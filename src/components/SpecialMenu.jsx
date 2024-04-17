@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 import { SpecialMenuSwiper } from "./swipers";
 import {
-  specialMenuData,
   leafHomeImg,
   onionHomeImg,
 } from "@/assets/data";
@@ -10,14 +9,16 @@ import { cn } from "@/utils";
 
 const SpecialMenu = () => {
   const[categoriesData,setCategoriesData] = useState([])
+  const[specialMenuData,setSpecialMenuData] = useState([])
   const [selectedCategory, setSelectedCategory] = useState(
     1
   );
   
   useEffect(() => {
-    getData()
+    getCategoriesData()
+    getSpecialMenuData()
   },[]);
-  const getData = async () => {
+  const getCategoriesData = async () => {
 
     try {
       const response = await fetch(
@@ -32,7 +33,21 @@ const SpecialMenu = () => {
       console.log(err);
     } 
   }
+  const getSpecialMenuData = async () => {
 
+    try {
+      const response = await fetch(
+        `https://ap-southeast-1.aws.data.mongodb-api.com/app/application-0-qfspg/endpoint/getSpecialMenu`
+      );
+      if (!response.ok) {
+        throw new Error(`HTTP error: Status ${response.status}`);
+      }
+      let postsData = await response.json();
+      setSpecialMenuData(postsData)
+    } catch (err) {
+      console.log(err);
+    } 
+  }
   return (
     <section className="py-6 lg:py-16">
       <div className="container">
@@ -116,7 +131,7 @@ const SpecialMenu = () => {
                       >
                         <div className="grid grid-cols-1">
                           <SpecialMenuSwiper
-                            dishes={specialMenuData.filter(
+                            dishes={specialMenuData?.filter(
                               (dish) => dish.category_id == selectedCategory
                             )}
                           />
