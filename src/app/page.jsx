@@ -52,7 +52,7 @@ export default function Home() {
                   href="#demo"
                   className="inline-flex items-center gap-2.5 rounded bg-primary px-4 py-2 text-center text-sm font-semibold text-white shadow-lg  shadow-transparent transition-all duration-500 ease-in-out hover:-translate-y-[2px] focus:outline-none md:me-0"
                 >
-                  <LuShoppingCart size={20} /> Order Now
+                  <LuShoppingCart size={20} /> Яг одоо захиалаарай
                 </a>
               </div>
             </nav>
@@ -69,19 +69,19 @@ export default function Home() {
             <div className="z-10 self-center lg:col-span-4">
               <div className="text-center lg:text-start">
                 <h1 className="text-2xl font-medium capitalize text-primary-950 dark:text-primary-50  md:text-3xl/snug lg:text-4xl/normal">
-                  Multipurpose{" "}
-                  <span className="font-semibold text-primary">Food</span>{" "}
-                  Client &amp; Admin App with Tailwind
+                  Олон зориулалттай{" "}
+                  <span className="font-semibold text-primary">Хоол</span>{" "}
+                  Үйлчлүүлэгч &amp; Tailwind-тэй админ програм
                 </h1>
                 <p className="mt-5">
-                  Discover the ease of having your preferred dishes delivered
-                  straight to your door. 🚪
+                  Өөрийн дуртай хоолыг хүргэхэд хялбар болохыг олж мэдээрэй
+                  шууд таны хаалга руу. 🚪
                 </p>
                 <a
                   href="#demo"
                   className="mt-10 inline-flex w-auto items-center gap-2 rounded-full bg-primary px-6 py-2.5 font-semibold text-white transition-all duration-300 hover:shadow-xl hover:shadow-primary-200/10"
                 >
-                  View Demos <LuEye size={20} />
+                  Демо үзэх <LuEye size={20} />
                 </a>
               </div>
             </div>
@@ -96,7 +96,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-20 text-center">
-            <p className="text-2xl font-medium">Developed Using</p>
+            <p className="text-2xl font-medium">ашиглан боловсруулсан</p>
             <div className="mt-8 inline-flex flex-wrap items-center justify-center gap-4">
               {frameworksData.map((framework, idx) => (
                 <div
@@ -120,14 +120,14 @@ export default function Home() {
         <div className="container">
           <div className="mx-auto mb-14 text-center">
             <span className="mb-2 inline-flex rounded-full border-x-2 border-x-primary-600 bg-primary-100 px-2 text-base font-semibold  text-primary-700">
-              Apps
+              Програмууд
             </span>
             <h2 className="mb-2.5 text-3xl font-semibold text-default-950">
               Client &amp; Admin Apps
             </h2>
             <p className="text-base font-medium text-default-900">
-              Empowering Food Business: Seamless Control for Clients, Effortless
-              Management for Admins!
+              Хүнсний бизнесийг чадавхижуулах: Үйлчлүүлэгчдэд саадгүй хяналт, хүч чармайлтгүй
+              Админуудад зориулсан менежмент!
             </p>
           </div>
 
@@ -142,14 +142,14 @@ export default function Home() {
         <div className="container">
           <div className="mx-auto mb-14 text-center">
             <span className="mb-2 inline-flex rounded-full border-x-2 border-x-primary-600 bg-primary-100 px-2 text-base font-semibold text-primary-700">
-              User
+              Хэрэглэгч
             </span>
             <h2 className="mb-2.5 text-3xl font-semibold text-default-950">
-              Client App
+              Үйлчлүүлэгч програм
             </h2>
             <p className="text-base font-medium text-default-900">
-              Instant Flavor, Effortless Ordering: Your Culinary Journey Starts
-              Here with Our Food Client Web App!
+              Шуурхай амт, хялбар захиалга: Таны хоолны аялал эхэлнэ
+              Манай Хүнсний үйлчлүүлэгчийн вэб програмыг энд оруулав!
             </p>
           </div>
           <div className="justify-content-center grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -163,14 +163,14 @@ export default function Home() {
         <div className="container">
           <div className="mx-auto mb-14 text-center">
             <span className="mb-2 inline-flex rounded-full border-x-2 border-x-primary-600 bg-primary-100 px-2 text-base font-semibold  text-primary-700">
-              Control
+              Хяналт
             </span>
             <h2 className="mb-2.5 text-3xl font-semibold text-default-950">
-              Admin Panel
+              Админ самбар
             </h2>
             <p className="text-base font-medium text-default-900">
-              Effortless Kitchen Management: Elevate Your Culinary Business with
-              Our Admin Web App!
+              Хүчин чармайлтгүй гал тогооны менежмент: Хоол хийх бизнесээ дээшлүүлээрэй
+              Манай админ вэб програм!
             </p>
           </div>
 
@@ -185,14 +185,14 @@ export default function Home() {
         <div className="container">
           <div className="mx-auto mb-14 text-center">
             <span className="mb-2 inline-flex rounded-full border-x-2 border-x-primary-600 bg-primary-100 px-2 text-base font-semibold  text-primary-700">
-              Security
+              Аюулгүй байдал
             </span>
             <h2 className="mb-2.5 text-3xl font-semibold text-default-950">
               Auth Pages
             </h2>
             <p className="text-base font-medium text-default-900">
-              Well, of course we would provide Authentication pages, which are
-              just right for your App.
+              Мэдээжийн хэрэг, бид баталгаажуулалтын хуудсыг өгөх болно
+              яг таны апп-д тохирсон.
             </p>
           </div>
 
@@ -207,14 +207,14 @@ export default function Home() {
         <div className="container">
           <div className="mx-auto mb-14 text-center">
             <span className="mb-2 inline-flex rounded-full border-x-2 border-x-primary-600 bg-primary-100 px-2 text-base font-semibold  text-primary-700">
-              Helper
+              Туслагч
             </span>
             <h2 className="mb-2.5 text-3xl font-semibold text-default-950">
-              Extra Pages
+              Нэмэлт хуудаснууд
             </h2>
             <p className="text-base font-medium text-default-900">
-              Beyond Taste: Explore Food Varieties with our Extra Pages Web App
-              – Where Culinary Diversity Meets Innovation!
+              Амтаас гадна: Манай Нэмэлт хуудас вэб програмын тусламжтайгаар хүнсний сортуудыг судлаарай
+              – Хоолны олон талт байдал инновацитай нийцдэг газар!
             </p>
           </div>
 
@@ -229,10 +229,10 @@ export default function Home() {
         <div className="container">
           <div className="mx-auto mb-14 text-center">
             <span className="mb-2 inline-flex rounded-full border-x-2 border-x-primary-600 bg-primary-100 px-2 text-base font-semibold  text-primary-700">
-              Features
+              Онцлогууд
             </span>
             <h2 className="mb-2.5 text-3xl font-semibold text-default-950">
-              Awesome Template Features
+              Загварын гайхалтай онцлогууд
             </h2>
           </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -241,7 +241,7 @@ export default function Home() {
             ))}
           </div>
           <p className="mt-6 text-center text-base font-medium text-primary-900 dark:text-primary">
-            All these sounds yummy, right? Wait until you purchase it. 😉
+            Энэ бүхэн амттай сонсогдож байна, тийм үү? Худалдан авах хүртлээ хүлээнэ үү. 😉
           </p>
         </div>
       </section>
@@ -270,32 +270,32 @@ export default function Home() {
                   />
                 </Link>
                 <h2 className="my-5 text-xl font-semibold capitalize text-default-900 md:text-3xl">
-                  Get Food for yourself
+                  Өөртөө хоол аваарай
                 </h2>
                 <p className="font-semibold text-default-800">
-                  Start working with <span className="text-primary">Food </span>
-                  to showcase your app to millions of people.
+                  Хамтран ажиллаж эхэл <span className="text-primary">хоол </span>
+                  өөрийн апп-аа олон сая хүнд үзүүлэх.
                 </p>
               </div>
               <Link
                 className="inline-flex items-center gap-2.5 rounded bg-primary px-4 py-2 text-center text-sm font-semibold text-white shadow-lg  shadow-transparent transition-all duration-500 ease-in-out hover:-translate-y-[2px] focus:outline-none md:me-0"
                 to=""
               >
-                <LuShoppingCart size={20} /> Buy Now
+                <LuShoppingCart size={20} /> Одоо худалдаж авах
               </Link>
             </div>
           </div>
         </div>
         <div className="container relative">
           <p className="py-6 text-center font-medium text-default-900">
-            © Yum. Crafted and Coded with{" "}
+            © Bes-Parmakh. аар урласан болон кодлогдсон{" "}
             <span className="text-red-500">❤️</span> by{" "}
             <Link
               className="text-primary-700"
               to="https://coderthemes.com/"
               target="_blank"
             >
-              Coderthemes
+              Кодер сэдэв
             </Link>
           </p>
         </div>
