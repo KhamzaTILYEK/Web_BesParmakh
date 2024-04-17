@@ -29,11 +29,11 @@ const BillingAddressForm = () => {
   });
   return (
     <form
-      onSubmit={handleSubmit(() => {})}
+      onSubmit={handleSubmit(() => { })}
       className="rounded-lg border border-default-200 p-6"
     >
       <h4 className="mb-6 text-xl font-medium text-default-900">
-        Billing Address
+        Тооцооны хаяг
       </h4>
       <div className="grid gap-6 lg:grid-cols-2">
         <TextFormInput
@@ -175,7 +175,7 @@ const BillingAddressForm = () => {
             type="submit"
             className="flex items-center justify-center gap-2 rounded-lg border border-primary bg-primary px-6 py-2.5 text-center text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:border-primary-700 hover:bg-primary-500"
           >
-            Save Changes
+            Өөрчлөлтүүдийг хадгалах
           </button>
         </div>
       </div>

@@ -18,7 +18,7 @@ const ContactForm = () => {
   });
 
   return (
-    <form onSubmit={handleSubmit(() => {})}>
+    <form onSubmit={handleSubmit(() => { })}>
       <TextFormInput
         name="email"
         label="Email"
@@ -57,7 +57,7 @@ const ContactForm = () => {
           type="submit"
           className="flex w-full justify-center rounded-lg bg-primary px-10 py-2.5 text-center font-medium text-white transition-all hover:bg-primary-500"
         >
-          Contact us
+          Бидэнтэй холбоо барина уу
         </button>
       </div>
     </form>

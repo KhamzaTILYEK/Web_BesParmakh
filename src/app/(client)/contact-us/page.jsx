@@ -13,11 +13,11 @@ const ContactUs = () => {
           <div className="grid gap-10 lg:grid-cols-5">
             <div className="lg:col-span-2">
               <h1 className="mb-2 text-2xl font-semibold text-default-800">
-                Contact Information
+                Холбогдох мэдээлэл
               </h1>
               <p className="mb-8 max-w-xl text-sm text-default-600">
-                Loremum et malesuada fames ac ante ipsum primis in faucibus. Sed
-                molestie accumsan dui, non iaculis.
+                Түүний өмнө өлсөж, өлсөж байв. Гэхдээ
+                Ажилтан нь онилдоггүй.
               </p>
               <div className="flex items-center justify-center">
                 <img
@@ -46,7 +46,7 @@ const ContactUs = () => {
                     <LuPhone size={20} className="fill-white text-primary" />
                   </span>
                   <h4 className="text-lg font-medium text-default-950">
-                    Call Us
+                    Бидэн рүү залгаарай
                   </h4>
                 </Link>
                 <Link
@@ -73,7 +73,7 @@ const ContactUs = () => {
                     <LuMail size={20} className="fill-white text-primary" />
                   </span>
                   <h4 className="text-lg font-medium text-default-950">
-                    Email
+                    И-мэйл
                   </h4>
                 </Link>
                 <Link
@@ -97,7 +97,7 @@ const ContactUs = () => {
                     <LuMapPin size={20} className="fill-white text-primary" />
                   </span>
                   <h4 className="text-lg font-medium text-default-950">
-                    Address
+                    Хаяг
                   </h4>
                 </div>
                 <p className="mb-2 text-sm text-default-500">

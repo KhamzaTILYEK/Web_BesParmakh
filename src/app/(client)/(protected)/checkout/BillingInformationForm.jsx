@@ -47,13 +47,13 @@ const BillingInformation = () => {
 
   return (
     <form
-      onSubmit={handleSubmit(() => {})}
+      onSubmit={handleSubmit(() => { })}
       className="grid grid-cols-1 gap-6 lg:grid-cols-3"
     >
       <div className="col-span-1 lg:col-span-2">
         <div className="mb-8">
           <h4 className="mb-6 text-lg font-medium text-default-800">
-            Billing Information
+            Тооцооны мэдээлэл
           </h4>
           <div className="grid gap-6 lg:grid-cols-4">
             <TextFormInput
@@ -209,14 +209,14 @@ const BillingInformation = () => {
                 htmlFor="shipmentAddress"
                 className="ms-2 block text-sm text-default-700"
               >
-                Ship into different address{" "}
+                Өөр хаягаар илгээнэ үү{" "}
               </label>
             </div>
           </div>
         </div>
         <div className="mb-8">
           <h4 className="mb-6 text-lg font-medium text-default-800">
-            Payment Option
+            Төлбөрийн сонголт
           </h4>
           <div className="mb-5 rounded-lg border border-default-200 p-6 lg:w-5/6">
             <div className="grid grid-cols-2 lg:grid-cols-4">
@@ -227,7 +227,7 @@ const BillingInformation = () => {
                 >
                   <LuDollarSign className="mb-4 text-primary" size={24} />
                   <h5 className="text-sm font-medium text-default-700">
-                    Cash on Delivery
+                    Бэлэн мөнгө Хүргэлт
                   </h5>
                 </label>
                 <input
@@ -287,7 +287,7 @@ const BillingInformation = () => {
                 >
                   <LuCreditCard className="mb-4 text-primary" size={24} />
                   <h5 className="text-sm font-medium text-default-700">
-                    Debit/Credit Card
+                    Дебит/Кредит карт
                   </h5>
                 </label>
                 <input
@@ -346,7 +346,7 @@ const BillingInformation = () => {
         </div>
         <div>
           <h4 className="mb-6 text-lg font-medium text-default-800">
-            Additional Information
+            Нэмэлт мэдээлэл
           </h4>
 
           <TextAreaFormInput

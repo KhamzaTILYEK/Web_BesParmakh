@@ -26,7 +26,7 @@ const ProductsGrid = () => {
                       data-hs-overlay="#filter_Offcanvas"
                       type="button"
                     >
-                      Filter <LuSettings2 size={16} />
+                      Шүүлтүүр <LuSettings2 size={16} />
                     </button>
                     <FoundResultsCount />
                   </div>

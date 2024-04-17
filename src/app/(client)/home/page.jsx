@@ -43,7 +43,7 @@ const Home = () => {
                     #Тусгай хоол 🍇
                   </span>
                   <div className="mb-5 text-3xl font-bold capitalize text-default-950 md:text-5xl/snug lg:text-6xl/normal">
-                  санал болгож байна&nbsp;
+                    санал болгож байна&nbsp;
                     <span className="relative inline-flex">
                       <span>Амттай</span>
                       <img
@@ -182,7 +182,7 @@ const Home = () => {
                   </span>
                   <div>
                     <h6 className="text-sm font-medium text-default-900">
-                      Hot Burger 
+                      Hot Burger
                     </h6>
                     <span className="inline-flex gap-0.5">
                       <FaStar
@@ -239,15 +239,15 @@ const Home = () => {
             </div>
             <div>
               <span className="mb-6 inline-flex rounded-full bg-primary/20 px-4 py-2 text-sm text-primary">
-                About Us
+                Бидний тухай
               </span>
               <h2 className="mb-6 max-w-xl text-3xl font-semibold text-default-900">
-                Where quality food meet Excellent services.
+                Чанартай хоол, дээд зэргийн үйлчилгээтэй газар.
               </h2>
               <p className="mb-16 max-w-2xl font-medium text-default-500 xl:mb-20">
-                It’s the perfect dining experience where every dish is crafted
-                with fresh, high-quality ingredients and served by friendly
-                staff who go.
+                Энэ бол хоол бүрийг урласан хоолны төгс туршлага юм
+                шинэхэн, өндөр чанартай орц найрлагатай, найрсаг байдлаар үйлчилнэ
+                явах ажилтнууд.
               </p>
               <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
                 <div className="rounded-md border border-default-100 bg-transparent shadow-lg transition-all duration-200 hover:border-primary">
@@ -261,10 +261,10 @@ const Home = () => {
                       />
                     </div>
                     <h3 className="mb-6 text-xl font-medium text-default-900">
-                      Fast Foods
+                      Түргэн хоол
                     </h3>
                     <p className="text-base text-default-500">
-                      Healthy Foods are nutrient-Dense Foods
+                      Эрүүл хүнс бол шим тэжээлээр баялаг хүнс юм
                     </p>
                   </div>
                 </div>
@@ -279,10 +279,10 @@ const Home = () => {
                       />
                     </div>
                     <h3 className="mb-6 text-xl font-medium text-default-900">
-                      Healthy Foods
+                      Эрүүл хоол
                     </h3>
                     <p className="text-base text-default-500">
-                      Healthy Foods are nutrient-Dense Foods
+                      Эрүүл хоол нь шим тэжээлээр баялаг хоол хүнс юм
                     </p>
                   </div>
                 </div>
@@ -297,10 +297,10 @@ const Home = () => {
                       />
                     </div>
                     <h3 className="mb-6 text-xl font-medium text-default-900">
-                      Fast Delivery
+                      Хурдан хүргэлт
                     </h3>
                     <p className="text-base text-default-500">
-                      Healthy Foods are nutrient-Dense Foods
+                      Эрүүл хүнс бол шим тэжээлээр баялаг хүнс юм
                     </p>
                   </div>
                 </div>
@@ -316,10 +316,10 @@ const Home = () => {
                   />
                   <div>
                     <h6 className="text-base font-medium text-default-900">
-                      Marley Culhane
+                      Ali Abakh
                     </h6>
                     <p className="text-sm font-medium text-default-500">
-                      Founder CEO
+                      Үүсгэн байгуулагч гүйцэтгэх захирал
                     </p>
                   </div>
                 </div>
@@ -392,20 +392,20 @@ const Home = () => {
         <div className="container">
           <div className="relative w-full lg:w-1/2">
             <h4 className="mb-6 font-handrawn text-2xl text-yellow-500">
-              Special Combo Offer
+              Тусгай Combo санал
             </h4>
             <h2 className="mb-8 text-4xl font-semibold text-white">
-              We make best Food in your town
+              Бид танай хотод хамгийн сайн хоол хийдэг
             </h2>
             <p className="mb-10 max-w-2xl text-base text-white/75">
-              &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.&quot;
+              &quot;Үйлчлүүлэгчийн үйлчилгээтэй байх нь чухал ч түүний араас харилцагчийн үйлчилгээ бий болно
+              гэхдээ ийм үед тэд маш их хөдөлмөр, өвдөлттэй адил тохиолдсон. гэх мэт
+              Учир нь би ямар ч ажил хийдэггүй хамгийн багадаа л ирнэ
+              зарим нь ашигтай байж болохоос бусад тохиолдолд.&quot;
             </p>
             <div className="inline-flex flex-wrap items-center justify-center gap-4">
               <button className="rounded-full bg-primary px-10 py-4 font-medium text-white transition-all hover:bg-primary-500">
-                Fill My Tummy
+                Миний гэдсийг дүүргэ
               </button>
               <h4 className="text-2xl font-medium text-yellow-400">
                 {currentCurrency}23.47{" "}
@@ -445,10 +445,10 @@ const Home = () => {
                       </div>
                       <div>
                         <h6 className="mb-1 text-base font-medium text-default-900">
-                          Richard Watson
+                          Ali Abakh
                         </h6>
                         <p className="text-sm font-medium text-default-500">
-                          Food Courier
+                          Хоолны шуудан зөөгч
                         </p>
                       </div>
                       <div className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-primary text-white">
@@ -458,17 +458,17 @@ const Home = () => {
                   </div>
                 </div>
                 <span className="mb-6 inline-flex rounded-full bg-primary/20 px-4 py-2 text-sm text-primary">
-                  Download App
+                  Апп татаж авах
                 </span>
                 <h2 className="mb-6 max-w-sm text-3xl/relaxed font-semibold text-default-900">
-                  Get Started With Us Today!
+                  Өнөөдөр бидэнтэй хамт эхлээрэй!
                 </h2>
                 <p className="mb-10 max-w-md text-base text-default-900">
-                  Discover food wherever and whenever and get your food
-                  delivered quickly.
+                  Хаана ч, хэзээ ч хоол олж, хоолоо аваарай
+                  хурдан шуурхай хүргэнэ.
                 </p>
                 <button className="inline-flex rounded-full bg-primary px-10 py-4 font-medium text-white transition-all hover:bg-primary-500">
-                  Order Now
+                  Яг одоо захиалаарай
                 </button>
               </div>
               <div className="relative px-20 pt-20">

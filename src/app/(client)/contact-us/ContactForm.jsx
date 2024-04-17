@@ -19,7 +19,7 @@ const ContactForm = () => {
     resolver: yupResolver(contactFormSchema),
   });
   return (
-    <form onSubmit={handleSubmit(() => {})}>
+    <form onSubmit={handleSubmit(() => { })}>
       <div className="grid gap-6 lg:grid-cols-2">
         <TextFormInput
           name="fName"
@@ -61,7 +61,7 @@ const ContactForm = () => {
             type="submit"
             className="inline-flex items-center justify-center rounded-lg bg-primary px-10 py-3 text-base font-medium capitalize text-white transition-all hover:bg-primary-500"
           >
-            Send Message
+            мессеж илгээх
           </button>
         </div>
       </div>

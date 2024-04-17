@@ -13,7 +13,7 @@ const AllWishList = () => {
     </>
   ) : (
     <div className="flex flex-col items-center justify-center p-10">
-      <p className="text-3xl">Add Products to wishlist and check again</p>
+      <p className="text-3xl">Хүсэлтийн жагсаалтад бүтээгдэхүүн нэмээд дахин шалгана уу</p>
       <img
         src={error404OtherImg}
         width={250}
@@ -25,7 +25,7 @@ const AllWishList = () => {
         to="/dishes"
         className="rounded-lg bg-primary px-6 py-3 text-base font-medium capitalize text-white transition-all hover:bg-primary-500 mx-auto inline-block"
       >
-        Check Products
+        Бүтээгдэхүүнийг шалгана уу
       </Link>
     </div>
   );

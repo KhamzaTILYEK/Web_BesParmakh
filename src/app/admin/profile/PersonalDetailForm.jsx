@@ -41,7 +41,7 @@ const PersonalDetailForm = () => {
     <div className="mb-6 rounded-lg border border-default-200 p-6">
       <div>
         <h4 className="mb-4 text-xl font-medium text-default-900">
-          Personal Details
+          Хувийн мэдээлэл
         </h4>
         <div className="grid gap-6 xl:grid-cols-5">
           <div className="xl:col-span-1">
@@ -58,7 +58,7 @@ const PersonalDetailForm = () => {
           </div>
           <div className="xl:col-span-4">
             <form
-              onSubmit={handleSubmit(() => {})}
+              onSubmit={handleSubmit(() => { })}
               className="grid gap-6 lg:grid-cols-2"
             >
               <TextFormInput
@@ -166,7 +166,7 @@ const PersonalDetailForm = () => {
                   type="submit"
                   className="flex items-center justify-center gap-2 rounded-lg border border-primary bg-primary px-6 py-2.5 text-center text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:bg-primary-500"
                 >
-                  Save Changes
+                  Өөрчлөлтүүдийг хадгалах
                 </button>
               </div>
             </form>

@@ -17,7 +17,7 @@ export const FoundResultsCount = () => {
 
   return (
     <h6 className="hidden text-base text-default-950 lg:flex">
-      {dishes.length ?? 0} Results Found
+      {dishes.length ?? 0} Үр дүн олдсон
     </h6>
   );
 };

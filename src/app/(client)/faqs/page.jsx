@@ -11,7 +11,7 @@ const FAQs = () => {
       <section className="py-6 lg:py-16">
         <div className="container">
           <h1 className="mb-6 text-4xl font-medium text-default-800">
-            Frequently Asked Questions
+            Түгээмэл асуултууд
           </h1>
           <div className="grid gap-10 lg:grid-cols-6">
             <div className="lg:col-span-4">
@@ -76,12 +76,12 @@ const FAQs = () => {
               <div className="rounded-lg bg-primary/10">
                 <div className="p-8">
                   <h4 className="mb-2 text-xl font-medium text-default-950">
-                    Don’t find your answer, Ask for support.
+                    Хариултаа олохгүй, дэмжлэг хүс.
                   </h4>
                   <p className="mb-6 text-base">
-                    Interdum et malesuada fames ac ante ipsum primis in
-                    faucibus. Sed molestie accumsan dui, non iaculis primis in
-                    faucibu raesent eget sem purus.
+                    Заримдаа бид өлсгөлөнг хүлээж, түүний өмнө эхнийх нь байдаг
+                    хоолой Харин dui давхаргын ажилтан эхлээд онилсонгүй
+                    Надад цэвэр салат хэрэгтэй байна.
                   </p>
                   <ContactForm />
                 </div>

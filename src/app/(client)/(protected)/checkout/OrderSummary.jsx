@@ -9,7 +9,7 @@ const OrderSummary = () => {
     <div className="mb-5">
       <div className="rounded-lg border border-default-200 p-5">
         <h4 className="mb-5 text-lg font-semibold text-default-700">
-          Order Summary
+          Захиалгын хураангуй
         </h4>
 
         {cartItems.map((item) => {
@@ -46,25 +46,25 @@ const OrderSummary = () => {
 
         <div className="mb-6">
           <div className="mb-3 flex justify-between">
-            <p className="text-sm text-default-500">Sub-total</p>
+            <p className="text-sm text-default-500">Дэд нийлбэр</p>
             <p className="text-sm font-medium text-default-700">
               {currentCurrency}
               {getCalculatedOrder().orderTotal.toFixed(2)}
             </p>
           </div>
           <div className="mb-3 flex justify-between">
-            <p className="text-sm text-default-500">Shipping</p>
-            <p className="text-sm font-medium text-default-700">Free</p>
+            <p className="text-sm text-default-500">Хүргэлт</p>
+            <p className="text-sm font-medium text-default-700">Үнэгүй</p>
           </div>
           <div className="mb-3 flex justify-between">
-            <p className="text-sm text-default-500">Discount</p>
+            <p className="text-sm text-default-500">Хөнгөлөлт</p>
             <p className="text-sm font-medium text-default-700">
               -{currentCurrency}
               {getCalculatedOrder().totalDiscount.toFixed(2)}
             </p>
           </div>
           <div className="mb-3 flex justify-between">
-            <p className="text-sm text-default-500">Tax</p>
+            <p className="text-sm text-default-500">Татвар</p>
             <p className="text-sm font-medium text-default-700">
               +{currentCurrency}
               {getCalculatedOrder().tax.toFixed(2)}
@@ -72,7 +72,7 @@ const OrderSummary = () => {
           </div>
           <div className="my-4 border-b border-default-200" />
           <div className="mb-3 flex justify-between">
-            <p className="text-base text-default-700">Total</p>
+            <p className="text-base text-default-700">Нийт</p>
             <p className="text-base font-medium text-default-700">
               {currentCurrency}
               {getCalculatedOrder().total.toFixed(2)}
@@ -83,7 +83,7 @@ const OrderSummary = () => {
           type="submit"
           className="inline-flex w-full items-center justify-center rounded-lg border border-primary bg-primary px-10 py-3 text-center text-sm font-medium text-white shadow-sm transition-all duration-500 hover:bg-primary-500"
         >
-          Place Order
+          Захиалга өгөх
         </button>
       </div>
     </div>

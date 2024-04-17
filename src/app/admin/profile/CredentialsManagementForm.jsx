@@ -19,9 +19,9 @@ const CredentialsManagementForm = () => {
   });
 
   return (
-    <form onSubmit={handleSubmit(() => {})}>
+    <form onSubmit={handleSubmit(() => { })}>
       <h4 className="mb-4 text-xl font-medium text-default-900">
-        Change Password
+        Нууц үг солих
       </h4>
       <PasswordFormInput
         name="currentPassword"
@@ -52,7 +52,7 @@ const CredentialsManagementForm = () => {
           type="submit"
           className="flex items-center justify-center gap-2 rounded-lg border border-primary bg-primary px-6 py-2.5 text-center text-sm font-semibold text-white shadow-sm transition-all duration-200  hover:bg-primary-500"
         >
-          Save Changes
+          Өөрчлөлтүүдийг хадгалах
         </button>
       </div>
     </form>

@@ -47,7 +47,7 @@ const ProductDetail = () => {
         <section className="py-6 lg:py-10">
           <div className="container">
             <h4 className="mb-4 text-xl font-semibold text-default-800">
-              You may also like
+              Танд ч бас таалагдаж магадгүй
             </h4>
             <div className="mb-10 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
               {dishesData.slice(0, 4).map((dish, idx) => (
@@ -59,7 +59,7 @@ const ProductDetail = () => {
 
             <div className="pt-10">
               <h4 className="text-base font-medium text-default-800">
-                Consumer Review
+                Хэрэглэгчийн тойм
               </h4>
 
               {consumerReviews.map((review, idx) => (
@@ -68,7 +68,7 @@ const ProductDetail = () => {
                   className={cn(
                     "py-5",
                     consumerReviews.length !== idx + 1 &&
-                      "border-b border-default-200"
+                    "border-b border-default-200"
                   )}
                 >
                   <div className="mb-3 flex items-center">
@@ -86,7 +86,7 @@ const ProductDetail = () => {
                         </h4>
                         <FaCircle size={5} className="text-default-400" />
                         <h4 className="text-sm font-medium text-default-400">
-                          Just now
+                          Саяхан
                         </h4>
                       </div>
                       <div className="flex gap-1.5">

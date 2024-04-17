@@ -21,15 +21,15 @@ const Error404 = () => {
               </div>
               <div className="max-w-xl text-center">
                 <h1 className="mb-4 text-5xl font-semibold text-default-800">
-                  Ooops...
+                  Өө...
                 </h1>
                 <h3 className="mb-4 text-2xl font-medium text-default-800">
-                  It’s look like you’re lost...
+                  Та төөрсөн юм шиг байна ...
                 </h3>
                 <p className="mx-auto mb-8 max-w-xl text-base text-default-600">
-                  Something went wrong. It’s look that your requested could not
-                  be found. It’s look like the link is broken or the page is
-                  removed.
+                  Ямар нэгэн зүйл буруугаар эргэсэн. Таны хүсэлт биелээгүй бололтой
+                  олдох. Холбоос эвдэрсэн эсвэл хуудас нь эвдэрсэн бололтой
+                  хасагдсан.
                 </p>
                 <div className="flex flex-wrap items-center justify-center gap-4">
                   <GoBackButton />
@@ -37,7 +37,7 @@ const Error404 = () => {
                     to="/home"
                     className="relative inline-flex w-1/2 items-center justify-center rounded-lg border border-primary px-6 py-3 text-base font-medium capitalize text-primary transition-all hover:bg-primary hover:text-white lg:w-2/6"
                   >
-                    Go To home
+                    Гэр лүүгээ яв
                   </Link>
                 </div>
               </div>

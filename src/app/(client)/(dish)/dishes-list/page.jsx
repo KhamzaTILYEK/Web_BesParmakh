@@ -24,7 +24,7 @@ const ProductList = () => {
                     className="inline-flex items-center gap-4 rounded-full border border-default-200 px-4 py-2.5 text-sm text-default-950 transition-all lg:hidden xl:px-5"
                     data-hs-overlay="#filter_Offcanvas"
                   >
-                    Filter <LuSettings2 size={16} />
+                    Шүүлтүүр<LuSettings2 size={16} />
                   </button>
                   <FoundResultsCount />
                 </div>
