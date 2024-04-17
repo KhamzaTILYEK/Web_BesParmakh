@@ -1,4 +1,4 @@
-import { lazy } from "react";
+import { lazy, useEffect, useState } from "react";
 import { LuClock3, LuPhone, LuPlay } from "react-icons/lu";
 import { FaStar } from "react-icons/fa6";
 import {
@@ -20,7 +20,6 @@ import {
   offerBgHomeImg,
 } from "@/assets/data/images";
 import { consumerReviews } from "@/assets/data";
-
 import { currentCurrency } from "@/common";
 import { PageTitle } from "@/components";
 const TestimonialsSwiper = lazy(
@@ -28,7 +27,8 @@ const TestimonialsSwiper = lazy(
 );
 const SpecialMenu = lazy(() => import("@/components/SpecialMenu"));
 
-const Home = () => {
+const Home = () => { 
+  
   return (
     <>
       <PageTitle title="Нүүр хуудас" />

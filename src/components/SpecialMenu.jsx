@@ -1,8 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 import { SpecialMenuSwiper } from "./swipers";
 import {
-  categoriesData,
   specialMenuData,
   leafHomeImg,
   onionHomeImg,
@@ -10,9 +9,29 @@ import {
 import { cn } from "@/utils";
 
 const SpecialMenu = () => {
+  const[categoriesData,setCategoriesData] = useState([])
   const [selectedCategory, setSelectedCategory] = useState(
-    categoriesData[0].id
+    1
   );
+  
+  useEffect(() => {
+    getData()
+  },[]);
+  const getData = async () => {
+
+    try {
+      const response = await fetch(
+        `https://ap-southeast-1.aws.data.mongodb-api.com/app/application-0-qfspg/endpoint/getDishes`
+      );
+      if (!response.ok) {
+        throw new Error(`HTTP error: Status ${response.status}`);
+      }
+      let postsData = await response.json();
+      setCategoriesData(postsData)
+    } catch (err) {
+      console.log(err);
+    } 
+  }
 
   return (
     <section className="py-6 lg:py-16">
@@ -35,7 +54,7 @@ const SpecialMenu = () => {
                   role="tablist"
                   data-hs-tabs-vertical="true"
                 >
-                  {categoriesData.map((category) => (
+                  {categoriesData && categoriesData.map((category) => (
                     <button
                       type="button"
                       role="tab"
@@ -53,8 +72,8 @@ const SpecialMenu = () => {
                         <div>
                           <span className="inline-flex h-14 w-14 grow items-center justify-center rounded-full hs-tab-active:bg-white">
                             <img
-                              src={category.image}
-                              height={32}
+                              src={`data:image/jpeg;base64,${category.image}`}
+                               height={32}
                               width={32}
                               className="h-8 w-8"
                               alt="category-img"
@@ -84,7 +103,7 @@ const SpecialMenu = () => {
 
               <div className="rounded-lg bg-primary/10 lg:pb-16">
                 <div className="p-4 lg:p-6">
-                  {categoriesData.map((category) => {
+                  {categoriesData && categoriesData.map((category) => {
                     return (
                       <div
                         key={category.id}

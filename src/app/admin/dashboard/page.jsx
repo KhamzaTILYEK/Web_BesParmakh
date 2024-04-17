@@ -29,6 +29,10 @@ const Dashboard = () => {
       name: "Total",
     },
   ];
+ 
+  
+
+  
 
   return (
     <div className="w-full lg:ps-64">
