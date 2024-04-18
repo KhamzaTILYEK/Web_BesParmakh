@@ -65,32 +65,60 @@ const useLogin = () => {
   };
 
   const login = handleSubmit(async (values) => {
+    console.log(values);
     try {
-      const res = await HttpClient.post("/login", values);
-      if (res.data.token) {
+      const response = await fetch(
+        `https://ap-southeast-1.aws.data.mongodb-api.com/app/application-0-qfspg/endpoint/login?email=${values.email.toLowerCase()}&password=${values.password}`
+      )
+      if (!response.ok) {
+        throw new Error(`HTTP error: Status ${response.status}`);
+      }
+      let postsData = await response.json();
+      console.log(postsData);
+      if (postsData.token) {
         saveSession({
-          ...(res.data ?? {}),
-          token: res.data.token,
+          ...(postsData ?? {}),
+          token: postsData.token,
         });
-        if (res.data.role == "user" || res.data.role == "admin") {
-          redirectAsRole(res.data.role, true);
+        if (postsData.role == "user" || postsData.role == "admin") {
+          redirectAsRole(postsData.role, true);
         }
       }
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    } catch (e) {
-      if (e.response?.data?.error) {
-        toast.error(e.response?.data?.error, {
-          position: "top-right",
-          duration: 2000,
-        });
-      }
-    } finally {
+      toast.success(`Successfully logged in. ${postsData?.userInfo?.userName}`, {
+        position: "top-right",
+        duration: 1000,
+      });
+    } catch (err) {
+      toast.error(err.response?.data?.error, {
+        position: "top-right",
+        duration: 1000,
+      });
+    }
+    finally {
       setLoading(false);
     }
-    toast.success("Successfully logged in. Redirecting....", {
-      position: "top-right",
-      duration: 2000,
-    });
+
+    // try {
+
+    //   const res = await HttpClient.post("/login", {});
+    //   if (res.data.token) {
+    //     saveSession({
+    //       ...(res.data ?? {}),
+    //       token: res.data.token,
+    //     });
+    //     if (res.data.role == "user" || res.data.role == "admin") {
+    //       redirectAsRole(res.data.role, true);
+    //     }
+    //   }
+    //   // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    // } catch (e) {
+    //   if (e.response?.data?.error) {
+    //     toast.error(e.response?.data?.error, {
+    //       position: "top-right",
+    //       duration: 2000,
+    //     });
+    //   }
+    // }
   });
 
   return { loading, login, control, changeUserRole };

@@ -3,21 +3,17 @@ import { LuGlobe } from "react-icons/lu";
 
 const languages = [
   {
-    name: "German",
-    image: germanyImg,
+    name: "Mongolian",
+    image: null,
   },
   {
-    name: "Italian",
-    image: italyImg,
+    name: "English",
+    image: null,
   },
   {
-    name: "Spanish",
-    image: spainImg,
-  },
-  {
-    name: "Russian",
-    image: russiaImg,
-  },
+    name: "Khazakh",
+    image: null,
+  }
 ];
 
 const LanguageDropdown = () => {

@@ -497,7 +497,7 @@ export const dishesData = [
     name: "Khamza",
     images: [pizzaImg],
     price: 2000,
-    type: "men",
+    type: "non-veg",
     tags: ["Tester"],
     quantity: 1,
     review: {

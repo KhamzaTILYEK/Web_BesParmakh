@@ -34,13 +34,13 @@ const MenuAdmin = () => {
         </Link>
       </div>
 
-      <SimplebarReactClient className="h-[calc(100%-390px)]">
+      <SimplebarReactClient className="h-[calc(100%-250px)]">
         <VerticalMenu menuItems={getAdminVerticalMenuItems()} />
       </SimplebarReactClient>
 
       <ul className="admin-menu flex flex-col gap-2 px-4 pt-10">
         <li className="menu-item">
-          <div
+          {/* <div
             style={{ backgroundImage: `url(${offerBgOtherImg})` }}
             className="flex flex-col items-center rounded-md bg-primary/5 bg-cover bg-no-repeat p-4 text-center text-sm text-default-700"
           >
@@ -53,7 +53,7 @@ const MenuAdmin = () => {
             <button className="rounded bg-primary/10 px-4 py-2 text-sm font-medium text-primary transition-all hover:bg-primary hover:text-white">
               Contact Support
             </button>
-          </div>
+          </div> */}
         </li>
 
         <li className="menu-item">

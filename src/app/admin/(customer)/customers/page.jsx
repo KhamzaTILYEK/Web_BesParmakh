@@ -2,8 +2,23 @@ import { BreadcrumbAdmin, CustomerDataTable } from "@/components";
 
 //data
 import { sellersData } from "@/assets/data";
-
+import { useEffect, useState } from "react";
 const CustomersList = () => {
+  const [customers,setCustomers]=useState([])
+  useEffect(() => {
+    getCustumersList()
+  },[]);
+  const getCustumersList = async () => {
+    try {
+      const response = await fetch(
+        `https://ap-southeast-1.aws.data.mongodb-api.com/app/application-0-qfspg/endpoint/getCustomers`
+      )
+      let postsData = await response.json();
+      setCustomers(postsData)
+    } catch (err) {
+      console.log(err);
+    }
+  }
   const columns = [
     {
       key: "name",
@@ -41,7 +56,7 @@ const CustomersList = () => {
         <BreadcrumbAdmin title="Customers List" subtitle="Customers" />
 
         <CustomerDataTable
-          rows={sellersData}
+          rows={customers}
           columns={columns}
           title="Customers"
           buttonText="Add a new Customer"
