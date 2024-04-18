@@ -1,7 +1,5 @@
 import { lazy, useEffect, useState } from "react";
 import { BreadcrumbAdmin, OrderDataTable } from "@/components";
-import { orderRows } from "../../../(order)/orders/page";
-import { getSellerById } from "@/helpers";
 import { useNavigate, useParams } from "react-router-dom";
 import Error404 from "../../../../not-found";
 const PersonDetailsCard = lazy(
@@ -85,7 +83,7 @@ const CustomerDetails = () => {
             <OrderDataTable
               title="Customer Order history"
               columns={columns}
-              rows={null}
+              rows={customer?.orders}
             />
           </div>
         </div>:<Error404/>}

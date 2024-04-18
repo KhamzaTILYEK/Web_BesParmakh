@@ -83,11 +83,17 @@ const useLogin = () => {
         if (postsData.role == "user" || postsData.role == "admin") {
           redirectAsRole(postsData.role, true);
         }
+        toast.success(`Successfully logged in. ${postsData?.userInfo?.userName}`, {
+          position: "top-right",
+          duration: 1000,
+        });
+      } else {
+        toast.error("user not found", {
+          position: "top-right",
+          duration: 1000,
+        });
       }
-      toast.success(`Successfully logged in. ${postsData?.userInfo?.userName}`, {
-        position: "top-right",
-        duration: 1000,
-      });
+
     } catch (err) {
       toast.error(err.response?.data?.error, {
         position: "top-right",

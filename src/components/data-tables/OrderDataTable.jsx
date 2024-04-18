@@ -1,14 +1,24 @@
 import { Link } from "react-router-dom";
-import { FaStar, FaStarHalfStroke } from "react-icons/fa6";
 import { DemoFilterDropdown } from "../index";
-import { cn, toSentenceCase } from "@/utils";
-import { currentCurrency } from "@/common";
+import { useState, useEffect } from "react";
 
 const sortFilterOptions = ["Ascending", "Descending"];
 
-const statusFilterOptions = ["All", "Paid", "Cancelled", "Refunded"];
+const statusFilterOptions = ["All", "Paid", "Cancelled", "Refunded","Done"];
 
 const OrderDataTable = ({ rows, columns, title }) => {
+
+const [filterId,setFilterId] = useState("All")
+const [orders,setOrders] = useState(null)
+
+useEffect(() => {
+  if(filterId=="All"){
+    setOrders(rows)
+  }else{
+    setOrders(rows.filter((row)=>row?.status==filterId))
+  }
+}, [rows, filterId]);
+
   return (
     <div className="rounded-lg border border-default-200">
       <div className="overflow-hidden p-6 ">
@@ -21,6 +31,7 @@ const OrderDataTable = ({ rows, columns, title }) => {
             />
 
             <DemoFilterDropdown
+              setFilterId={setFilterId}
               filterType="Status"
               filterOptions={statusFilterOptions}
             />
@@ -44,8 +55,45 @@ const OrderDataTable = ({ rows, columns, title }) => {
                 </tr>
               </thead>
               <tbody className="divide-y divide-default-200">
-                {rows && rows.map((row, idx) => {
-                  const dish = row.dish;
+                {orders && orders.map((row)=>{
+
+                  return(<tr className={`text-start `}>
+                    
+                  <td
+                    key="date"
+                    className="whitespace-nowrap px-6 py-3 text-start text-sm font-medium text-default-800"
+                  >
+                    {row.date}
+                  </td>
+                  <td
+                    key="id"
+                    className="whitespace-nowrap px-6 py-3 text-start text-sm font-medium text-default-800"
+                  >
+                    {row?._id}
+                  </td>
+                  <td
+                    key="dish"
+                    className="whitespace-nowrap px-6 py-3 text-start text-sm font-medium text-default-800"
+                  >
+                    {row.dish_name}
+                  </td>
+                  <td
+                    key="amount"
+                    className="whitespace-nowrap px-6 py-3 text-start text-sm font-medium text-default-800"
+                  >
+                    {row.amount}
+                  </td>
+                  <td
+                    key="startus"
+                    className="whitespace-nowrap px-6 py-3 text-start text-sm font-medium text-default-800"
+                  >
+                    {row.status}
+                  </td>
+              </tr>)
+                })}
+              
+                {/* {rows && rows.map((row, idx) => {
+                  // const dish = row.dish;
                   return (
                     <tr key={idx}>
                       {columns.map((column) => {
@@ -57,7 +105,7 @@ const OrderDataTable = ({ rows, columns, title }) => {
                               className="whitespace-nowrap px-6 py-4 text-sm font-medium text-default-800"
                             >
                               <div className="flex items-center gap-4">
-                                <div className="shrink">
+                              <div className="shrink">
                                   <div className="h-18 w-18">
                                     <img
                                       src={dish?.images[0] ?? ""}
@@ -159,7 +207,7 @@ const OrderDataTable = ({ rows, columns, title }) => {
                       })}
                     </tr>
                   );
-                })}
+                })} */}
               </tbody>
             </table>
           </div>

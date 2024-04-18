@@ -2,9 +2,9 @@ import { useState } from "react";
 import { LuChevronDown } from "react-icons/lu";
 import { cn } from "@/utils";
 
-const DemoFilterDropdown = ({ filterType, filterOptions, buttonClassName }) => {
+const DemoFilterDropdown = ({ filterType, filterOptions, buttonClassName, setFilterId }) => {
   const [selectedOption, setSelectedOption] = useState(filterOptions[0]);
-
+ 
   return (
     <div className="hs-dropdown relative inline-flex">
       <button
@@ -22,7 +22,7 @@ const DemoFilterDropdown = ({ filterType, filterOptions, buttonClassName }) => {
           {filterOptions.map((option, idx) => (
             <li key={option + idx}>
               <span
-                onClick={() => setSelectedOption(option)}
+                onClick={() => {setSelectedOption(option), setFilterId(option)}}
                 className={cn(
                   "flex items-center gap-3 rounded px-3 py-2 font-normal transition-all hover:bg-default-100 hover:text-default-700",
                   selectedOption == option
