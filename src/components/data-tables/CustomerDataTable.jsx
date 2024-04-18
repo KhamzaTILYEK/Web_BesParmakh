@@ -4,7 +4,7 @@ import TableSearchBox from "./TableSearchBox";
 import { DemoFilterDropdown } from "../filter";
 import DateRangeFilter from "./DateRangeFilter";
 import GoToAddButton from "./GoToAddButton";
-
+import { useNavigate } from "react-router-dom";
 const sortFilterOptions = ["Ascending", "Descending"];
 
 const statusFilterOptions = ["All", "Active", "Blocked"];
@@ -16,6 +16,7 @@ const CustomerDataTable = ({
   buttonLink,
   buttonText,
 }) => {
+  const navigate = useNavigate()
   return (
     <div className="rounded-lg border border-default-200">
       <div className="border-b border-b-default-200 px-6 py-4">
@@ -81,7 +82,7 @@ const CustomerDataTable = ({
               <tbody className="divide-y divide-default-200">
                 {rows.map((row, idx) => {
                   return (
-                    <tr key={idx}>
+                    <tr className=" cursor-pointer" key={idx} onClick={()=>{navigate(`/admin/customers/${row?.userName}`)}}>
                       <td className="whitespace-nowrap px-6 py-4">
                         <div className="flex h-5 items-center">
                           <input
@@ -106,6 +107,7 @@ const CustomerDataTable = ({
                             <td
                               key={tableData + idx}
                               className="whitespace-nowrap px-6 py-4 text-base text-default-800"
+                              
                             >
                               {tableData} |&nbsp;
                               <span className="text-xs">
