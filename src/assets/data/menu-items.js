@@ -207,7 +207,7 @@ export const ADMIN_VERTICAL_MENU_ITEMS = [
       {
         key: "customers-details",
         label: "Customer Details",
-        url: "/admin/customers/701",
+        url: "/admin/customers/Erali",
         parentKey: "customers",
       },
       {
@@ -216,12 +216,12 @@ export const ADMIN_VERTICAL_MENU_ITEMS = [
         url: "/admin/add-customer",
         parentKey: "customers",
       },
-      {
-        key: "customers-edit",
-        label: "Edit Customer",
-        url: "/admin/edit-customer",
-        parentKey: "customers",
-      },
+      // {
+      //   key: "customers-edit",
+      //   label: "Edit Customer",
+      //   url: "/admin/edit-customer",
+      //   parentKey: "customers",
+      // },
     ],
   },
   {

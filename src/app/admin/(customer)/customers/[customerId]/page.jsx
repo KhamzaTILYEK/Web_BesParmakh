@@ -3,6 +3,7 @@ import { BreadcrumbAdmin, OrderDataTable } from "@/components";
 import { orderRows } from "../../../(order)/orders/page";
 import { getSellerById } from "@/helpers";
 import { useNavigate, useParams } from "react-router-dom";
+import Error404 from "../../../../not-found";
 const PersonDetailsCard = lazy(
   () => import("@/components/cards/PersonDetailsCard")
 );
@@ -10,19 +11,39 @@ const PersonDetailsCard = lazy(
 const CustomerDetails = () => {
   const navigate = useNavigate();
   const { customerId } = useParams();
-
-  const [seller, setSeller] = useState();
+  const [customer,setCustomer]=useState(null)
 
   useEffect(() => {
-    (async () => {
-      const foundSeller = await getSellerById(Number(customerId));
-      if (!foundSeller) {
-        navigate("/not-found");
+    
+    setCustomer({})
+    getCustumer()
+  },[customerId]);
+  const getCustumer = async () => {
+    try {
+      const response = await fetch(
+        `https://ap-southeast-1.aws.data.mongodb-api.com/app/application-0-qfspg/endpoint/getCustomer?userName=${customerId}`
+      )
+      let customerData = await response.json();
+      if (!customerData) {
+        setCustomer(null)
       } else {
-        setSeller(foundSeller);
+        console.log(customerData);
+        setCustomer(customerData)
       }
-    })();
-  }, [customerId]);
+    } catch (err) {
+      console.log(err);
+    }
+  }
+  // useEffect(() => {
+  //   (async () => {
+  //     const foundSeller = await getSellerById(Number(customerId));
+  //     if (!foundSeller) {
+  //       navigate("/not-found");
+  //     } else {
+  //       setSeller(foundSeller);
+  //     }
+  //   })();
+  // }, [customerId]);
 
   const columns = [
     {
@@ -50,23 +71,24 @@ const CustomerDetails = () => {
   return (
     <div className="w-full lg:ps-64">
       <div className="page-content space-y-6 p-6">
+        
         <BreadcrumbAdmin
           title="Customers Details"
           link="/admin/customers"
           subtitle="Customers"
         />
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+        {customer?<div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
           <div className="lg:col-span-1">
-            {seller && <PersonDetailsCard seller={seller} />}
+            {customer && <PersonDetailsCard customer={customer} />}
           </div>
           <div className="lg:col-span-2">
             <OrderDataTable
               title="Customer Order history"
               columns={columns}
-              rows={orderRows}
+              rows={null}
             />
           </div>
-        </div>
+        </div>:<Error404/>}
       </div>
     </div>
   );

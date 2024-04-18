@@ -44,7 +44,7 @@ const OrderDataTable = ({ rows, columns, title }) => {
                 </tr>
               </thead>
               <tbody className="divide-y divide-default-200">
-                {rows.map((row, idx) => {
+                {rows && rows.map((row, idx) => {
                   const dish = row.dish;
                   return (
                     <tr key={idx}>

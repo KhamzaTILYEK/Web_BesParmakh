@@ -1,7 +1,5 @@
 import { BreadcrumbAdmin, CustomerDataTable } from "@/components";
 
-//data
-import { sellersData } from "@/assets/data";
 import { useEffect, useState } from "react";
 const CustomersList = () => {
   const [customers,setCustomers]=useState([])
@@ -21,8 +19,12 @@ const CustomersList = () => {
   }
   const columns = [
     {
-      key: "name",
-      name: "Name",
+      key: "firstName",
+      name: "FirstName",
+    },
+    {
+      key: "lastName",
+      name: "LastName",
     },
     {
       key: "contact_no",
