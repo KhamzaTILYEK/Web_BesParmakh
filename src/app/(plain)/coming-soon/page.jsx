@@ -1,5 +1,5 @@
 const ComingSoon = () => {
-  return <div>ComingSoon </div>;
+  return <div>Тун удахгүй </div>;
 };
 
 export default ComingSoon;

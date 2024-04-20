@@ -4,9 +4,9 @@ import { useAuthContext } from "@/context";
 
 const BottomLink = () => (
   <p className="mt-auto text-center text-default-950">
-    Please come back and
+    Буцаад ирээрэй
     <Link to="/auth/login" className="ms-1 text-primary">
-      <span className="font-medium">Login</span>
+      <span className="font-medium">Нэвтрэх</span>
     </Link>
   </p>
 );
@@ -18,8 +18,8 @@ const Logout = () => {
 
   return (
     <AuthFormLayout
-      authTitle="Logout"
-      helpText="We are Sorry to see you go, please come back soon. 😢"
+      authTitle="Гарах"
+      helpText="Таныг явж байгаад харамсаж байна, удахгүй буцаж ирээрэй. 😢"
       bottomLink={<BottomLink />}
     >
       <PageTitle title="Logout" />

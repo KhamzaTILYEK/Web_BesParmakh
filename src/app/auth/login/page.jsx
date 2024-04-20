@@ -5,9 +5,9 @@ import { AuthFormLayout, PageTitle } from "@/components";
 
 const BottomLink = () => (
   <p className="mt-auto text-center text-default-950">
-    Don’t have an account ?{" "}
+    Бүртгэлгүй юу?{" "}
     <Link to="/auth/register" className="ms-1 text-primary">
-      <span className="font-medium">Register</span>
+      <span className="font-medium">Бүртгүүлэх</span>
     </Link>
   </p>
 );
@@ -15,8 +15,8 @@ const BottomLink = () => (
 const Login = () => {
   return (
     <AuthFormLayout
-      authTitle="Login"
-      helpText="Enter your credentials to access Yum."
+      authTitle="Нэвтрэх"
+      helpText="Бес-пармак руу нэвтрэхийн тулд итгэмжлэлээ оруулна уу"
       bottomLink={<BottomLink />}
       hasThirdPartyAuth
     >

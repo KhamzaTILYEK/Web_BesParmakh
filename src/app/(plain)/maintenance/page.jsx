@@ -1,5 +1,5 @@
 const Maintenance = () => {
-  return <div>Maintenance</div>;
+  return <div>Засвар үйлчилгээ</div>;
 };
 
 export default Maintenance;

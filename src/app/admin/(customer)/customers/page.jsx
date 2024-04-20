@@ -2,10 +2,10 @@ import { BreadcrumbAdmin, CustomerDataTable } from "@/components";
 
 import { useEffect, useState } from "react";
 const CustomersList = () => {
-  const [customers,setCustomers]=useState([])
+  const [customers, setCustomers] = useState([])
   useEffect(() => {
     getCustumersList()
-  },[]);
+  }, []);
   const getCustumersList = async () => {
     try {
       const response = await fetch(
@@ -60,8 +60,8 @@ const CustomersList = () => {
         <CustomerDataTable
           rows={customers}
           columns={columns}
-          title="Customers"
-          buttonText="Add a new Customer"
+          title="Үйлчлүүлэгчид"
+          buttonText="Шинэ харилцагч нэмнэ үү"
           buttonLink="/admin/add-customer"
         />
       </div>

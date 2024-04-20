@@ -10,18 +10,18 @@ import {
 
 const AddCustomerForm = () => {
   const addCustomerFormSchema = yup.object({
-    fname: yup.string().required("Please enter your first name"),
-    lname: yup.string().required("Please enter your last name"),
-    username: yup.string().required("Please enter your user name"),
+    fname: yup.string().required("Өөрийн нэрээ оруулна уу"),
+    lname: yup.string().required("Овогоо оруулна уу"),
+    username: yup.string().required("Хэрэглэгчийн нэрээ оруулна уу"),
     email: yup
       .string()
       .email("Please enter a valid email")
       .required("Please enter your email"),
-    phoneNo: yup.number().required("Please enter your Phone NO."),
-    country: yup.string().required("Please select your Country"),
-    state: yup.string().required("Please select your State/Province"),
-    zipCode: yup.string().required("Please select your ZIP/Postal code"),
-    description: yup.string().required("Please enter your description"),
+    phoneNo: yup.number().required("Утасны дугаараа оруулна уу"),
+    country: yup.string().required("Улсаа сонгоно уу"),
+    state: yup.string().required("Өөрийн муж/аймаг сонгоно уу"),
+    zipCode: yup.string().required("ZIP/Шуудангийн кодоо сонгоно уу"),
+    description: yup.string().required("Тайлбараа оруулна уу"),
   });
 
   const { control, handleSubmit, reset } = useForm({
@@ -29,35 +29,35 @@ const AddCustomerForm = () => {
   });
   return (
     <div className="rounded-lg border border-default-200">
-      <form onSubmit={handleSubmit(() => {})} className="p-6">
+      <form onSubmit={handleSubmit(() => { })} className="p-6">
         <div className="mb-6 grid gap-6 lg:grid-cols-2">
           <TextFormInput
             name="fname"
-            label="First Name"
+            label="Нэр"
             type="text"
-            placeholder="Enter Your First Name"
+            placeholder="Нэрээ оруулна уу"
             control={control}
             fullWidth
           />
           <TextFormInput
             name="lname"
-            label="Last Name"
+            label="Овог"
             type="text"
-            placeholder="Enter Your Last Name"
+            placeholder="Овогоо оруулна уу"
             control={control}
             fullWidth
           />
           <TextFormInput
             name="username"
-            label="User Name"
+            label="Хэрэглэгчийн нэр"
             type="text"
-            placeholder="Enter Your Last Name"
+            placeholder="Овогоо оруулна уу"
             control={control}
             fullWidth
           />
           <TextFormInput
             name="email"
-            label="Email"
+            label="Имэйл"
             type="email"
             placeholder="demoexample@mail.com"
             control={control}
@@ -65,7 +65,7 @@ const AddCustomerForm = () => {
           />
           <TextFormInput
             name="phoneNo"
-            label="Phone Number"
+            label="Утасны дугаар"
             type="text"
             placeholder="+1-123-XXX-4567"
             control={control}
@@ -73,7 +73,7 @@ const AddCustomerForm = () => {
           />
           <SelectFormInput
             name="country"
-            label="Country/Region"
+            label="Улс/Бүс нутаг"
             control={control}
             id="billing-country1"
             instanceId="billing-country"
@@ -96,7 +96,7 @@ const AddCustomerForm = () => {
           />
           <SelectFormInput
             name="state"
-            label="State/Province"
+            label="муж/аймаг"
             control={control}
             id="billing-state-province1"
             instanceId="billing-state-province"
@@ -118,7 +118,7 @@ const AddCustomerForm = () => {
           />
           <SelectFormInput
             name="zipCode"
-            label="ZIP/Postal Code"
+            label="ZIP/Шуудангийн код"
             control={control}
             id="billing-zip-code1"
             instanceId="billing-zip-code"
@@ -132,8 +132,8 @@ const AddCustomerForm = () => {
           />
           <TextAreaFormInput
             name="description"
-            label="Description"
-            placeholder="Jot something down.."
+            label="Тодорхойлолт"
+            placeholder="Ямар нэг юм бичээрэй.."
             rows={5}
             containerClassName="lg:col-span-2"
             control={control}
@@ -147,14 +147,14 @@ const AddCustomerForm = () => {
             className="flex items-center justify-center gap-2 rounded-lg bg-red-500/10 px-6 py-2.5 text-center text-sm font-semibold text-red-500 shadow-sm transition-colors duration-200 hover:bg-red-500 hover:text-white"
           >
             <LuEraser size={20} />
-            Clear
+            тодорхой
           </button>
           <button
             type="submit"
             className="flex items-center justify-center gap-2 rounded-lg bg-primary px-6 py-2.5 text-center text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:bg-primary-500"
           >
             <LuSave size={20} />
-            Save
+            Хадгалах
           </button>
         </div>
       </form>

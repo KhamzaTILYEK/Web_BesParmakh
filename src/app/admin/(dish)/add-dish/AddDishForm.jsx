@@ -18,17 +18,17 @@ const AddDishForm = () => {
   valueSnow = `<h5><span class="ql-size-large">Add a long description for your product</span></h5>`;
 
   const credentialsManagementFormSchema = yup.object({
-    productname: yup.string().required("Please enter your product name"),
+    productname: yup.string().required("Бүтээгдэхүүнийхээ нэрийг оруулна уу"),
     productCatagory: yup
       .string()
-      .required("Please select your product catagory"),
-    sellingPrice: yup.number().required("Please enter your selling price"),
-    costPrice: yup.number().required("Please enter your selling price"),
-    quantity: yup.number().required("Please enter your quantity"),
-    deliveryType: yup.string().required("Please select deliveryType"),
-    description: yup.string().required("Please enter your description"),
-    saleStartDate: yup.string().required("Please select Sale Start Date"),
-    saleEndDate: yup.string().required("Please select Sale End Date"),
+      .required("Бүтээгдэхүүний ангилалаа сонгоно уу"),
+    sellingPrice: yup.number().required("Худалдах үнээ оруулна уу"),
+    costPrice: yup.number().required("Худалдах үнээ оруулна уу"),
+    quantity: yup.number().required("Тоо хэмжээгээ оруулна уу"),
+    deliveryType: yup.string().required("Хүргэлтийн төрлийг сонгоно уу"),
+    description: yup.string().required("Тайлбараа оруулна уу"),
+    saleStartDate: yup.string().required("Хямдрал эхлэх огноог сонгоно уу"),
+    saleEndDate: yup.string().required("Борлуулалт дуусах огноог сонгоно уу"),
   });
 
   const { control, handleSubmit, reset } = useForm({
@@ -36,22 +36,22 @@ const AddDishForm = () => {
   });
   return (
     <div className="xl:col-span-2">
-      <form onSubmit={handleSubmit(() => {})} className="space-y-6">
+      <form onSubmit={handleSubmit(() => { })} className="space-y-6">
         <div className="rounded-lg border border-default-200 p-6">
           <div className="grid gap-6 lg:grid-cols-2">
             <div className="space-y-6">
               <TextFormInput
                 name="productname"
                 type="text"
-                label="Product Name"
-                placeholder="Product Name"
+                label="Бүтээгдэхүүний нэр"
+                placeholder="Бүтээгдэхүүний нэр"
                 control={control}
                 fullWidth
               />
 
               <SelectFormInput
                 name="productCatagory"
-                label="Product Catagory"
+                label="Бүтээгдэхүүний ангилал"
                 id="product-catagory"
                 instanceId="product-catagory"
                 control={control}
@@ -66,16 +66,16 @@ const AddDishForm = () => {
                 <TextFormInput
                   name="sellingPrice"
                   type="text"
-                  label="Selling Price"
-                  placeholder="Selling Price"
+                  label="Борлуулалтын үнэ"
+                  placeholder="Борлуулалтын үнэ"
                   control={control}
                   fullWidth
                 />
                 <TextFormInput
                   name="costPrice"
                   type="text"
-                  label="Cost Price"
-                  placeholder="Cost Price"
+                  label="Зардал үнэ"
+                  placeholder="Зардал үнэ"
                   control={control}
                   fullWidth
                 />
@@ -83,14 +83,14 @@ const AddDishForm = () => {
               <TextFormInput
                 name="quantity"
                 type="text"
-                label="Quantity"
-                placeholder="Quantity in Stock"
+                label="Тоо хэмжээ"
+                placeholder="Нөөц дэх тоо хэмжээ"
                 control={control}
                 fullWidth
               />
               <SelectFormInput
                 name="deliveryType"
-                label="Delivery Type"
+                label="Хүргэлтийн төрөл"
                 id="delivery-catagory"
                 instanceId="delivery-catagory"
                 control={control}
@@ -103,14 +103,14 @@ const AddDishForm = () => {
               />
               <div className="flex justify-between">
                 <h4 className="text-sm font-medium text-default-600">
-                  Discount
+                  Хөнгөлөлт
                 </h4>
                 <div className="flex items-center gap-4">
                   <label
                     className="block text-sm text-default-600"
                     htmlFor="addDiscount"
                   >
-                    Add Discount
+                    Хөнгөлөлт нэмэх
                   </label>
                   <input
                     type="checkbox"
@@ -121,14 +121,14 @@ const AddDishForm = () => {
               </div>
               <div className="flex justify-between">
                 <h4 className="text-sm font-medium text-default-600">
-                  Expiry Date
+                  Дуусах хугацаа
                 </h4>
                 <div className="flex items-center gap-4">
                   <label
                     className="block text-sm text-default-600"
                     htmlFor="addExpiryDate"
                   >
-                    Add Expiry Date
+                    Дуусах огноо нэмнэ үү
                   </label>
                   <input
                     type="checkbox"
@@ -141,7 +141,7 @@ const AddDishForm = () => {
             <div className="space-y-6">
               <TextAreaFormInput
                 name="description"
-                label="Description"
+                label="Тодорхойлолт"
                 placeholder="short Description"
                 rows={5}
                 control={control}
@@ -152,7 +152,7 @@ const AddDishForm = () => {
                   className="mb-2 block text-sm font-medium text-default-900"
                   htmlFor="editor"
                 >
-                  Product Long Description
+                  Бүтээгдэхүүний урт тодорхойлолт
                 </label>
                 <div id="editor" className="h-44">
                   <ReactQuill
@@ -165,14 +165,14 @@ const AddDishForm = () => {
               </div>
               <div className="flex justify-between">
                 <h4 className="text-sm font-medium text-default-600">
-                  Return Policy
+                  Буцаах бодлого
                 </h4>
                 <div className="flex items-center gap-4">
                   <label
                     className="block text-sm text-default-600"
                     htmlFor="returnPolicy"
                   >
-                    Returnable
+                    Буцаах боломжтой
                   </label>
                   <input
                     type="checkbox"
@@ -186,7 +186,7 @@ const AddDishForm = () => {
                   <DateFormInput
                     name="saleStartDate"
                     type="date"
-                    label="Sale Start On"
+                    label="Хямдрал эхлэх"
                     className="block w-full rounded-lg border border-default-200 bg-transparent px-4 py-2.5 dark:bg-default-50"
                     placeholder="12/9/2022"
                     options={{
@@ -199,7 +199,7 @@ const AddDishForm = () => {
                   <DateFormInput
                     name="saleEndDate"
                     type="date"
-                    label="Sale End On"
+                    label="Хямдрал дуусна"
                     className="block w-full rounded-lg border border-default-200 bg-transparent px-4 py-2.5 dark:bg-default-50"
                     placeholder="12/10/2022"
                     options={{
@@ -223,14 +223,14 @@ const AddDishForm = () => {
                 className="flex items-center justify-center gap-2 rounded-lg bg-red-500/10 px-6 py-2.5 text-center text-sm font-semibold text-red-500 shadow-sm transition-colors duration-200 hover:bg-red-500 hover:text-white"
               >
                 <LuEraser size={20} />
-                Clear
+                Тодорхой
               </button>
               <button
                 type="submit"
                 className="flex items-center justify-center gap-2 rounded-lg bg-primary px-6 py-2.5 text-center text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:bg-primary-500"
               >
                 <LuSave size={20} />
-                Save
+                Хадгалах
               </button>
             </div>
           </div>

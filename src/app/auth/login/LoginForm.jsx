@@ -33,7 +33,7 @@ const LoginForm = () => {
           to="/auth/forgot-password"
           className="float-right text-end text-sm text-default-600 underline"
         >
-          Forgot Password?
+          Нууц үгээ мартсан?
         </Link>
 
         <button
@@ -41,7 +41,7 @@ const LoginForm = () => {
           className="mt-5 w-full rounded-lg bg-primary px-6 py-3 text-base capitalize text-white transition-all hover:bg-primary-500"
           disabled={loading}
         >
-          Log In
+          Нэвтрэх
         </button>
       </form>
 
@@ -50,14 +50,14 @@ const LoginForm = () => {
           <div className="flex items-center justify-between gap-2 border-b border-dashed border-primary px-4 py-2">
             <div className="inline-flex items-center gap-2">
               <LuUser size={22} />
-              <p className="text-base text-default-900">User</p>
+              <p className="text-base text-default-900">Хэрэглэгч</p>
             </div>
             <button
               className="flex items-center gap-1.5 rounded-md bg-primary px-2 py-1 text-sm text-white transition-all hover:bg-primary-600"
               onClick={() => changeUserRole("user")}
             >
               <LuCopy />
-              Use
+              Ашиглах
             </button>
           </div>
           <p className="p-2 px-4">
@@ -74,14 +74,14 @@ const LoginForm = () => {
           <div className="flex items-center justify-between gap-2 border-b border-dashed border-primary px-4 py-2">
             <div className="inline-flex items-center gap-2">
               <LuShield size={22} />
-              <p className="text-base text-default-900">Administator</p>
+              <p className="text-base text-default-900">Администратор</p>
             </div>
             <button
               className="flex items-center gap-1.5 rounded-md bg-primary px-2 py-1 text-sm text-white transition-all hover:bg-primary-600"
               onClick={() => changeUserRole("admin")}
             >
               <LuCopy />
-              Use
+              Ашиглах
             </button>
           </div>
           <p className="p-2 px-4">

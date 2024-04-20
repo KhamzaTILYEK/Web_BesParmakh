@@ -101,10 +101,10 @@ const ContactUs = () => {
                   </h4>
                 </div>
                 <p className="mb-2 text-sm text-default-500">
-                  37125 Maya Estate Dr, Victoria Road,
+                  37125 Майя үл хөдлөх хөрөнгийн доктор, Виктория зам,
                 </p>
                 <p className="text-sm text-default-500">
-                  Warsaw, Poland - 234834
+                  Mongolia, Ulaanbaatar - 234834
                 </p>
               </div>
             </div>

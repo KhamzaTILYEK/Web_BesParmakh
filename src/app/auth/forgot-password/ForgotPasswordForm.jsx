@@ -8,7 +8,7 @@ const ForgotPasswordForm = () => {
     email: yup
       .string()
       .email("Please enter a valid email")
-      .required("Please enter your email"),
+      .required("Имэйлээ оруулна уу"),
   });
 
   const { control, handleSubmit } = useForm({
@@ -21,14 +21,14 @@ const ForgotPasswordForm = () => {
         name="email"
         control={control}
         type="text"
-        placeholder="Enter your email"
+        placeholder="Имэйлээ оруулна уу"
         className="bg-white"
         label="Email"
         containerClassName="mb-6"
         fullWidth
       />
       <button className="w-full rounded-lg bg-primary px-6 py-3 text-base capitalize text-white transition-all hover:bg-primary-500">
-        Reset Password
+        Нууц үгээ анхны байдалд нь оруулж
       </button>
     </form>
   );

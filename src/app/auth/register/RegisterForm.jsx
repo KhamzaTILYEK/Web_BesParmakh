@@ -58,7 +58,7 @@ const RegisterForm = () => {
         type="submit"
         className="w-full rounded-lg bg-primary px-6 py-3 text-base capitalize text-white transition-all hover:bg-primary-500"
       >
-        Register
+        Бүртгүүлэх
       </button>
     </form>
   );

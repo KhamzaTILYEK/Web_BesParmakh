@@ -39,16 +39,16 @@ const ProductList = () => {
   return (
     <div className="w-full lg:ps-64">
       <div className="page-content space-y-6 p-6">
-        <BreadcrumbAdmin title="Dishes List" subtitle="Dishes" />
+        <BreadcrumbAdmin title="Хоолны жагсаалт" subtitle="Аяга таваг" />
 
         <div className="grid grid-cols-1">
           <div className="rounded-lg border border-default-200">
             <DishDataTable
               rows={rows}
               columns={columns}
-              title="Dishes List"
+              title="Хоолны жагсаалт"
               buttonLink="/admin/add-dish"
-              buttonText="Add Dish"
+              buttonText="Хоол нэмнэ"
             />
           </div>
         </div>

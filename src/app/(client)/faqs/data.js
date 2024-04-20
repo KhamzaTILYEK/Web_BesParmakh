@@ -1,46 +1,46 @@
 const faqContent = [
   {
-    title: "How to contact with Customer Service?",
+    title: "Харилцагчийн үйлчилгээтэй хэрхэн холбогдох вэ?",
     description:
-      "Nulla malesuada iaculis nisi, vitae sagittis lacus laoreet in. Morbi aliquet pulvinar orci non vulputate. Donec aliquet ullamcorper gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed molestie accumsan dui, non iaculis magna mattis id. Ut consectetur massa at viverra euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent eget sem purus.",
+      "Нуурын нууранд амьдралын сумнаас өөр онилсон зүйл байхгүй. Morbi aquiquet pulvinar orci non vulputate. Ачааны машинууд жирэмсэн болтол. Заримдаа өлсгөлөнг хүлээж байгаа бөгөөд өмнө нь хоолойд хамгийн түрүүнд тохиолддог. Харин dui давхаргын ажилтан, энэ нь том эдлэнд чиглэсэн биш юм. Дараа нь Euismod хүүхэлдэйн кинонд цугларах болно. Заримдаа өлсгөлөнг хүлээж байгаа бөгөөд өмнө нь хоолойд хамгийн түрүүнд тохиолддог. Энэ нь цэвэр салат хэрэгтэй.",
     points: [
-      "Vivamus sed est non arcu porta aliquet et vitae nulla.",
-      "Integer et lacus vitae justo fermentum rutrum. In nec ultrices massa.",
-      "Proin blandit nunc risus, at semper turpis sagittis nec.",
-      "Quisque ut dolor erat",
+      "Бид амьдарч байгаа боловч ачааны машины хаалганы нум, амьдрал байхгүй.",
+      "Бүхэл бүтэн амьдрал, нуур зүгээр л исгэж байна. Сагсан бөмбөгийн аль алинд нь биш.",
+      "Одоо инээд зусардаж байна, гэхдээ үргэлж сумаар биш.",
+      "Бүгд их гунигтай байсан",
     ],
   },
   {
-    title: "Website response taking time, how to improve?",
+    title: "Вэбсайтад хариу өгөхөд цаг хугацаа шаардагддаг, хэрхэн сайжруулах вэ?",
     description:
-      "Nulla malesuada iaculis nisi, vitae sagittis lacus laoreet in. Morbi aliquet pulvinar orci non vulputate. Donec aliquet ullamcorper gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed molestie accumsan dui, non iaculis magna mattis id. Ut consectetur massa at viverra euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent eget sem purus.",
+      "Нуурын нууранд амьдралын сумнаас өөр онилсон зүйл байхгүй. Morbi aquiquet pulvinar orci non vulputate. Ачааны машинууд жирэмсэн болтол. Заримдаа өлсгөлөнг хүлээж байгаа бөгөөд өмнө нь хоолойд хамгийн түрүүнд тохиолддог. Харин dui давхаргын ажилтан, энэ нь том эдлэнд чиглэсэн биш юм. Дараа нь Euismod хүүхэлдэйн кинонд цугларах болно. Заримдаа өлсгөлөнг хүлээж байгаа бөгөөд өмнө нь хоолойд хамгийн түрүүнд тохиолддог. Энэ нь цэвэр салат хэрэгтэй.",
     points: [
-      "Vivamus sed est non arcu porta aliquet et vitae nulla.",
-      "Integer et lacus vitae justo fermentum rutrum. In nec ultrices massa.",
-      "Proin blandit nunc risus, at semper turpis sagittis nec.",
-      "Quisque ut dolor erat",
+      "Бид амьдарч байгаа боловч ачааны машины хаалганы нум, амьдрал байхгүй.",
+      "Бүхэл бүтэн амьдрал, нуур зүгээр л исгэж байна. Сагсан бөмбөгийн аль алинд нь биш.",
+      "Одоо инээд зусардаж байна, гэхдээ үргэлж сумаар биш.",
+      "Бүгд их гунигтай байсан",
     ],
   },
   {
-    title: "In elementum est a ante sodales iaculis.",
+    title: "Элемент нь урд талын гишүүдэд чиглэгддэг.",
     description:
-      "Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.",
+      "Aenean-ийн аз жаргалд өвдөлт хэрэгтэй. Жасмин масс. Хамтрагчидтайгаа нийлээд уулс өд, их түлхэлт төрүүлж, хөгийн хулгана төрнө. Тэр болтол хичнээн муур, ultricies биш, хүүхдүүд хөлбөмбөг, хэн үнэ, салат.",
     points: [
-      "Vivamus sed est non arcu porta aliquet et vitae nulla.",
-      "Integer et lacus vitae justo fermentum rutrum. In nec ultrices massa.",
-      "Proin blandit nunc risus, at semper turpis sagittis nec.",
-      "Quisque ut dolor erat",
+      "Бид амьдарч байгаа боловч ачааны машины хаалганы нум, амьдрал байхгүй.",
+      "Бүхэл бүтэн амьдрал, нуур зүгээр л исгэж байна. Сагсан бөмбөгийн аль алинд нь биш.",
+      "Одоо инээд зусардаж байна, гэхдээ үргэлж сумаар биш.",
+      "Бүгд их гунигтай байсан",
     ],
   },
   {
-    title: "How do I Tracking My Order?",
+    title: "Би захиалгаа хэрхэн хянах вэ?",
     description:
-      "Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.",
+      "Aenean-ийн аз жаргалд өвдөлт хэрэгтэй. Жасмин масс. Хамтрагчидтайгаа нийлээд уулс өд, их түлхэлт төрүүлж, хөгийн хулгана төрнө. Тэр болтол хичнээн муур, ultricies биш, хүүхдүүд хөлбөмбөг, хэн үнэ, салат. Зөөлөн хөлтэй бөмбөг гэж байдаггүй. Бүрэн гар. Маргааш уураг.",
   },
   {
-    title: "App installation failed, how to update system information?",
+    title: "Програмыг суулгаж чадсангүй, системийн мэдээллийг хэрхэн шинэчлэх вэ?",
     description:
-      "Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.",
+      "Aenean-ийн аз жаргалд өвдөлт хэрэгтэй. Жасмин масс. Хамтрагчидтайгаа нийлээд уулс өд, их түлхэлт төрүүлж, хөгийн хулгана төрнө. Тэр болтол хичнээн муур, ultricies биш, хүүхдүүд хөлбөмбөг, хэн үнэ, салат. Зөөлөн хөлтэй бөмбөг гэж байдаггүй. Бүрэн гар. Маргааш уураг.",
   },
 ];
 

@@ -9,13 +9,13 @@ const PersonDetailsCard = lazy(
 const CustomerDetails = () => {
   const navigate = useNavigate();
   const { customerId } = useParams();
-  const [customer,setCustomer]=useState(null)
+  const [customer, setCustomer] = useState(null)
 
   useEffect(() => {
-    
+
     setCustomer({})
     getCustumer()
-  },[customerId]);
+  }, [customerId]);
   const getCustumer = async () => {
     try {
       const response = await fetch(
@@ -69,24 +69,24 @@ const CustomerDetails = () => {
   return (
     <div className="w-full lg:ps-64">
       <div className="page-content space-y-6 p-6">
-        
+
         <BreadcrumbAdmin
-          title="Customers Details"
+          title="Хэрэглэгчийн дэлгэрэнгүй мэдээлэл"
           link="/admin/customers"
-          subtitle="Customers"
+          subtitle="Үйлчлүүлэгчид"
         />
-        {customer?<div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+        {customer ? <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
           <div className="lg:col-span-1">
             {customer && <PersonDetailsCard customer={customer} />}
           </div>
           <div className="lg:col-span-2">
             <OrderDataTable
-              title="Customer Order history"
+              title="Хэрэглэгчийн захиалгын түүх"
               columns={columns}
               rows={customer?.orders}
             />
           </div>
-        </div>:<Error404/>}
+        </div> : <Error404 />}
       </div>
     </div>
   );
