@@ -15,7 +15,7 @@ const LoginForm = () => {
           type="email"
           className="bg-white"
           placeholder="Enter your email"
-          label="Email"
+          label="Имэйл"
           containerClassName="mb-6"
           fullWidth
         />
@@ -23,7 +23,7 @@ const LoginForm = () => {
         <PasswordFormInput
           name="password"
           control={control}
-          label="Password"
+          label="Нууц үг"
           labelClassName="block text-sm font-medium text-default-900 mb-2"
           containerClassName="mb-1"
           fullWidth

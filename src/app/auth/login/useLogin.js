@@ -18,8 +18,8 @@ const useLogin = () => {
     email: yup
       .string()
       .email("Please enter a valid email")
-      .required("Please enter your email"),
-    password: yup.string().required("Please enter your password"),
+      .required("Имэйлээ оруулна уу"),
+    password: yup.string().required("Нууц үгээ оруулна уу"),
   });
 
   const { control, handleSubmit, reset } = useForm({
