@@ -115,19 +115,19 @@ const OrderList = () => {
             <div className="space-y-6">
               <div className="grid gap-6 sm:grid-cols-2 2xl:grid-cols-3">
                 <OrderStatistics
-                  title="Food Delivered"
+                  title="Хүргүүлсэн хоол"
                   stats="23,568"
                   icon={LuBanknote}
                   variant="bg-primary/20 text-primary"
                 />
                 <OrderStatistics
-                  title="Your Balance"
+                  title="Таны үлдэгдэл"
                   stats={`${currentCurrency}8,904.80`}
                   icon={LuWallet}
                   variant="bg-yellow-500/20 text-yellow-500"
                 />
                 <OrderStatistics
-                  title="Satisfaction Rating"
+                  title="Сэтгэл ханамжийн үнэлгээ"
                   stats="98%"
                   icon={FaStar}
                   variant="bg-green-500/20 text-green-500"
@@ -135,7 +135,7 @@ const OrderList = () => {
               </div>
               <div className="grid grid-cols-1">
                 <OrderDataTable
-                  title="Order History"
+                  title="Захиалгын түүх"
                   columns={columns}
                   rows={orderRows}
                 />
@@ -147,7 +147,7 @@ const OrderList = () => {
               <div className="p-6">
                 <div className="mb-6">
                   <h2 className="mb-4 text-xl font-semibold text-default-800">
-                    Ongoing Orders
+                    Үргэлжилж буй захиалга
                   </h2>
                   <div className="relative">
                     <span className="absolute start-2.5 top-1/2 -translate-y-1/2">

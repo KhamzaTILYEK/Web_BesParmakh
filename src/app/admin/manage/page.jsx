@@ -17,9 +17,9 @@ const Manage = () => {
     <div className="w-full lg:ps-64">
       <div className="page-content space-y-6 p-6">
         <BreadcrumbAdmin
-          title="Manage"
+          title="Удирдах"
           link="/admin/dashboard"
-          subtitle="Admin"
+          subtitle="Админ"
         />
         <div className="grid grid-cols-1 gap-6 xl:grid-cols-12">
           <div className="xl:col-span-5">
@@ -27,16 +27,16 @@ const Manage = () => {
               <div className="rounded-lg border border-default-200">
                 <div className="p-5">
                   <h3 className="mb-4 text-lg font-semibold text-default-800">
-                    Offer Zone
+                    Санал болгох бүс
                   </h3>
                   <div className="space-y-4">
                     <ManageOfferCard
-                      offerTitle="Up to 50% OFF, Flat Discount and other great offers"
+                      offerTitle="50% хүртэл хямдрал, хавтгай хямдрал болон бусад гайхалтай саналууд"
                       variant="cyan"
                       image={bagIconImg}
                     />
                     <ManageOfferCard
-                      offerTitle="Up to 50% OFF, Flat Discount and other great offers"
+                      offerTitle="50% хүртэл хямдрал, хавтгай хямдрал болон бусад гайхалтай саналууд"
                       variant="pink"
                       image={specialOfferIconImg}
                     />
@@ -46,7 +46,7 @@ const Manage = () => {
               <div className="overflow-hidden rounded-lg border border-default-200">
                 <div className="px-6 py-4">
                   <h3 className="text-lg font-semibold text-default-800">
-                    Upcoming New Menu
+                    Удахгүй гарах шинэ цэс
                   </h3>
                 </div>
                 <div className="custom-scroll h-[40rem] overflow-y-scroll">
@@ -63,7 +63,7 @@ const Manage = () => {
             <div className="rounded-lg border border-default-200">
               <div className="p-5">
                 <h3 className="mb-4 text-lg font-semibold text-default-800">
-                  New Menu
+                  Шинэ цэс
                 </h3>
                 <div className="space-y-4">
                   {dishesData.map((dish, idx) => {
@@ -74,7 +74,7 @@ const Manage = () => {
                       to="/admin/add-dish"
                       className="inline-flex items-center justify-center gap-2 rounded-lg border border-primary bg-primary px-10 py-4 text-center text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:bg-primary-500"
                     >
-                      Add Menu items
+                      Цэсийн зүйл нэмэх
                     </Link>
                   </div>
                 </div>
@@ -86,13 +86,13 @@ const Manage = () => {
               <OrderCard
                 color="#009400"
                 change={34}
-                changeType="Increase Orders"
+                changeType="Захиалгыг нэмэгдүүлэх"
                 title="New Order"
               />
               <OrderCard
                 color="#D40000"
                 change={45}
-                changeType="Decrease Order"
+                changeType="Захиалгыг багасгах"
                 title="Cancelled Orders"
               />
               <AddNewFoodCard />

@@ -25,22 +25,22 @@ const EditDishUploader = () => {
           </div>
           <h5 className="mb-2 text-base font-medium text-primary">
             <LuUploadCloud className="ms-2 inline-flex" />
-            Upload Image
+            Зураг байршуулах
           </h5>
           <p className="mb-2 text-sm text-default-600">
-            Upload a cover image for your product.
+            Бүтээгдэхүүнийхээ нүүр зургийг байршуулна уу.
           </p>
           <p className="text-sm text-default-600">
-            File Format
+            Файлын формат
             <span className="text-default-800">jpeg, png</span>
-            Recommended Size
+            Санал болгож буй хэмжээ
             <span className="text-default-800">600x600 (1:1)</span>
           </p>
         </div>
         <img src={burritoBowlImg} alt="burrito" />
       </div>
       <h4 className="mb-4 text-base font-medium text-default-800">
-        Additional Images
+        Нэмэлт зургууд
       </h4>
       <div className="grid grid-cols-2 gap-6">
         <div className="flex h-40 flex-col items-center justify-center rounded-lg border border-default-200 p-6">

@@ -19,7 +19,7 @@ const OrderProgress = () => {
             <LuCheck />
           </div>
           <h4 className="mt-3 rounded-lg bg-default-100 p-2 text-sm text-default-800 shadow md:bg-transparent md:shadow-none">
-            Order received
+            Захиалга хүлээн авлаа
           </h4>
         </div>
         <div className="flex flex-col items-center justify-center">
@@ -27,7 +27,7 @@ const OrderProgress = () => {
             <span className="text-sm font-medium text-white">02</span>
           </div>
           <h4 className="mt-3 rounded-lg bg-default-100 p-2 text-sm text-default-800 shadow md:bg-transparent md:shadow-none">
-            Processing
+            Боловсруулж байна
           </h4>
         </div>
         <div className="flex flex-col items-center justify-center">
@@ -35,7 +35,7 @@ const OrderProgress = () => {
             <span className="text-sm font-medium text-primary">03</span>
           </div>
           <h4 className="mt-3 rounded-lg bg-default-100 p-2 text-sm text-default-800 shadow md:bg-transparent md:shadow-none">
-            On the way
+            Замдаа
           </h4>
         </div>
         <div className="flex flex-col items-center justify-center">
@@ -43,7 +43,7 @@ const OrderProgress = () => {
             <span className="text-sm font-medium text-primary">04</span>
           </div>
           <h4 className="mt-3 rounded-lg bg-default-100 p-2 text-sm text-default-800 shadow md:bg-transparent md:shadow-none">
-            Delivered
+            Хүргэсэн
           </h4>
         </div>
       </div>

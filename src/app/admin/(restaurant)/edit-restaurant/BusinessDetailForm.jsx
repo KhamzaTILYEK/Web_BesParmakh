@@ -6,16 +6,16 @@ import { TextAreaFormInput, TextFormInput } from "@/components";
 
 const BusinessDetailForm = () => {
   const businessDetailsFormSchema = yup.object({
-    businessName: yup.string().required("Please enter your business name"),
-    businessType: yup.string().required("Please enter your business type"),
-    contactNO: yup.number().required("Please enter your contact Number"),
-    gstNo: yup.string().required("Please enter your GST NO."),
-    website: yup.string().required("Please enter website url"),
+    businessName: yup.string().required("Бизнесийнхээ нэрийг оруулна уу"),
+    businessType: yup.string().required("Бизнесийнхээ төрлийг оруулна уу"),
+    contactNO: yup.number().required("Холбоо барих дугаараа оруулна уу"),
+    gstNo: yup.string().required("GST дугаараа оруулна уу."),
+    website: yup.string().required("Вэбсайт url оруулна уу"),
     email: yup
       .string()
-      .email("Please enter a valid email")
-      .required("Please enter your email"),
-    description: yup.string().required("Please Enter your description"),
+      .email("Хүчинтэй имэйл оруулна уу")
+      .required("Имэйлээ оруулна уу"),
+    description: yup.string().required("Тайлбараа оруулна уу"),
   });
 
   const defaultValue = {
@@ -26,7 +26,7 @@ const BusinessDetailForm = () => {
     website: "http://healthyfeastcorner.com",
     email: "kianna.vetrov@mail.com",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+      "Өвчтөнд анхаарал халамж тавих, үйлчлүүлэгчийг дагаж мөрдөх нь чухал боловч үүнтэй зэрэгцэн тэд маш их зовлон зүдгүүрт өртөх болно. Би нэг зүйлд оръё, бидний бэлтгэл юу вэ? Би нэг зүйлд оръё, бидний бэлтгэл юу вэ? Хамгийн жижиг нарийн ширийн зүйлийг хэлэхэд бидний дасгал хэн бэ?",
   };
 
   const { control, handleSubmit, reset } = useForm({
@@ -40,12 +40,12 @@ const BusinessDetailForm = () => {
 
   return (
     <form
-      onSubmit={handleSubmit(() => {})}
+      onSubmit={handleSubmit(() => { })}
       id="tabBusinessDetail"
       className="hidden"
       role="tabpanel"
     >
-      <h4 className="mb-6 text-lg font-medium text-default-900">Step 2:</h4>
+      <h4 className="mb-6 text-lg font-medium text-default-900">Алхам 2:</h4>
       <div className="mb-6 grid gap-6 lg:grid-cols-2">
         <TextFormInput
           name="businessName"
@@ -57,41 +57,41 @@ const BusinessDetailForm = () => {
         <TextFormInput
           name="businessType"
           type="text"
-          label="Business Type"
+          label="Бизнесийн төрөл"
           control={control}
           fullWidth
         />
         <TextFormInput
           name="contactNO"
           type="text"
-          label="Contact Number"
+          label="Холбогдох дугаар"
           control={control}
           fullWidth
         />
         <TextFormInput
           name="gstNo"
           type="text"
-          label="GST Number"
+          label="GST дугаар"
           control={control}
           fullWidth
         />
         <TextFormInput
           name="website"
           type="text"
-          label="Website"
+          label="Вэб сайт"
           control={control}
           fullWidth
         />
         <TextFormInput
           name="email"
           type="email"
-          label="Email"
+          label="Имэйл"
           control={control}
           fullWidth
         />
         <TextAreaFormInput
           name="description"
-          label="Description"
+          label="Тодорхойлолт"
           placeholder="Enter Description"
           rows={5}
           containerClassName="lg:col-span-2"
@@ -106,14 +106,14 @@ const BusinessDetailForm = () => {
           className="inline-flex items-center gap-1 rounded-lg border border-primary bg-transparent px-5 py-2 text-center align-middle text-base font-semibold tracking-wide text-primary duration-500 hover:bg-primary hover:text-white"
         >
           <LuUndo size={20} />
-          Cancel
+          Цуцлах
         </button>
         <button
           type="submit"
           className="flex items-center justify-center gap-2 rounded-lg bg-primary px-6 py-2.5 text-center text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:bg-primary-500"
         >
           <LuSave size={20} />
-          Save
+          Хадгалах
         </button>
       </div>
     </form>

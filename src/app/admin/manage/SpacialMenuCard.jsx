@@ -12,7 +12,7 @@ const SpacialMenuCard = () => {
         <div className="mb-10 flex items-center justify-center">
           <div className="w-1/2">
             <h4 className="-rotate-12 text-xl font-semibold text-primary">
-              Today’s <br /> Special <br /> Menu
+              Өнөөдрийн <br /> Онцгой <br /> Цэс
             </h4>
           </div>
           <div className="w-1/2">
@@ -29,7 +29,7 @@ const SpacialMenuCard = () => {
           />
         </div>
         <button className="inline-flex w-auto items-center justify-center gap-2 rounded-lg border border-primary bg-primary px-10 py-3 text-center text-base font-semibold text-white shadow-sm transition-all duration-200 hover:bg-primary-500 xl:w-full">
-          Manage
+          Удирдах
         </button>
       </div>
     </div>

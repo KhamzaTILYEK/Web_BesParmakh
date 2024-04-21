@@ -140,7 +140,7 @@ const CostAndUsageChart = () => {
     <div className="mb-6 rounded-lg border border-default-200 p-6">
       <div className="flex justify-between">
         <h4 className="text-xl font-medium text-default-900">
-          Cost &amp; Usage by instance type
+          Зардал &amp; Хэрэглээний төрлөөр
         </h4>
         <DemoFilterDropdown
           filterOptions={["Last Day", "Last 6 Month", "Last Year"]}

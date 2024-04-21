@@ -8,8 +8,8 @@ const AddRestaurant = () => {
     <div className="w-full lg:ps-64">
       <div className="page-content space-y-6 p-6">
         <BreadcrumbAdmin
-          title="Add Restaurant"
-          subtitle="Restaurants"
+          title="Ресторан нэмэх"
+          subtitle="Ресторанууд"
           link="/admin/restaurants"
         />
         <div>
@@ -25,7 +25,7 @@ const AddRestaurant = () => {
               aria-controls="tabPersonalDetail"
               role="tab"
             >
-              Personal Detail
+              Хувийн мэдээлэл
             </button>
             <button
               type="button"
@@ -34,7 +34,7 @@ const AddRestaurant = () => {
               aria-controls="tabBusinessDetail"
               role="tab"
             >
-              Business Detail
+              Бизнесийн дэлгэрэнгүй
             </button>
             <button
               type="button"
@@ -43,7 +43,7 @@ const AddRestaurant = () => {
               aria-controls="tabBankDetail"
               role="tab"
             >
-              Bank Detail
+              Банкны дэлгэрэнгүй мэдээлэл
             </button>
           </nav>
           <div className="rounded-lg border border-default-200 p-6">

@@ -17,9 +17,9 @@ const UpcomingNewMenuCard = ({ product }) => {
         <div className="grow">
           <h4 className="mb-2 text-lg font-medium text-default-950">{name}</h4>
           <p className="text-sm text-default-600">
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium voluptatum deleniti atque corrupti quos
-            dolores et quas molestias excepturi
+            Гэвч үнэн хэрэгтээ бид хоёулаа тэднийг буруутгаж, зохих хүмүүсийг үзэн ядалтаар удирддаг
+            одоогийн зугаа цэнгэлийн зусардалд зөөлөрч, завхарсан хүмүүс
+            зовлон шаналал, зовлон бэрхшээл
           </p>
         </div>
       </div>

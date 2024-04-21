@@ -7,8 +7,8 @@ const EditProduct = () => {
     <div className="w-full lg:ps-64">
       <div className="page-content space-y-6 p-6">
         <BreadcrumbAdmin
-          title="Edit Dish"
-          subtitle="Dishes"
+          title="Таваг засах"
+          subtitle="Аяга таваг"
           link="/admin/dishes"
         />
         <div className="grid gap-6 xl:grid-cols-3">

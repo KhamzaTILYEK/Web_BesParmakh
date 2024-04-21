@@ -6,11 +6,11 @@ import { TextFormInput } from "@/components";
 
 const BankDetailsForm = () => {
   const businessDetailsFormSchema = yup.object({
-    bankName: yup.string().required("Please enter your bank name"),
-    branchName: yup.string().required("Please enter your branch name"),
-    holderName: yup.string().required("Please enter your account holder name"),
-    accountNo: yup.number().required("Please enter your account no."),
-    ifscNo: yup.string().required("Please enter IFSC code"),
+    bankName: yup.string().required("Банкны нэрээ оруулна уу"),
+    branchName: yup.string().required("Салбарынхаа нэрийг оруулна уу"),
+    holderName: yup.string().required("Өөрийн данс эзэмшигчийн нэрийг оруулна уу"),
+    accountNo: yup.number().required("Бүртгэлийн дугаараа оруулна уу."),
+    ifscNo: yup.string().required("IFSC кодыг оруулна уу"),
   });
 
   const defaultValue = {
@@ -31,7 +31,7 @@ const BankDetailsForm = () => {
 
   return (
     <form
-      onSubmit={handleSubmit(() => {})}
+      onSubmit={handleSubmit(() => { })}
       id="tabBankDetail"
       className="hidden"
       role="tabpanel"
@@ -41,21 +41,21 @@ const BankDetailsForm = () => {
         <TextFormInput
           name="bankName"
           type="text"
-          label="Bank Name"
+          label="Банкны нэр"
           control={control}
           fullWidth
         />
         <TextFormInput
           name="branchName"
           type="text"
-          label="Branch"
+          label="Салбар"
           control={control}
           fullWidth
         />
         <TextFormInput
           name="holderName"
           type="text"
-          label="Account Holder Name"
+          label="Дансны эзэмшигчийн нэр"
           containerClassName="lg:col-span-2"
           control={control}
           fullWidth
@@ -63,14 +63,14 @@ const BankDetailsForm = () => {
         <TextFormInput
           name="accountNo"
           type="text"
-          label="Account Number"
+          label="Дансны дугаар"
           control={control}
           fullWidth
         />
         <TextFormInput
           name="ifscNo"
           type="text"
-          label="IFSC Code"
+          label="IFSC код"
           control={control}
           fullWidth
         />
@@ -82,7 +82,7 @@ const BankDetailsForm = () => {
           className="inline-flex items-center gap-1 rounded-lg border border-primary bg-transparent px-5 py-2 text-center align-middle text-base font-semibold tracking-wide text-primary duration-500 hover:bg-primary hover:text-white"
         >
           <LuUndo size={20} />
-          Cancel
+          Цуцлах
         </button>
         <button
           type="submit"

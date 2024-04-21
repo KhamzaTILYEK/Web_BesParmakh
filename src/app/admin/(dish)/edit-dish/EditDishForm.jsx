@@ -15,20 +15,20 @@ import "react-quill/dist/quill.snow.css";
 
 const EditDishForm = () => {
   let valueSnow = "";
-  valueSnow = `<h5><span class="ql-size-large">Mexican burritos are usually made with a wheat tortilla and contain grilled meat, cheese toppings</span></h5>`;
+  valueSnow = `<h5><span class="ql-size-large">Мексикийн буррито нь ихэвчлэн улаан буудайн тортиллагаар хийгдсэн бөгөөд шарсан мах, бяслагны оройг агуулдаг.</span></h5>`;
 
   const editDishFormSchema = yup.object({
-    productname: yup.string().required("Please enter your product name"),
+    productname: yup.string().required("Бүтээгдэхүүнийхээ нэрийг оруулна уу"),
     productCategory: yup
       .string()
-      .required("Please select your product catagory"),
-    sellingPrice: yup.number().required("Please enter your selling price"),
-    costPrice: yup.number().required("Please enter your selling price"),
-    quantity: yup.number().required("Please enter your quantity"),
-    deliveryType: yup.string().required("Please select deliveryType"),
-    description: yup.string().required("Please enter your description"),
-    saleStartDate: yup.string().required("Please select Sale Start Date"),
-    saleEndDate: yup.string().required("Please select Sale End Date"),
+      .required("Бүтээгдэхүүний ангилалаа сонгоно уу"),
+    sellingPrice: yup.number().required("Худалдах үнээ оруулна уу"),
+    costPrice: yup.number().required("Худалдах үнээ оруулна уу"),
+    quantity: yup.number().required("Тоо хэмжээгээ оруулна уу"),
+    deliveryType: yup.string().required("Хүргэлтийн төрлийг сонгоно уу"),
+    description: yup.string().required("Тайлбараа оруулна уу"),
+    saleStartDate: yup.string().required("Хямдрал эхлэх огноог сонгоно уу"),
+    saleEndDate: yup.string().required("Борлуулалт дуусах огноог сонгоно уу"),
   });
 
   const defaultValue = {
@@ -37,7 +37,7 @@ const EditDishForm = () => {
     costPrice: 35,
     quantity: 80,
     description:
-      "Mexican burritos are usually made with a wheat tortilla and contain grilled meat, cheese toppings, and fresh vegetables which are sources of vitamins, proteins, fibers, minerals, and antioxidants.",
+      "Мексикийн буррито нь ихэвчлэн улаан буудайн тортиллагаар хийгдсэн бөгөөд витамин, уураг, эслэг, эрдэс бодис, антиоксидантуудын эх үүсвэр болох шарсан мах, бяслагны амттан, шинэ ногоо агуулдаг.",
     deliveryType: "",
     productCategory: "",
     saleEndDate: "",
@@ -55,21 +55,21 @@ const EditDishForm = () => {
 
   return (
     <div className="xl:col-span-2">
-      <form onSubmit={handleSubmit(() => {})} className="space-y-6">
+      <form onSubmit={handleSubmit(() => { })} className="space-y-6">
         <div className="rounded-lg border border-default-200 p-6">
           <div className="grid gap-6 lg:grid-cols-2">
             <div className="space-y-6">
               <TextFormInput
                 name="productname"
                 type="text"
-                label="Product Name"
+                label="Бүтээгдэхүүний нэр"
                 control={control}
                 fullWidth
               />
 
               <SelectFormInput
                 name="productCategory"
-                label="Product Category"
+                label="Бүтээгдэхүүний ангилал"
                 id="product-category"
                 instanceId="product-category"
                 control={control}
@@ -84,14 +84,14 @@ const EditDishForm = () => {
                 <TextFormInput
                   name="sellingPrice"
                   type="text"
-                  label="Selling Price"
+                  label="Борлуулалтын үнэ"
                   control={control}
                   fullWidth
                 />
                 <TextFormInput
                   name="costPrice"
                   type="text"
-                  label="Cost Price"
+                  label="Зардал үнэ"
                   control={control}
                   fullWidth
                 />
@@ -99,13 +99,13 @@ const EditDishForm = () => {
               <TextFormInput
                 name="quantity"
                 type="text"
-                label="Quantity"
+                label="Тоо хэмжээ"
                 control={control}
                 fullWidth
               />
               <SelectFormInput
                 name="deliveryType"
-                label="Delivery Type"
+                label="Хүргэлтийн төрөл"
                 id="delivery-category"
                 instanceId="delivery-category"
                 control={control}
@@ -118,14 +118,14 @@ const EditDishForm = () => {
               />
               <div className="flex justify-between">
                 <h4 className="text-sm font-medium text-default-600">
-                  Discount
+                  Хөнгөлөлт
                 </h4>
                 <div className="flex items-center gap-4">
                   <label
                     className="block text-sm text-default-600"
                     htmlFor="addDiscount"
                   >
-                    Add Discount
+                    Хөнгөлөлт нэмэх
                   </label>
                   <input
                     type="checkbox"
@@ -136,14 +136,14 @@ const EditDishForm = () => {
               </div>
               <div className="flex justify-between">
                 <h4 className="text-sm font-medium text-default-600">
-                  Expiry Date
+                  Дуусах хугацаа
                 </h4>
                 <div className="flex items-center gap-4">
                   <label
                     className="block text-sm text-default-600"
                     htmlFor="addExpiryDate"
                   >
-                    Add Expiry Date
+                    Дуусах огноо нэмнэ үү
                   </label>
                   <input
                     type="checkbox"
@@ -156,7 +156,7 @@ const EditDishForm = () => {
             <div className="space-y-6">
               <TextAreaFormInput
                 name="description"
-                label="Description"
+                label="Тодорхойлолт"
                 rows={5}
                 control={control}
                 fullWidth
@@ -166,7 +166,7 @@ const EditDishForm = () => {
                   className="mb-2 block text-sm font-medium text-default-900"
                   htmlFor="editor"
                 >
-                  Product Long Description
+                  Бүтээгдэхүүний урт тодорхойлолт
                 </label>
                 <div id="editor" className="h-44">
                   <ReactQuill
@@ -179,14 +179,14 @@ const EditDishForm = () => {
               </div>
               <div className="flex justify-between">
                 <h4 className="text-sm font-medium text-default-600">
-                  Return Policy
+                  Буцаах бодлого
                 </h4>
                 <div className="flex items-center gap-4">
                   <label
                     className="block text-sm text-default-600"
                     htmlFor="returnPolicy"
                   >
-                    Returnable
+                    Буцаах боломжтой
                   </label>
                   <input
                     type="checkbox"
@@ -200,7 +200,7 @@ const EditDishForm = () => {
                   <DateFormInput
                     name="saleStartDate"
                     type="date"
-                    label="Sale Start On"
+                    label="Хямдрал эхлэх"
                     className="block w-full rounded-lg border border-default-200 bg-transparent px-4 py-2.5 dark:bg-default-50"
                     placeholder="12/9/2022"
                     options={{
@@ -213,7 +213,7 @@ const EditDishForm = () => {
                   <DateFormInput
                     name="saleEndDate"
                     type="date"
-                    label="Sale End On"
+                    label="Хямдрал дуусна"
                     className="block w-full rounded-lg border border-default-200 bg-transparent px-4 py-2.5 dark:bg-default-50"
                     placeholder="12/10/2022"
                     options={{
@@ -237,14 +237,14 @@ const EditDishForm = () => {
                 className="inline-flex items-center gap-1 rounded-lg border border-primary bg-transparent px-5 py-2 text-center align-middle text-base font-semibold tracking-wide text-primary duration-500 hover:bg-primary hover:text-white"
               >
                 <LuUndo size={20} />
-                Cancel
+                Цуцлах
               </button>
               <button
                 type="submit"
                 className="flex items-center justify-center gap-2 rounded-lg bg-primary px-6 py-2.5 text-center text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:bg-primary-500"
               >
                 <LuSave size={20} />
-                Save
+                Хадгалах
               </button>
             </div>
           </div>

@@ -24,65 +24,65 @@ const BusinessDetailForm = () => {
 
   return (
     <form
-      onSubmit={handleSubmit(() => {})}
+      onSubmit={handleSubmit(() => { })}
       id="tabBusinessDetail"
       className="hidden"
       role="tabpanel"
     >
-      <h4 className="mb-6 text-lg font-medium text-default-900">Step 2:</h4>
+      <h4 className="mb-6 text-lg font-medium text-default-900">Алхам 2:</h4>
       <div className="mb-6 grid gap-6 lg:grid-cols-2">
         <TextFormInput
           name="businessName"
           type="text"
-          label="Business Name"
-          placeholder="Enter Your Business Name"
+          label="Бизнес нэр"
+          placeholder="Бизнесийнхээ нэрийг оруулна уу"
           control={control}
           fullWidth
         />
         <TextFormInput
           name="businessType"
           type="text"
-          label="Business Type"
-          placeholder="Enter Your Business Type"
+          label="Бизнесийн төрөл"
+          placeholder="Бизнесийнхээ төрлийг оруулна уу"
           control={control}
           fullWidth
         />
         <TextFormInput
           name="contactNO"
           type="text"
-          label="Contact Number"
-          placeholder="Enter Your Contact Number"
+          label="Холбогдох дугаар"
+          placeholder="Холбоо барих дугаараа оруулна уу"
           control={control}
           fullWidth
         />
         <TextFormInput
           name="gstNo"
           type="text"
-          label="GST Number"
-          placeholder="Enter Your GST Number"
+          label="GST дугаар"
+          placeholder="GST дугаараа оруулна уу"
           control={control}
           fullWidth
         />
         <TextFormInput
           name="website"
           type="text"
-          label="Website"
-          placeholder="Enter Website.com"
+          label="Вэб сайт"
+          placeholder="Website.com руу орно уу"
           control={control}
           fullWidth
         />
         <TextFormInput
           name="email"
           type="email"
-          label="Email"
-          placeholder="Enter Your Email"
+          label="Имэйл"
+          placeholder="Имэйлээ оруулна уу"
           control={control}
           fullWidth
         />
         <TextAreaFormInput
           name="description"
-          label="Description"
-          placeholder="Enter Description"
+          label="Тодорхойлолт"
+          placeholder="Тодорхойлолтыг оруулна уу"
           rows={5}
           containerClassName="lg:col-span-2"
           control={control}
@@ -96,14 +96,14 @@ const BusinessDetailForm = () => {
           className="flex items-center justify-center gap-2 rounded-lg bg-red-500/10 px-6 py-2.5 text-center text-sm font-semibold text-red-500 shadow-sm transition-colors duration-200 hover:bg-red-500 hover:text-white"
         >
           <LuEraser size={20} />
-          Clear
+          Тодорхой
         </button>
         <button
           type="submit"
           className="flex items-center justify-center gap-2 rounded-lg bg-primary px-6 py-2.5 text-center text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:bg-primary-500"
         >
           <LuSave size={20} />
-          Save
+          Хадгалах
         </button>
       </div>
     </form>

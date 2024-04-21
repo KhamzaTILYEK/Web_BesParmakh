@@ -11,19 +11,19 @@ import {
 
 const PersonalDetailsForm = () => {
   const personalDetailsFormSchema = yup.object({
-    fName: yup.string().required("Please enter your first name"),
-    lName: yup.string().required("Please enter your last Name"),
-    contactNO: yup.number().required("Please enter your contact Number"),
-    panNo: yup.string().required("Please enter your PAN NO."),
+    fName: yup.string().required("Өөрийн нэрээ оруулна уу"),
+    lName: yup.string().required("Өөрийн овог нэрээ оруулна уу"),
+    contactNO: yup.number().required("Холбоо барих дугаараа оруулна уу"),
+    panNo: yup.string().required("PAN NO-оо оруулна уу."),
     email: yup
       .string()
-      .email("Please enter a valid email")
-      .required("Please enter your email"),
-    birthDate: yup.string().required("Please select your Birth Date"),
-    city: yup.string().required("Please select your City"),
-    country: yup.string().required("Please select your Country"),
-    zipCode: yup.string().required("Please select your ZIP/Postal code"),
-    description: yup.string().required("Please Enter your description"),
+      .email("Хүчинтэй имэйл оруулна уу")
+      .required("Имэйлээ оруулна уу"),
+    birthDate: yup.string().required("Төрсөн огноогоо сонгоно уу"),
+    city: yup.string().required("Хотоо сонгоно уу"),
+    country: yup.string().required("Улсаа сонгоно уу"),
+    zipCode: yup.string().required("ZIP/Шуудангийн кодоо сонгоно уу"),
+    description: yup.string().required("Тайлбараа оруулна уу"),
   });
 
   const defaultValue = {
@@ -37,7 +37,7 @@ const PersonalDetailsForm = () => {
     country: "Canada",
     zipCode: "45 3424",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+      "Өвчтөнд анхаарал халамж тавих, үйлчлүүлэгчийг дагаж мөрдөх нь чухал боловч үүнтэй зэрэгцэн тэд маш их зовлон зүдгүүрт өртөх болно. Би нэг зүйлд оръё, бидний бэлтгэл юу вэ? Би нэг зүйлд оръё, бидний бэлтгэл юу вэ? Хамгийн жижиг нарийн ширийн зүйлийг хэлэхэд бидний дасгал хэн бэ?",
   };
   const { control, handleSubmit, reset } = useForm({
     resolver: yupResolver(personalDetailsFormSchema),
@@ -49,51 +49,51 @@ const PersonalDetailsForm = () => {
   };
   return (
     <form
-      onSubmit={handleSubmit(() => {})}
+      onSubmit={handleSubmit(() => { })}
       id="tabPersonalDetail"
       role="tabpanel"
     >
-      <h4 className="mb-6 text-lg font-medium text-default-900">Step 1:</h4>
+      <h4 className="mb-6 text-lg font-medium text-default-900">Алхам 1:</h4>
       <div className="mb-6 grid gap-6 lg:grid-cols-2">
         <TextFormInput
           name="fName"
           type="text"
-          label="First Name"
+          label="Нэр"
           control={control}
           fullWidth
         />
         <TextFormInput
           name="lName"
           type="text"
-          label="Last Name"
+          label="Овог"
           control={control}
           fullWidth
         />
         <TextFormInput
           name="contactNO"
           type="text"
-          label="Contact Number"
+          label="Холбогдох дугаар"
           control={control}
           fullWidth
         />
         <TextFormInput
           name="panNo"
           type="text"
-          label="PAN Card Number"
+          label="PAN картын дугаар"
           control={control}
           fullWidth
         />
         <TextFormInput
           name="email"
           type="email"
-          label="Email"
+          label="Имэйл"
           control={control}
           fullWidth
         />
         <DateFormInput
           name="birthDate"
           type="date"
-          label="Birth of Date"
+          label="Төрсөн он сар өдөр"
           className="block w-full rounded-lg border border-default-200 bg-transparent px-4 py-2.5 dark:bg-default-50"
           options={{
             dateFormat: "d/m/Y",
@@ -105,7 +105,7 @@ const PersonalDetailsForm = () => {
       <div className="mb-6 grid gap-6 lg:grid-cols-3">
         <SelectFormInput
           name="city"
-          label="City"
+          label="Хот"
           control={control}
           id="billing-city"
           instanceId="billing-city"
@@ -127,7 +127,7 @@ const PersonalDetailsForm = () => {
         />
         <SelectFormInput
           name="country"
-          label="Country/Region"
+          label="Улс/Бүс нутаг"
           control={control}
           id="billing-country"
           instanceId="billing-country"
@@ -150,7 +150,7 @@ const PersonalDetailsForm = () => {
         />
         <SelectFormInput
           name="zipCode"
-          label="ZIP/Postal Code"
+          label="ZIP/Шуудангийн код"
           control={control}
           id="billing-zip-code1"
           instanceId="billing-zip-code1"
@@ -164,7 +164,7 @@ const PersonalDetailsForm = () => {
         />
         <TextAreaFormInput
           name="description"
-          label="Description"
+          label="Тодорхойлолт"
           rows={5}
           containerClassName="lg:col-span-3"
           control={control}
@@ -178,14 +178,14 @@ const PersonalDetailsForm = () => {
           className="inline-flex items-center gap-1 rounded-lg border border-primary bg-transparent px-5 py-2 text-center align-middle text-base font-semibold tracking-wide text-primary duration-500 hover:bg-primary hover:text-white"
         >
           <LuUndo size={20} />
-          Cancel
+          Цуцлах
         </button>
         <button
           type="submit"
           className="flex items-center justify-center gap-2 rounded-lg bg-primary px-6 py-2.5 text-center text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:bg-primary-500"
         >
           <LuSave size={20} />
-          Save
+          Хадгалах
         </button>
       </div>
     </form>

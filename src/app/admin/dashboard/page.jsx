@@ -29,15 +29,15 @@ const Dashboard = () => {
       name: "Total",
     },
   ];
- 
-  
 
-  
+
+
+
 
   return (
     <div className="w-full lg:ps-64">
       <div className="page-content space-y-6 p-6">
-        <BreadcrumbAdmin title="Dashboard" subtitle="Admin" />
+        <BreadcrumbAdmin title="Dashboard" subtitle="Админ" />
         <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-6">
           {analyticsOverviewData.map((overview, idx) => {
             const changeColor =
@@ -68,13 +68,13 @@ const Dashboard = () => {
             <div className="space-y-6">
               <div className="flex flex-wrap items-center justify-between gap-4">
                 <h3 className="text-xl font-semibold text-default-950">
-                  Category
+                  Ангилал
                 </h3>
                 <Link
                   to="/dishes"
                   className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:text-primary-500"
                 >
-                  View all <LuChevronRight size={20} />
+                  Бүгдийг харах <LuChevronRight size={20} />
                 </Link>
               </div>
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4">
@@ -104,13 +104,13 @@ const Dashboard = () => {
             <div className="pt-10">
               <div className="mb-10 flex flex-wrap items-center justify-between gap-4">
                 <h3 className="text-xl font-semibold text-default-950">
-                  Best Selling Products
+                  Шилдэг борлуулалттай бүтээгдэхүүн
                 </h3>
                 <Link
                   to="/dishes"
                   className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:text-primary-500"
                 >
-                  View all <LuChevronRight size={20} />
+                  Бүгдийг харах <LuChevronRight size={20} />
                 </Link>
               </div>
               <div className="grid grid-cols-2 gap-6 lg:grid-cols-3">

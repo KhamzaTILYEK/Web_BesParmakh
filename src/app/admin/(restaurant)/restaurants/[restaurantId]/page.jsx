@@ -82,7 +82,7 @@ const RestaurantDetails = () => {
               <h4 className="mb-1 text-base font-medium text-default-800">
                 {restaurant?.name ?? "Restaurant Detail"}
               </h4>
-              <p className="text-sm text-default-600">Since 2013</p>
+              <p className="text-sm text-default-600">2013 оноос хойш</p>
             </div>
           </div>
         </div>
@@ -94,15 +94,15 @@ const RestaurantDetails = () => {
               columns={columns}
               rows={dishesData}
               buttonLink="/admin/add-dish"
-              buttonText="Add Dish"
-              title="Menu"
+              buttonText="Хоол нэмнэ"
+              title="Цэс"
             />
           </div>
           <div className="xl:col-span-1">
             <div className="mb-6 rounded-lg border border-default-200">
               <div className="border-b border-b-default-300 p-6">
                 <h4 className="text-xl font-medium text-default-900">
-                  Seller Personal Detail
+                  Худалдагчийн хувийн мэдээлэл
                 </h4>
               </div>
               <div className="px-6 py-5">
@@ -110,13 +110,13 @@ const RestaurantDetails = () => {
                   <tbody>
                     <tr>
                       <td className="text-start text-base font-medium">
-                        Owner Name:
+                        Эзэмшигчийн нэр:
                       </td>
                       <td className="text-start">{restaurant?.seller?.name}</td>
                     </tr>
                     <tr>
                       <td className="text-start text-base font-medium">
-                        Status:
+                        Статус:
                       </td>
                       <td className="text-start">
                         {restaurant?.seller?.status}
@@ -124,7 +124,7 @@ const RestaurantDetails = () => {
                     </tr>
                     <tr>
                       <td className="text-start text-base font-medium">
-                        Email:
+                        Имэйл:
                       </td>
                       <td className="text-start">
                         {restaurant?.seller?.email}
@@ -132,7 +132,7 @@ const RestaurantDetails = () => {
                     </tr>
                     <tr>
                       <td className="text-start text-base font-medium">
-                        Contact No:
+                        Холбоо барих дугаар:
                       </td>
                       <td className="text-start">
                         {restaurant?.seller?.contact_no}
@@ -140,7 +140,7 @@ const RestaurantDetails = () => {
                     </tr>
                     <tr>
                       <td className="text-start text-base font-medium">
-                        Orders:
+                        Захиалга:
                       </td>
                       <td className="text-start">
                         {restaurant?.seller?.orders}
@@ -148,7 +148,7 @@ const RestaurantDetails = () => {
                     </tr>
                     <tr>
                       <td className="text-start text-base font-medium">
-                        Location:
+                        Байршил:
                       </td>
                       <td className="text-start">
                         {restaurant?.seller?.location}
@@ -161,7 +161,7 @@ const RestaurantDetails = () => {
             <div className="mb-6 rounded-lg border border-default-200">
               <div className="border-b border-b-default-300 p-6">
                 <h4 className="text-xl font-medium text-default-900">
-                  Customer Reviews
+                  Хэрэглэгчийн тойм
                 </h4>
               </div>
               <div className="p-6">
@@ -207,7 +207,7 @@ const RestaurantDetails = () => {
                       />
                     </h2>
                     <p className="block text-xs text-default-600">
-                      452 Reviews
+                      452 тойм
                     </p>
                   </div>
                   <div className="text-center">
@@ -215,7 +215,7 @@ const RestaurantDetails = () => {
                       91%
                     </h2>
                     <p className="block text-xs text-default-600">
-                      Recommended
+                      Санал болгож байна
                     </p>
                   </div>
                 </div>
@@ -228,10 +228,10 @@ const RestaurantDetails = () => {
                     />
                     <div className="flex-grow">
                       <h4 className="mb-1 text-xs text-default-700">
-                        Kianna Stanton{" "}
-                        <span className="text-default-600">🇺🇸US</span>
+                        Ali Abakh{" "}
+                        <span className="text-default-600">🇺🇸UB</span>
                       </h4>
-                      <h4 className="text-xs text-green-400">Verified Buyer</h4>
+                      <h4 className="text-xs text-green-400">Баталгаажсан худалдан авагч</h4>
                     </div>
                     <div>
                       <FaStar
@@ -257,12 +257,12 @@ const RestaurantDetails = () => {
                     </div>
                   </div>
                   <h5 className="mb-2 text-sm text-default-600">
-                    SO DELICIOUS 🍯💯
+                    ТИЙМ АМТТАЙ 🍯💯
                   </h5>
                   <p className="text-sm text-default-600">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                    Үйлчлүүлэгчийн үйлчилгээтэй байх нь чухал ч түүний араас харилцагчийн үйлчилгээ бий болно
+                    гэхдээ ийм үед тэд маш их хөдөлмөр, өвдөлтөөр унасан
+                    зарим нь Хамгийн жижиг нарийн ширийн зүйлийг хэлэхэд бидний дасгал хэн бэ?
                   </p>
                 </div>
                 <div className="mb-4">
@@ -274,10 +274,10 @@ const RestaurantDetails = () => {
                     />
                     <div className="flex-grow">
                       <h4 className="mb-1 text-xs text-default-700">
-                        Ryan Rhiel Madsen{" "}
+                        Khamza tilyek {" "}
                         <span className="text-default-600">🇺🇸US</span>
                       </h4>
-                      <h4 className="text-xs text-green-400">Verified Buyer</h4>
+                      <h4 className="text-xs text-green-400">Баталгаажсан худалдан авагч</h4>
                     </div>
                     <div>
                       <FaStar
@@ -303,12 +303,12 @@ const RestaurantDetails = () => {
                     </div>
                   </div>
                   <h5 className="mb-2 text-sm text-default-600">
-                    SO DELICIOUS 🍯💯
+                    ТИЙМ АМТТАЙ 🍯💯
                   </h5>
                   <p className="text-sm text-default-600">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                    Үйлчлүүлэгчийн үйлчилгээтэй байх нь чухал ч түүний араас харилцагчийн үйлчилгээ бий болно
+                    гэхдээ ийм үед тэд маш их хөдөлмөр, өвдөлтөөр унасан
+                    зарим нь Хамгийн жижиг нарийн ширийн зүйлийг хэлэхэд бидний дасгал хэн бэ?
                   </p>
                 </div>
               </div>

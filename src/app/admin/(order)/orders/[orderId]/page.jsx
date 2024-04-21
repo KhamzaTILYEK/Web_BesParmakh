@@ -49,44 +49,44 @@ const OrderDetails = () => {
     <div className="w-full lg:ps-64">
       <div className="page-content space-y-6 p-6">
         <BreadcrumbAdmin
-          title="Order Details"
+          title="захиалгын мэдээлэл"
           subtitle="Order"
           link="/admin/orders"
         />
         <div className="rounded-lg border border-default-200">
           <div className="flex flex-wrap items-center gap-3 border-b border-default-200 p-6">
             <h4 className="text-xl font-medium text-default-900">
-              Order {order && order.id.toUpperCase()}
+              Захиалга {order && order.id.toUpperCase()}
             </h4>
             <div className="flex flex-wrap items-center gap-3">
               <LuDot />
-              <h4 className="text-sm text-default-600">September 23, 2023</h4>
+              <h4 className="text-sm text-default-600">2023 оны есдүгээр сарын 23</h4>
             </div>
             <div className="flex flex-wrap items-center gap-3">
               <LuDot />
-              <h4 className="text-sm text-default-600">3 Products</h4>
+              <h4 className="text-sm text-default-600">3 бүтээгдэхүүн</h4>
             </div>
             <Link
               to="/admin/orders"
               className="ms-auto text-base font-medium text-primary"
             >
-              Back to List
+              Жагсаалт руу буцах
             </Link>
           </div>
           <div className="p-6">
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
               <OrderDetailsCard
-                title="Billing Address"
-                name="Jaylon Calzoni"
-                address=" 2123 Parker st. Allentown, New Mexico 123456"
-                email="jaylon.calzoni@mail.com"
+                title="Тооцооны хаяг"
+                name="Ali Abakh"
+                address="Ulaanbaatar Mongolia"
+                email="aliabakh@mail.com"
                 phoneNo="(123) 456-7890"
               />
               <OrderDetailsCard
-                title="Shipping Address"
-                name="Ryan Westervelt"
-                address="2123 Parker st. Allentown, New Mexico 123456"
-                email="ryanwestenvelt@mail.com"
+                title="Хүргэлтийн хаяг"
+                name="Bilguun Bilguun"
+                address="Ulaanbaatar"
+                email="Bilguun02@mail.com"
                 phoneNo="(123) 456-7890"
               />
               <TotalPayment />
