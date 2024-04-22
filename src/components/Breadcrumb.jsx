@@ -19,7 +19,7 @@ const Breadcrumb = ({ title, subtitle }) => {
                   to="/home"
                 >
                   <LuHome size={16} />
-                  Home
+                  Гэр
                   <LuChevronRight size={16} />
                 </Link>
               </li>

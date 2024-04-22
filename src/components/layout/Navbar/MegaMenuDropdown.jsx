@@ -6,7 +6,7 @@ const MegaMenuDropdown = () => {
     <li>
       <div className="hs-dropdown relative inline-flex [--trigger:hover] [--auto-close:inside]">
         <button className="hs-dropdown-toggle inline-flex items-center whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium text-default-700 after:absolute after:inset-0 hover:text-primary hover:after:-bottom-10 lg:text-base">
-          Mega Menu <LuChevronDown size={16} className="ms-2" />
+          Мега цэс <LuChevronDown size={16} className="ms-2" />
         </button>
         <div className="hs-dropdown-menu absolute inset-x-0 top-full z-10 mt-4 hidden w-full min-w-full opacity-0 transition-[opacity,margin] duration-300 hs-dropdown-open:opacity-100">
           <div className="container">

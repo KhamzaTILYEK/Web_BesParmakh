@@ -4,7 +4,7 @@ const DishRatingRepresentation = () => {
   return (
     <>
       <h4 className="mb-4 text-xl font-semibold text-default-800">
-        Consumer Ratings
+        Хэрэглэгчийн үнэлгээ
       </h4>
       <div className="grid items-center gap-5 lg:grid-cols-4">
         <div className="flex flex-col items-center justify-center rounded-lg bg-primary/10 py-8">

@@ -11,7 +11,7 @@ const TabNavigation = () => {
           type="button"
         >
           <LuHome size={18} />
-          <span className="text-xs font-medium">Home</span>
+          <span className="text-xs font-medium">Гэр</span>
         </Link>
         <Link
           to="/dishes"
@@ -19,7 +19,7 @@ const TabNavigation = () => {
           type="button"
         >
           <LuUtensils size={18} />
-          <span className="text-xs font-medium">Food</span>
+          <span className="text-xs font-medium">Хоол</span>
         </Link>
         <Link
           to="/wishlist"
@@ -27,7 +27,7 @@ const TabNavigation = () => {
           type="button"
         >
           <LuHeart size={18} />
-          <span className="text-xs font-medium">Wishlist</span>
+          <span className="text-xs font-medium">Хүслийн жагсаалт</span>
         </Link>
       </div>
     </div>

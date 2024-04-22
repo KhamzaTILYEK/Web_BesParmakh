@@ -74,20 +74,20 @@ const OfferAdBanner = () => {
             </div>
           </div>
           <h5 className="text-center text-sm text-primary-50">
-            Free Delivery Over {currentCurrency}50{" "}
+            Хүргэлт үнэгүй {currentCurrency}50{" "}
             <Link to="" className="font-semibold underline">
-              Claim Offer
+              Санал нэхэмжлэх
             </Link>
           </h5>
           <ul className="flex items-center justify-end gap-4">
             <li className="menu-item flex">
               <Link className="text-sm hover:text-primary" to="/faqs">
-                Help
+                Туслах
               </Link>
             </li>
             <li className="menu-item flex">
               <Link className="text-sm hover:text-primary" to="/contact-us">
-                Contact Us
+                Бидэнтэй холбоо барина уу
               </Link>
             </li>
           </ul>

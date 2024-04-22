@@ -21,7 +21,7 @@ const SubscribeToMail = () => {
       <div className="flex flex-col gap-3">
         <div className="rounded-lg bg-primary/10">
           <div className="p-8">
-            <form className="mb-6 space-y-2" onSubmit={handleSubmit(() => {})}>
+            <form className="mb-6 space-y-2" onSubmit={handleSubmit(() => { })}>
               <label
                 htmlFor="subscribeEmail"
                 className="mb-4 text-lg font-medium text-default-950"
@@ -41,9 +41,9 @@ const SubscribeToMail = () => {
               </div>
             </form>
             <p className="mb-6 text-sm text-default-500">
-              Subscribe to Yup&apos;s email notifications to get notified for
-              all money saving and tummy filling offers. Enter your email
-              address to get started{" "}
+              Тиймээ бүртгүүлээрэй&apos;ийн имэйл мэдэгдлүүдийг авахын тулд мэдэгдэнэ
+              мөнгө хэмнэх, гэдэс дүүргэх бүх санал. Имэйлээ оруулна уу
+              эхлэх хаяг{" "}
             </p>
           </div>
         </div>

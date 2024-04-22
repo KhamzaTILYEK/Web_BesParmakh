@@ -58,7 +58,7 @@ const SpecialMenuSwiper = ({ dishes }) => {
                     to="/dishes"
                     className="inline-flex items-center border-b border-dashed border-white text-white"
                   >
-                    Order Now <LuChevronRight size={20} />
+                    Яг одоо захиалаарай <LuChevronRight size={20} />
                   </Link>
                 </div>
               </div>

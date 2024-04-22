@@ -82,11 +82,11 @@ const ProductDetailView = ({ dish, showButtons }) => {
         <h5 className="text-sm text-default-500">{review.count} Reviews</h5>
       </div>
       <p className="mb-4 text-sm text-default-500">
-        Mexican burritos are usually made with a wheat tortilla and contain
-        grilled meat, cheese toppings, and fresh vegetables which are sources of
-        vitamins, proteins, fibers, minerals, and antioxidants. This makes
-        burritos a balanced meal that can be enjoyed in moderation as part of a
-        healthy meal plan.
+        Мексикийн буррито нь ихэвчлэн улаан буудайн тортиллагаар хийгдсэн байдаг
+        шарсан мах, бяслагны амттан, эх үүсвэр болох шинэхэн ногоо
+        витамин, уураг, эслэг, эрдэс бодис, антиоксидант. Энэ болгодог
+        burritos нь дунд зэрэг идэж болох тэнцвэртэй хоол юм
+        эрүүл хоолны дэглэм.
       </p>
       <div className="mb-5 flex gap-2">
         <div className="flex items-center gap-2.5 rounded-full border border-default-200 px-3 py-1.5">
@@ -155,8 +155,8 @@ const ProductDetailView = ({ dish, showButtons }) => {
       <div className="flex items-center">
         <LuEye size={20} className="me-2 text-primary" />
         <h5 className="text-sm text-default-600">
-          <span className="font-semibold text-primary">152</span>&nbsp; People
-          are viewing this right now
+          <span className="font-semibold text-primary">152</span>&nbsp; Хүмүүс
+          яг одоо үүнийг үзэж байна
         </h5>
       </div>
     </div>

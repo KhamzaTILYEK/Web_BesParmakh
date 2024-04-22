@@ -25,7 +25,7 @@ const AddToCartButton = ({ dish, className }) => {
       onClick={() => addToCart(dish, 1)}
     >
       <LuShoppingCart size={18} className="me-2" />
-      Add to Cart
+      Картанд нэмэх
     </button>
   );
 };
