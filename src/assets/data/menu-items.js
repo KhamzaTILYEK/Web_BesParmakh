@@ -21,9 +21,15 @@ import {
 
 const clientMenuItems = [
   {
+    key: "homepage",
+    label: "HomePage",
+    url: "/",
+    isTitle: true,
+  },
+  {
     key: "home-page",
     label: "Home",
-    url: "/home",
+    url: "/hpme",
     isTitle: true,
   },
   {
@@ -160,7 +166,7 @@ export const CLIENT_VERTICAL_MENU_ITEMS = clientMenuItems;
 export const ADMIN_VERTICAL_MENU_ITEMS = [
   {
     key: "dashboard-page",
-    label: "Dashboard",
+    label: "Dashboard - mn",
     icon: LuLayoutGrid,
     url: "/admin/dashboard",
     isTitle: true,

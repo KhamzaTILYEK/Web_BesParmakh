@@ -10,15 +10,15 @@ const profileDropdownItems = [
     name: "My Profile",
     link: "/admin/profile",
   },
-  {
-    icon: LuNewspaper,
-    name: "Landing",
-    link: "/",
-  },
+  // {
+  //   icon: LuNewspaper,
+  //   name: "Landing",
+  //   link: "/",
+  // },
   {
     icon: LuHome,
     name: "Home",
-    link: "/home",
+    link: "/",
   },
   {
     icon: LuLogOut,
