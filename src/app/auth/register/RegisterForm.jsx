@@ -16,9 +16,9 @@ const RegisterForm = () => {
   const { control, handleSubmit } = useForm({
     resolver: yupResolver(registerFormSchema),
     defaultValues: {
-      fullName: "Yum Coderthemes",
-      email: "user@demo.com",
-      password: "password",
+      fullName: "",
+      email: "",
+      password: "",
     },
   });
 

@@ -9,7 +9,7 @@ const OfferAdBanner = () => {
         <nav className="grid items-center gap-4 lg:grid-cols-3">
           <div className="relative flex">
             <div className="hs-dropdown relative inline-flex [--placement:bottom] [--trigger:hover]">
-              <button className="hs-dropdown-toggle relative flex items-center text-base after:absolute after:inset-0 hover:after:-bottom-10">
+              {/* <button className="hs-dropdown-toggle relative flex items-center text-base after:absolute after:inset-0 hover:after:-bottom-10">
                 <img
                   alt="Image"
                   height={14}
@@ -70,7 +70,7 @@ const OfferAdBanner = () => {
                     </button>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
           </div>
           <h5 className="text-center text-sm text-primary-50">

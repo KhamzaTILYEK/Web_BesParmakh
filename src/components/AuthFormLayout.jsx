@@ -45,7 +45,7 @@ const AuthFormLayout = ({
 
           {children}
 
-          {hasThirdPartyAuth && (
+          {/* {hasThirdPartyAuth && (
             <div className="my-6 flex items-center justify-center gap-4">
               <img
                 height={32}
@@ -62,7 +62,7 @@ const AuthFormLayout = ({
                 className="h-8 w-8"
               />
             </div>
-          )}
+          )} */}
         </div>
 
         {bottomLink && (

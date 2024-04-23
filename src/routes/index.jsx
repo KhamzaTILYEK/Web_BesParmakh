@@ -4,8 +4,7 @@ import { flattenRoutes } from "@/helpers";
 
 // default pages
 // https://react.dev/reference/react/lazy#suspense-for-code-splitting
-const Landing = lazy(() => import("../app/(client)/home/page"));
-const HomePage = lazy(() => import("../app/(client)/home/page"));
+const Landing = lazy(() => import("../app/page"));
 const NotFound = lazy(() => import("../app/not-found"));
 const NotFoundAlt = lazy(
   () => import("../app/admin/extra-pages/not-found-alt/page")
@@ -194,6 +193,11 @@ const clientRoutes = [
   },
   {
     path: "/home",
+    name: "Home",
+    element: <Home />,
+  },
+  {
+    path: "/",
     name: "Home",
     element: <Home />,
   },
@@ -506,11 +510,11 @@ const adminRoutes = [
 ];
 
 const otherRoutes = [
-  {
-    path: "/",
-    name: "Landing",
-    element: <HomePage />,
-  },
+  // {
+  //   path: "/",
+  //   name: "Landing",
+  //   element: <Landing />,
+  // },
   {
     path: "/not-found",
     name: "Page Not Found",

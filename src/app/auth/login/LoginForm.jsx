@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { LuCopy, LuLock, LuMail, LuShield, LuUser } from "react-icons/lu";
 import useLogin from "./useLogin";
 import { PasswordFormInput, TextFormInput } from "@/components";
+import { calculateDiscount } from './../../../helpers/product';
 
 const LoginForm = () => {
   const { loading, login, control, changeUserRole } = useLogin();
@@ -35,7 +36,13 @@ const LoginForm = () => {
         >
           Нууц үгээ мартсан?
         </Link>
-
+        
+        <Link
+          to="/"
+          className="text-end text-sm text-default-600 underline"
+        >
+          {"< Нүүр хуудас руу буцах!"}
+        </Link>
         <button
           type="submit"
           className="mt-5 w-full rounded-lg bg-primary px-6 py-3 text-base capitalize text-white transition-all hover:bg-primary-500"
@@ -62,10 +69,10 @@ const LoginForm = () => {
           </div>
           <p className="p-2 px-4">
             <span className="flex items-center gap-2 text-sm">
-              <LuMail size={18} /> user@coderthemes.com
+              <LuMail size={18} /> aliabakh@gmail.com
             </span>
             <span className="mt-2 flex items-center gap-2 text-sm">
-              <LuLock size={18} /> password
+              <LuLock size={18} /> 1234
             </span>
           </p>
         </div>
@@ -86,10 +93,10 @@ const LoginForm = () => {
           </div>
           <p className="p-2 px-4">
             <span className="flex items-center gap-2 text-sm">
-              <LuMail size={18} /> admin@coderthemes.com
+              <LuMail size={18} /> erali@g-service.com
             </span>
             <span className="mt-2 flex items-center gap-2 text-sm">
-              <LuLock size={18} /> password
+              <LuLock size={18} /> 1234
             </span>
           </p>
         </div>

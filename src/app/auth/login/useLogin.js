@@ -25,15 +25,15 @@ const useLogin = () => {
   const { control, handleSubmit, reset } = useForm({
     resolver: yupResolver(loginFormSchema),
     defaultValues: {
-      email: "user@coderthemes.com",
-      password: "password",
+      email: "aliabakh@gmail.com",
+      password: "1234",
     },
   });
 
   const changeUserRole = (role) => {
     reset({
-      email: role == "user" ? "user@coderthemes.com" : "admin@coderthemes.com",
-      password: role == "user" ? "password" : "password",
+      email: role == "user" ? "erali@g-service.com" : "aliabakh@gmail.com",
+      password: role == "user" ? "1234" : "1234",
     });
   };
 

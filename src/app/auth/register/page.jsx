@@ -17,11 +17,12 @@ const Register = () => {
     <AuthFormLayout
       authTitle="Register"
       helpText="Бүртгэлгүй юу? Бүртгэлээ үүсгээрэй, Bes-Parmakh дээр нэг минут хүрэхгүй хугацаа шаардагдана"
-      bottomLink={<BottomLink />}
+      bottomLink={null}
       hasThirdPartyAuth
     >
       <PageTitle title="Register" />
       <RegisterForm />
+      <BottomLink />
     </AuthFormLayout>
   );
 };
