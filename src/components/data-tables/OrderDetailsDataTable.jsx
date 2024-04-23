@@ -22,7 +22,7 @@ const OrderDetailsDataTable = ({ columns, rows }) => {
                     scope="col"
                     className="whitespace-nowrap px-5 py-3 text-start text-xs font-medium uppercase text-default-500"
                   >
-                    Sub Total
+                    Дэд нийт
                   </th>
                 </tr>
               </thead>

@@ -10,7 +10,7 @@ const WalletDetailsCard = () => {
     <div className="rounded-lg border border-default-200">
       <div className="p-6">
         <h3 className="mb-6 text-lg font-semibold text-default-800">
-          Card Details
+          Картын дэлгэрэнгүй мэдээлэл
         </h3>
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 divide-y divide-default-200 xl:grid-cols-3 xl:divide-x xl:divide-y-0">
           <div className="col-span-1 lg:col-span-2">
@@ -29,7 +29,7 @@ const WalletDetailsCard = () => {
                 </div>
                 <div className="flex flex-wrap items-center justify-between gap-3">
                   <div className="font-medium text-default-400">
-                    Weekly payment limit
+                    Долоо хоног тутмын төлбөрийн хязгаар
                   </div>
                   <div className="text-sm font-medium text-default-950">
                     <span className="text-default-400">
@@ -46,15 +46,15 @@ const WalletDetailsCard = () => {
               <h1 className="text-2xl font-semibold text-primary">
                 {currentCurrency}2850.75
               </h1>
-              <p className="mb-6 text-base">Current Balance</p>
+              <p className="mb-6 text-base">Одоогийн үлдэгдэл</p>
               <h2 className="text-xl font-semibold text-green-500">
                 {currentCurrency}4595.50
               </h2>
-              <p className="mb-6 text-base">Income</p>
+              <p className="mb-6 text-base">Орлого</p>
               <h2 className="mb-1 text-lg font-semibold text-red-500">
                 {currentCurrency}412.40
               </h2>
-              <p className="mb-6 text-base">Outgoing</p>
+              <p className="mb-6 text-base">Гарч байна</p>
               <div className="mb-4">
                 <input
                   type="checkbox"
@@ -64,12 +64,12 @@ const WalletDetailsCard = () => {
                   defaultChecked
                 />
                 <label htmlFor="hs-basic-usage" className="sr-only">
-                  switch
+                  солих
                 </label>
               </div>
               <p className="text-base">
                 {" "}
-                Card {isActive ? "Activated" : "Deactivated"}{" "}
+                Карт {isActive ? "Activated" : "Deactivated"}{" "}
               </p>
             </div>
           </div>

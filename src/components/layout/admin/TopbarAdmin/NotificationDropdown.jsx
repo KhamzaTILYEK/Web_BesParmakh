@@ -66,9 +66,9 @@ const NotificationDropdown = ({ notifications }) => {
       </button>
       <div className="hs-dropdown-menu duration mt-2 hidden min-w-[20rem] rounded-lg border border-default-200 bg-white opacity-0 shadow-md transition-[opacity,margin] hs-dropdown-open:opacity-100 dark:bg-default-50">
         <div className="flex items-center justify-between px-4 py-2">
-          <h6 className="text-sm font-medium"> Notification</h6>
+          <h6 className="text-sm font-medium"> Мэдэгдэл</h6>
           <Link to="" className="text-default-500">
-            <small>Clear All</small>
+            <small>Бүгдийг цэвэрлэ</small>
           </Link>
         </div>
 
@@ -146,7 +146,7 @@ const NotificationDropdown = ({ notifications }) => {
           to=""
           className="block px-4 py-2 text-center text-sm font-medium text-primary"
         >
-          View All
+          Бүгдийг харах
         </Link>
       </div>
     </div>

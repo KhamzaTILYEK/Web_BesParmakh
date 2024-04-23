@@ -16,10 +16,10 @@ const PopularDishOfferCard = () => {
           </div>
           <div className="mb-10 text-center">
             <h3 className="mb-2 text-2xl font-medium text-default-900">
-              Green Healthy Salad
+              Эрүүл ногоон салат
             </h3>
             <p className="text-sm text-default-500">
-              Tasty and Healthy Salad for you to eat along side your meal.
+              Хоолныхоо хажуугаар идэж болох амттай, эрүүл салат.
             </p>
           </div>
           <div className="mb-6 flex w-full items-center justify-center gap-2 font-medium text-default-950">
@@ -29,7 +29,7 @@ const PopularDishOfferCard = () => {
             className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-4 py-2.5 text-white transition-all hover:bg-primary-500"
             type="button"
           >
-            Order Now <LuMoveRight size={20} />
+            Яг одоо захиалаарай <LuMoveRight size={20} />
           </button>
         </div>
       </div>

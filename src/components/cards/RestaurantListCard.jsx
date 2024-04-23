@@ -46,14 +46,14 @@ const RestaurantListCard = ({ restaurant }) => {
           <h4 className="mb-2.5 text-lg font-medium text-primary">
             {total_dishes}
           </h4>
-          <h5 className="text-sm text-default-800">Total Product</h5>
+          <h5 className="text-sm text-default-800">Нийт бүтээгдэхүүн</h5>
         </div>
         <div className="border-s border-default-200" />
         <div className="text-center">
           <h4 className="mb-2.5 text-lg font-medium text-primary">
             {total_sales}
           </h4>
-          <h5 className="text-sm text-default-800">Total Sales</h5>
+          <h5 className="text-sm text-default-800">Нийт борлуулалт</h5>
         </div>
       </div>
       <div className="mb-6 space-y-5">
@@ -81,7 +81,7 @@ const RestaurantListCard = ({ restaurant }) => {
           to={`/admin/restaurants/${id}`}
           className="inline-flex rounded-lg bg-primary px-8 py-2.5 font-medium text-white transition-all hover:bg-primary-500"
         >
-          View Details
+          Дэлгэрэнгүй мэдээллийг харах
         </Link>
       </div>
     </div>

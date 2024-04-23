@@ -41,8 +41,8 @@ const ProfileDropdown = () => {
           src={avatar1Img}
         />
         <div className="hidden text-start lg:block">
-          <p className="text-sm font-medium text-default-700">Kaiya Botosh</p>
-          <p className="mt-1 text-xs text-default-500">Admin</p>
+          <p className="text-sm font-medium text-default-700">Ali Abakh</p>
+          <p className="mt-1 text-xs text-default-500">админ</p>
         </div>
       </button>
       <div className="hs-dropdown-menu duration mt-2 hidden min-w-[12rem] rounded-lg border border-default-200 bg-white p-2 opacity-0 shadow-md transition-[opacity,margin] hs-dropdown-open:opacity-100 dark:bg-default-50">

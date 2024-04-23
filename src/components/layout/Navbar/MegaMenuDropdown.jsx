@@ -26,7 +26,7 @@ const MegaMenuDropdown = () => {
                         role="tab"
                         type="button"
                       >
-                        Wraps <LuChevronRight size={20} className="ms-auto" />
+                        Боодол <LuChevronRight size={20} className="ms-auto" />
                       </button>
                       <button
                         className="inline-flex items-center !bg-transparent text-base font-medium text-default-600 transition-all hover:text-primary hs-tab-active:text-primary"
@@ -34,15 +34,13 @@ const MegaMenuDropdown = () => {
                         role="tab"
                         type="button"
                       >
-                        Noodles <LuChevronRight size={20} className="ms-auto" />
+                        Гоймон <LuChevronRight size={20} className="ms-auto" />
                       </button>
                       <button
                         className="inline-flex items-center !bg-transparent text-base font-medium text-default-600 transition-all hover:text-primary hs-tab-active:text-primary"
-                        data-hs-tab="#mexican"
-                        role="tab"
-                        type="button"
+                        data-hs-tab="#mexican" type="button"
                       >
-                        Mexican cuisine{" "}
+                        Мексик хоол{" "}
                         <LuChevronRight size={20} className="ms-auto" />
                       </button>
                       <button
@@ -51,7 +49,7 @@ const MegaMenuDropdown = () => {
                         role="tab"
                         type="button"
                       >
-                        Tacos <LuChevronRight size={20} className="ms-auto" />
+                        Тако <LuChevronRight size={20} className="ms-auto" />
                       </button>
                       <button
                         className="inline-flex items-center !bg-transparent text-base font-medium text-default-600 transition-all hover:text-primary hs-tab-active:text-primary"
@@ -59,7 +57,7 @@ const MegaMenuDropdown = () => {
                         role="tab"
                         type="button"
                       >
-                        Smart Meals{" "}
+                        Ухаалаг хоол{" "}
                         <LuChevronRight size={20} className="ms-auto" />
                       </button>
                       <button
@@ -68,7 +66,7 @@ const MegaMenuDropdown = () => {
                         role="tab"
                         type="button"
                       >
-                        Burger <LuChevronRight size={20} className="ms-auto" />
+                        Бургер <LuChevronRight size={20} className="ms-auto" />
                       </button>
                       <button
                         className="inline-flex items-center !bg-transparent text-base font-medium text-default-600 transition-all hover:text-primary hs-tab-active:text-primary"
@@ -76,7 +74,7 @@ const MegaMenuDropdown = () => {
                         role="tab"
                         type="button"
                       >
-                        Beverages &amp; Desserts{" "}
+                        Ундаа &amp; Амттан{" "}
                         <LuChevronRight size={20} className="ms-auto" />
                       </button>
                     </nav>
@@ -88,7 +86,7 @@ const MegaMenuDropdown = () => {
                       <div className="grid grid-cols-4 divide-x divide-default-200">
                         <div className="ps-6">
                           <h6 className="text-base font-medium text-default-800">
-                            Bean-Based Wraps
+                            Буурцагт суурилсан боолт
                           </h6>
                           <ul className="mt-4 grid space-y-3">
                             <li>
@@ -96,7 +94,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Black Bean Wrap
+                                Хар шошны боодол
                               </Link>
                             </li>
                             <li>
@@ -104,7 +102,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Refried Bean and Cheese Wrap
+                                Шарсан шош, бяслагны боодол
                               </Link>
                             </li>
                             <li>
@@ -112,7 +110,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Falafel Wrap
+                                Фалафелийн боодол
                               </Link>
                             </li>
                             <li>
@@ -120,14 +118,14 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Chickpea and Hummus Wrap
+                                Улаан вандуй ба Hummus боодол
                               </Link>
                             </li>
                           </ul>
                         </div>
                         <div className="ps-6">
                           <h6 className="text-base font-medium text-default-800">
-                            Grilled Vegetable Wraps
+                            Шарсан хүнсний ногооны боодол
                           </h6>
                           <ul className="mt-4 grid space-y-3">
                             <li>
@@ -135,7 +133,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Grilled Veggie Wrap
+                                Шарсан ногооны боодол
                               </Link>
                             </li>
                             <li>
@@ -143,7 +141,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Roasted Red Pepper Wrap
+                                Шарсан улаан чинжүүний боодол
                               </Link>
                             </li>
                             <li>
@@ -151,7 +149,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Portobello Mushroom Wrap
+                                Портобелло мөөгний боодол
                               </Link>
                             </li>
                             <li>
@@ -159,14 +157,14 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Eggplant Parmesan Wrap
+                                Хаш Пармезан боодол
                               </Link>
                             </li>
                           </ul>
                         </div>
                         <div className="ps-6">
                           <h6 className="text-base font-medium text-default-800">
-                            Cheese and Spinach Wraps
+                            Бяслаг, бууцай боодол
                           </h6>
                           <ul className="mt-4 grid space-y-3">
                             <li>
@@ -174,7 +172,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Spinach and Feta Wrap
+                                Бууцай ба Фета боодол
                               </Link>
                             </li>
                             <li>
@@ -182,7 +180,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Paneer Tikka Wrap
+                                Paneer Tikka боодог
                               </Link>
                             </li>
                             <li>
@@ -190,14 +188,14 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Caprese Wrap
+                                Caprese боолт
                               </Link>
                             </li>
                           </ul>
                         </div>
                         <div className="ps-6">
                           <h6 className="text-base font-medium text-default-800">
-                            Chicken Wraps
+                            Тахианы боодол
                           </h6>
                           <ul className="mt-4 grid space-y-3">
                             <li>
@@ -205,7 +203,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Grilled Chicken Wrap
+                                Шарсан тахианы боодол
                               </Link>
                             </li>
                             <li>
@@ -213,7 +211,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Buffalo Chicken Wrap
+                                Буффало тахианы боодол
                               </Link>
                             </li>
                             <li>
@@ -221,7 +219,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Chicken Caesar Wrap
+                                Цезарь тахианы боодол
                               </Link>
                             </li>
                             <li>
@@ -229,7 +227,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Chicken Shawarma Wrap
+                                Шаварма тахианы боодол
                               </Link>
                             </li>
                           </ul>
@@ -240,7 +238,7 @@ const MegaMenuDropdown = () => {
                       <div className="grid grid-cols-4 divide-x divide-default-200">
                         <div className="ps-6">
                           <h6 className="text-base font-medium text-default-800">
-                            Italian Pasta Dishes
+                            Италийн гоймонгийн хоол
                           </h6>
                           <ul className="mt-4 grid space-y-3">
                             <li>
@@ -248,7 +246,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Spaghetti Bolognese
+                                Болонезийн спагетти
                               </Link>
                             </li>
                             <li>
@@ -256,7 +254,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Fettuccine Alfredo
+                                Феттучин Альфредо
                               </Link>
                             </li>
                             <li>
@@ -264,7 +262,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Lasagna
+                                Лазанья
                               </Link>
                             </li>
                             <li>
@@ -272,7 +270,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Carbonara
+                                Карбонара
                               </Link>
                             </li>
                             <li>
@@ -280,14 +278,14 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Penne alla Vodka
+                                Пенне
                               </Link>
                             </li>
                           </ul>
                         </div>
                         <div className="ps-6">
                           <h6 className="text-base font-medium text-default-800">
-                            Asian Noodle Dishes
+                            Азийн гоймонтой хоол
                           </h6>
                           <ul className="mt-4 grid space-y-3">
                             <li>
@@ -295,7 +293,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Ramen
+                                Рамен
                               </Link>
                             </li>
                             <li>
@@ -303,7 +301,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Pad Thai
+                                Пад Тайланд
                               </Link>
                             </li>
                             <li>
@@ -319,7 +317,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Chow Mein
+                                Чоу Майн
                               </Link>
                             </li>
                             <li>
@@ -327,7 +325,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Udon Stir-Fry
+                                Хутгасан гудамжууд
                               </Link>
                             </li>
                             <li>
@@ -335,7 +333,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Soba Noodles
+                                Соба гоймон
                               </Link>
                             </li>
                             <li>
@@ -343,14 +341,14 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Lo Mein
+                                Ло Майн
                               </Link>
                             </li>
                           </ul>
                         </div>
                         <div className="ps-6">
                           <h6 className="text-base font-medium text-default-800">
-                            Chinese Noodle Dishes
+                            Хятад гоймонтой хоол
                           </h6>
                           <ul className="mt-4 grid space-y-3">
                             <li>
@@ -358,7 +356,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Beef Chow Fun
+                                Үхрийн махны шөл
                               </Link>
                             </li>
                             <li>
@@ -366,7 +364,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Dan Dan Noodles
+                                Дан Дан гоймон
                               </Link>
                             </li>
                             <li>
@@ -374,7 +372,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Sesame Noodles
+                                Кунжутын гоймон
                               </Link>
                             </li>
                             <li>
@@ -382,7 +380,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Wonton Noodle Soup
+                                Вонтон гоймонтой шөл
                               </Link>
                             </li>
                             <li>
@@ -390,14 +388,14 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Zha Jiang Mian
+                                ж А Жиан Миа Н
                               </Link>
                             </li>
                           </ul>
                         </div>
                         <div className="ps-6">
                           <h6 className="text-base font-medium text-default-800">
-                            Japanese Noodle Dishes
+                            Японы гоймонтой хоол
                           </h6>
                           <ul className="mt-4 grid space-y-3">
                             <li>
@@ -405,7 +403,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Yakisoba
+                                якисоба
                               </Link>
                             </li>
                             <li>
@@ -413,7 +411,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Tempura Udon
+                                Темпура Удон
                               </Link>
                             </li>
                             <li>
@@ -421,7 +419,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Hiyashi Chukakies
+                                Хөргөсөн хятад хоол алга болдог
                               </Link>
                             </li>
                             <li>
@@ -429,7 +427,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Sushi Rolls
+                                Суши ороомог
                               </Link>
                             </li>
                           </ul>
@@ -440,7 +438,7 @@ const MegaMenuDropdown = () => {
                       <div className="grid grid-cols-4 divide-x divide-default-200">
                         <div className="ps-6">
                           <h6 className="text-base font-medium text-default-800">
-                            Thai Noodle Dishes
+                            Тайландын гоймонтой хоол
                           </h6>
                           <ul className="mt-4 grid space-y-3">
                             <li>
@@ -448,7 +446,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Drunken Noodles
+                                Согтуу гоймон
                               </Link>
                             </li>
                             <li>
@@ -456,7 +454,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Tom Yum Noodle Soup
+                                Том Юм гоймонтой шөл
                               </Link>
                             </li>
                             <li>
@@ -464,7 +462,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Green Curry Noodles
+                                Ногоон карри гоймон
                               </Link>
                             </li>
                             <li>
@@ -472,14 +470,14 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Glass Noodle Salad
+                                Шилэн гоймонтой салат
                               </Link>
                             </li>
                           </ul>
                         </div>
                         <div className="ps-6">
                           <h6 className="text-base font-medium text-default-800">
-                            Indian Noodle Dishes
+                            Энэтхэгийн гоймонтой хоол
                           </h6>
                           <ul className="mt-4 grid space-y-3">
                             <li>
@@ -487,7 +485,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Veg Hakka Noodles
+                                Veg Hakka гоймон
                               </Link>
                             </li>
                             <li>
@@ -495,7 +493,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Maggi Noodles
+                                Магги гоймон
                               </Link>
                             </li>
                             <li>
@@ -503,14 +501,14 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Masala Instant Noodles
+                                Масала бэлэн гоймон
                               </Link>
                             </li>
                           </ul>
                         </div>
                         <div className="ps-6">
                           <h6 className="text-base font-medium text-default-800">
-                            Korean Noodle Dishes
+                            Солонгос гоймонтой хоол
                           </h6>
                           <ul className="mt-4 grid space-y-3">
                             <li>
@@ -518,7 +516,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Japchae
+                                Жапчае
                               </Link>
                             </li>
                             <li>
@@ -526,7 +524,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Jajangmyeon
+                                Жажанмён
                               </Link>
                             </li>
                             <li>
@@ -534,7 +532,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Ramyeon
+                                Рамён
                               </Link>
                             </li>
                             <li>
@@ -542,14 +540,14 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Naengmyeon
+                                Наенмён
                               </Link>
                             </li>
                           </ul>
                         </div>
                         <div className="ps-6">
                           <h6 className="text-base font-medium text-default-800">
-                            Western Noodle Dishes
+                            Баруун гоймонтой хоол
                           </h6>
                           <ul className="mt-4 grid space-y-3">
                             <li>
@@ -557,7 +555,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Chicken Noodle Soup
+                                Тахианы гоймонтой шөл
                               </Link>
                             </li>
                             <li>
@@ -565,7 +563,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Beef Stroganoff
+                                Үхрийн махны строганов
                               </Link>
                             </li>
                             <li>
@@ -573,7 +571,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Tuna Noodle Casserole
+                                Туна гоймонтой Casserole
                               </Link>
                             </li>
                             <li>
@@ -581,7 +579,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Macaroni and Cheese
+                                Гоймон ба бяслаг
                               </Link>
                             </li>
                           </ul>
@@ -592,7 +590,7 @@ const MegaMenuDropdown = () => {
                       <div className="grid grid-cols-4 divide-x divide-default-200">
                         <div className="ps-6">
                           <h6 className="text-base font-medium text-default-800">
-                            Tacos
+                            Тако
                           </h6>
                           <ul className="mt-4 grid space-y-3">
                             <li>
@@ -600,7 +598,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Street Tacos
+                                Гудамжны тако
                               </Link>
                             </li>
                             <li>
@@ -608,7 +606,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Carnitas Tacos
+                                Карнитас Такос
                               </Link>
                             </li>
                             <li>
@@ -616,7 +614,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Barbacoa Tacos
+                                BBQ Tacos
                               </Link>
                             </li>
                             <li>
@@ -624,7 +622,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Fish Tacos
+                                Загасны тако
                               </Link>
                             </li>
                             <li>
@@ -632,14 +630,14 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Vegetarian Tacos
+                                Цагаан хоолтон Тако
                               </Link>
                             </li>
                           </ul>
                         </div>
                         <div className="ps-6">
                           <h6 className="text-base font-medium text-default-800">
-                            Enchiladas
+                            Энчиладас
                           </h6>
                           <ul className="mt-4 grid space-y-3">
                             <li>
@@ -647,7 +645,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Chicken Enchiladas
+                                Тахианы мах Enchiladas
                               </Link>
                             </li>
                             <li>
@@ -655,7 +653,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Cheese Enchiladas
+                                Чейз дэх Энчиладус
                               </Link>
                             </li>
                             <li>
@@ -663,7 +661,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Beef Enchiladas
+                                Үхрийн мах Enchiladas
                               </Link>
                             </li>
                             <li>
@@ -671,14 +669,14 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Suizas Enchiladas
+                                Швейцарийн Энчиладас
                               </Link>
                             </li>
                           </ul>
                         </div>
                         <div className="ps-6">
                           <h6 className="text-base font-medium text-default-800">
-                            Tamales
+                            Тамалес
                           </h6>
                           <ul className="mt-4 grid space-y-3">
                             <li>
@@ -686,7 +684,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Pork Tamales
+                                Гахайн Тамалес
                               </Link>
                             </li>
                             <li>
@@ -694,7 +692,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Chicken Tamales
+                                Тамалес тахианы мах
                               </Link>
                             </li>
                             <li>
@@ -702,14 +700,14 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Sweet Tamales
+                                Амтат Тамалес
                               </Link>
                             </li>
                           </ul>
                         </div>
                         <div className="ps-6">
                           <h6 className="text-base font-medium text-default-800">
-                            Quesadillas
+                            Кесадилла
                           </h6>
                           <ul className="mt-4 grid space-y-3">
                             <li>
@@ -717,7 +715,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Cheese Quesadillas
+                                Кесадилла бяслаг
                               </Link>
                             </li>
                             <li>
@@ -725,7 +723,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Chicken Quesadillas
+                                Тахианы мах Кесадилла
                               </Link>
                             </li>
                             <li>
@@ -733,7 +731,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Vegetarian Quesadillas
+                                Цагаан хоолтон Кесадилла
                               </Link>
                             </li>
                           </ul>
@@ -744,7 +742,7 @@ const MegaMenuDropdown = () => {
                       <div className="grid grid-cols-3 divide-x divide-default-200">
                         <div className="ps-6">
                           <h6 className="text-base font-medium text-default-800">
-                            Balanced Meals
+                            Тэнцвэртэй хооллолт
                           </h6>
                           <ul className="mt-4 grid space-y-3">
                             <li>
@@ -752,7 +750,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Grilled chicken breast with steamed broccoli and
+                                Шарсан тахианы хөхний ууранд жигнэсэн брокколи болон
                                 quinoa
                               </Link>
                             </li>
@@ -761,14 +759,14 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Baked salmon with asparagus and brown rice
+                                Аспарагус, бор будаатай жигнэсэн хулд загас
                               </Link>
                             </li>
                           </ul>
                         </div>
                         <div className="ps-6">
                           <h6 className="text-base font-medium text-default-800">
-                            Low-Carb Meals
+                            Нүүрс ус багатай хоол
                           </h6>
                           <ul className="mt-4 grid space-y-3">
                             <li>
@@ -776,8 +774,8 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Cauliflower rice stir-fry with tofu and mixed
-                                vegetables
+                                Цэцэгт байцааны будаа дүфүгээр хуурч, холино
+                                хүнсний ногоо
                               </Link>
                             </li>
                             <li>
@@ -785,14 +783,14 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Zucchini noodles with pesto and grilled shrimp
+                                Песто болон шарсан сам хорхойтой цуккини гоймон
                               </Link>
                             </li>
                           </ul>
                         </div>
                         <div className="ps-6">
                           <h6 className="text-base font-medium text-default-800">
-                            High-Protein Meals
+                            Уураг ихтэй хоол
                           </h6>
                           <ul className="mt-4 grid space-y-3">
                             <li>
@@ -800,7 +798,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Lean beef or turkey burger with a side salad
+                                Хажуугийн салаттай туранхай үхрийн мах эсвэл цацагт хяруулын бургер
                               </Link>
                             </li>
                             <li>
@@ -808,7 +806,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Greek yogurt parfait with berries and nuts
+                                Жимс жимсгэнэ, самартай Грек тараг parfait
                               </Link>
                             </li>
                           </ul>
@@ -819,7 +817,7 @@ const MegaMenuDropdown = () => {
                       <div className="grid grid-cols-4 divide-x divide-default-200">
                         <div className="ps-6">
                           <h6 className="text-base font-medium text-default-800">
-                            Classic Burgers
+                            Сонгодог бургер
                           </h6>
                           <ul className="mt-4 grid space-y-3">
                             <li>
@@ -827,7 +825,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Cheeseburger
+                                Чизбургер
                               </Link>
                             </li>
                             <li>
@@ -835,7 +833,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Bacon Cheeseburger
+                                Бэкон бяслаг
                               </Link>
                             </li>
                             <li>
@@ -843,7 +841,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Double Cheeseburger
+                                Давхар бяслаг
                               </Link>
                             </li>
                             <li>
@@ -851,7 +849,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Triple Cheeseburger
+                                Гурвалсан бяслаг
                               </Link>
                             </li>
                             <li>
@@ -859,14 +857,14 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Classic Veggie Burger
+                                Сонгодог ногооны бургер
                               </Link>
                             </li>
                           </ul>
                         </div>
                         <div className="ps-6">
                           <h6 className="text-base font-medium text-default-800">
-                            Patty Variations
+                            Пэтти хувилбарууд
                           </h6>
                           <ul className="mt-4 grid space-y-3">
                             <li>
@@ -874,7 +872,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Turkey Burger
+                                Турк бургер
                               </Link>
                             </li>
                             <li>
@@ -882,7 +880,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Chicken Burger
+                                Тахианы мах бургер
                               </Link>
                             </li>
                             <li>
@@ -890,7 +888,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Bison Burger
+                                Бизон бургер
                               </Link>
                             </li>
                             <li>
@@ -898,7 +896,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Salmon Burger
+                                Салмон бургер
                               </Link>
                             </li>
                             <li>
@@ -906,7 +904,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Black Bean Burger
+                                Хар шоштой бургер
                               </Link>
                             </li>
                             <li>
@@ -914,14 +912,14 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Portobello Mushroom Burger
+                                Портобелло мөөгтэй бургер
                               </Link>
                             </li>
                           </ul>
                         </div>
                         <div className="ps-6">
                           <h6 className="text-base font-medium text-default-800">
-                            Flavorful Toppings
+                            Амтат амтлагч
                           </h6>
                           <ul className="mt-4 grid space-y-3">
                             <li>
@@ -929,7 +927,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                BBQ Burgerges
+                                Барбекю бургер
                               </Link>
                             </li>
                             <li>
@@ -937,7 +935,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Mushroom Swiss Burger
+                                Мөөгтэй Швейцарийн бургер
                               </Link>
                             </li>
                             <li>
@@ -945,7 +943,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Western/Cowboy Burger
+                                Баруун/Ковбой бургер
                               </Link>
                             </li>
                             <li>
@@ -953,7 +951,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Blue Cheese Burger
+                                Цэнхэр бяслагтай бургер
                               </Link>
                             </li>
                             <li>
@@ -961,7 +959,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Jalapeño Burger
+                                Жалапэно бургер
                               </Link>
                             </li>
                             <li>
@@ -969,14 +967,14 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Guacamole Burger
+                                Гуакамол бургер
                               </Link>
                             </li>
                           </ul>
                         </div>
                         <div className="ps-6">
                           <h6 className="text-base font-medium text-default-800">
-                            Breakfast Burger
+                            Өглөөний цайны бургер
                           </h6>
                           <ul className="mt-4 grid space-y-3">
                             <li>
@@ -984,7 +982,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Avocado Burger
+                                Авокадо бургер
                               </Link>
                             </li>
                             <li>
@@ -992,7 +990,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Caprese Burger
+                                Caprese бургер
                               </Link>
                             </li>
                             <li>
@@ -1000,7 +998,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Mediterranean Burger
+                                Газар дундын тэнгисийн бургер
                               </Link>
                             </li>
                             <li>
@@ -1008,7 +1006,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Tex-Mex Burger
+                                Текс-Мекс бургер
                               </Link>
                             </li>
                             <li>
@@ -1016,7 +1014,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Reuben Burger
+                                Рубен бургер
                               </Link>
                             </li>
                           </ul>
@@ -1031,7 +1029,7 @@ const MegaMenuDropdown = () => {
                       <div className="grid grid-cols-4 divide-x divide-default-200">
                         <div className="ps-6">
                           <h6 className="text-base font-medium text-default-800">
-                            Coffee Based
+                            Кофенд суурилсан
                           </h6>
                           <ul className="mt-4 grid space-y-3">
                             <li>
@@ -1039,7 +1037,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Espresso
+                                Эспрессо
                               </Link>
                             </li>
                             <li>
@@ -1047,7 +1045,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Cappuccino
+                                Капучино
                               </Link>
                             </li>
                             <li>
@@ -1055,7 +1053,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Latte
+                                Латте
                               </Link>
                             </li>
                             <li>
@@ -1063,7 +1061,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Americano
+                                Америко
                               </Link>
                             </li>
                             <li>
@@ -1071,7 +1069,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Mocha
+                                Моча
                               </Link>
                             </li>
                             <li>
@@ -1079,14 +1077,14 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Macchiato
+                                Макиато
                               </Link>
                             </li>
                           </ul>
                         </div>
                         <div className="ps-6">
                           <h6 className="text-base font-medium text-default-800">
-                            Tea
+                            Цай
                           </h6>
                           <ul className="mt-4 grid space-y-3">
                             <li>
@@ -1094,7 +1092,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Black Tea
+                                Хар цай
                               </Link>
                             </li>
                             <li>
@@ -1102,7 +1100,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Green Tea
+                                Ногоон цай
                               </Link>
                             </li>
                             <li>
@@ -1110,7 +1108,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Herbal Tea
+                                Ургамлын гаралтай цай
                               </Link>
                             </li>
                             <li>
@@ -1118,7 +1116,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Chai Tea
+                                Чай цай
                               </Link>
                             </li>
                             <li>
@@ -1126,14 +1124,14 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Earl Grey
+                                Эрл Грэй
                               </Link>
                             </li>
                           </ul>
                         </div>
                         <div className="ps-6">
                           <h6 className="text-base font-medium text-default-800">
-                            Cakes
+                            Бялуу
                           </h6>
                           <ul className="mt-4 grid space-y-3">
                             <li>
@@ -1141,7 +1139,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Chocolate Cake
+                                Шоколадтай бялуу
                               </Link>
                             </li>
                             <li>
@@ -1149,7 +1147,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Carrot Cake
+                                Луувангийн бялуу
                               </Link>
                             </li>
                             <li>
@@ -1157,7 +1155,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Red Velvet Cake
+                                Улаан хилэн бялуу
                               </Link>
                             </li>
                             <li>
@@ -1165,14 +1163,14 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Cheesecake
+                                Бяслагны бялуу
                               </Link>
                             </li>
                           </ul>
                         </div>
                         <div className="ps-6">
                           <h6 className="text-base font-medium text-default-800">
-                            Cookies &amp; Pastries
+                            Күүки &amp; нарийн боов
                           </h6>
                           <ul className="mt-4 grid space-y-3">
                             <li>
@@ -1180,7 +1178,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Chocolate Chip Cookies
+                                Шоколадны чиптэй жигнэмэг
                               </Link>
                             </li>
                             <li>
@@ -1188,7 +1186,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Oatmeal Raisin Cookies
+                                Үзэм Күүки
                               </Link>
                             </li>
                             <li>
@@ -1196,7 +1194,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Peanut Butter Cookies
+                                Газрын самрын тостой жигнэмэг
                               </Link>
                             </li>
                             <li>
@@ -1204,7 +1202,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Sugar Cookies
+                                Элсэн чихэртэй жигнэмэг
                               </Link>
                             </li>
                             <li>
@@ -1212,7 +1210,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Croissant
+                                Круассан
                               </Link>
                             </li>
                             <li>
@@ -1220,7 +1218,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Danish Pastry
+                                Данийн нарийн боов
                               </Link>
                             </li>
                           </ul>

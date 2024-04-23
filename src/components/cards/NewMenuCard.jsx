@@ -23,7 +23,7 @@ const NewMenuCard = ({ dish }) => {
             size={16}
             className="fill-primary text-primary group-hover:fill-white group-hover:text-white"
           />{" "}
-          Edit
+          Засварлах
         </Link>
       </div>
       <div className="flex items-center justify-between gap-6">

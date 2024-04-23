@@ -50,7 +50,7 @@ const RestaurantMenuDataTable = ({
                           htmlFor="hs-table-search-checkbox-all"
                           className="sr-only"
                         >
-                          Checkbox
+                          шалгах хайрцаг
                         </label>
                       </div>
                     </th>
@@ -67,7 +67,7 @@ const RestaurantMenuDataTable = ({
                       scope="col"
                       className="whitespace-nowrap px-6 py-3 text-start text-base font-medium text-default-500"
                     >
-                      Actions
+                      Үйлдлүүд
                     </th>
                   </tr>
                 </thead>
@@ -86,7 +86,7 @@ const RestaurantMenuDataTable = ({
                               htmlFor="hs-table-search-checkbox-1"
                               className="sr-only"
                             >
-                              Checkbox
+                              шалгах хайрцаг
                             </label>
                           </div>
                         </td>
@@ -177,17 +177,17 @@ const RestaurantMenuDataTable = ({
                               <ul className="flex flex-col gap-1">
                                 <li>
                                   <button className="flex w-full items-center gap-3 rounded px-3 py-2 font-normal text-default-600 transition-all hover:bg-default-100 hover:text-default-700">
-                                    Edit
+                                    Засварлах
                                   </button>
                                 </li>
                                 <li>
                                   <button className="flex w-full items-center gap-3 rounded px-3 py-2 font-normal text-default-600 transition-all hover:bg-default-100 hover:text-default-700">
-                                    View
+                                    Харах
                                   </button>
                                 </li>
                                 <li>
                                   <button className="flex w-full items-center gap-3 rounded px-3 py-2 font-normal text-default-600 transition-all hover:bg-default-100 hover:text-default-700">
-                                    Delete
+                                    Устгах
                                   </button>
                                 </li>
                               </ul>

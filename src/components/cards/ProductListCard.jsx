@@ -47,9 +47,9 @@ const ProductListCard = ({ dish }) => {
                 <AddToFavouriteButton dish={dish} />
               </div>
               <p className="mb-6 line-clamp-2 max-w-2xl text-base text-default-600">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam
+                Захиалагч дасгалжуулагчийн үйл явцыг дагаж мөрдөх нь маш чухал боловч би үүнийг дагаж мөрддөг
+                Ийм үед тэд маш их хөдөлмөр, өвдөлтөнд ордог. гэх мэт
+                Учир нь би хамгийн багад нь очих болно
               </p>
               <div className="mb-6 flex flex-wrap items-center gap-4 md:flex-nowrap">
                 <AddToCartButton dish={dish} className="w-fit" />

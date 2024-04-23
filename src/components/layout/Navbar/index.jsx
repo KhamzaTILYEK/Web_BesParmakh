@@ -89,7 +89,7 @@ const Navbar = () => {
                             to="/admin/profile"
                             target="_blank"
                           >
-                            <LuUserCircle size={16} /> Admin
+                            <LuUserCircle size={16} /> админ
                           </Link>
                         </li>
                         <li>
@@ -98,7 +98,7 @@ const Navbar = () => {
                             to="/cart"
                           >
                             <LuShoppingCart size={16} />
-                            Cart
+                            Сагс
                           </Link>
                         </li>
                         <li>
@@ -107,7 +107,7 @@ const Navbar = () => {
                             to="/wishlist"
                           >
                             <LuHeart size={16} />
-                            Wishlist
+                            Хүслийн жагсаалт
                           </Link>
                         </li>
                         <li>
@@ -116,7 +116,7 @@ const Navbar = () => {
                             className="flex w-full items-center gap-3 rounded px-3 py-2 font-normal text-default-600 transition-all hover:bg-default-100 hover:text-default-700"
                           >
                             <LuLogOut size={16} />
-                            Log Out
+                            Гарах
                           </Link>
                         </li>
                       </ul>

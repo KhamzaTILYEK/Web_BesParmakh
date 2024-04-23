@@ -62,7 +62,7 @@ const MenuAdmin = () => {
             to="/admin/profile"
           >
             <LuUserCircle2 size={20} />
-            Profile
+            Профайл
           </Link>
         </li>
         <li className="menu-item">
@@ -71,7 +71,7 @@ const MenuAdmin = () => {
             to="/auth/logout"
           >
             <LuLogOut size={20} />
-            Logout
+            Гарах
           </Link>
         </li>
       </ul>

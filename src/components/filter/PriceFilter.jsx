@@ -33,7 +33,7 @@ const PriceFilter = () => {
         type="button"
       >
         <p>
-          Price Range{" "}
+          Үнийн хүрээ{" "}
           <span className="text-sm font-normal text-default-700">{`(${priceRange[0]} - ${priceRange[1]})`}</span>
         </p>
         <LuChevronDown className="transition-transform duration-300 hs-collapse-open:rotate-180" />

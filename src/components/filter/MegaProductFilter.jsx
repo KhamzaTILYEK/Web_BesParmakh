@@ -15,13 +15,13 @@ const MegaProductFilter = () => {
       tabIndex={-1}
     >
       <div className="flex items-center justify-between border-b border-default-200 px-4 py-3 lg:hidden">
-        <h3 className="font-medium text-default-800">Filter Options</h3>
+        <h3 className="font-medium text-default-800">Шүүлтүүрийн сонголтууд</h3>
         <button
           className="inline-flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-md text-sm text-default-500 hover:text-default-700"
           data-hs-overlay="#filter_Offcanvas"
           type="button"
         >
-          <span className="sr-only">Close modal</span>
+          <span className="sr-only">Модалыг хаах</span>
           <LuX size={20} />
         </button>
       </div>
@@ -34,7 +34,7 @@ const MegaProductFilter = () => {
               id="hs-basic-collapse"
               type="button"
             >
-              Category
+              Ангилал
               <LuChevronDown className="transition-transform duration-300 hs-collapse-open:rotate-180" />
             </button>
             <div
@@ -54,7 +54,7 @@ const MegaProductFilter = () => {
               id="hs-basic-collapse"
               type="button"
             >
-              Popular Café / Restaurant
+              Алдартай кафе / ресторан
               <LuChevronDown className="transition-transform duration-300 hs-collapse-open:rotate-180" />
             </button>
             <div
@@ -72,7 +72,7 @@ const MegaProductFilter = () => {
               id="hs-basic-collapse"
               type="button"
             >
-              Popular Café / Restaurant
+              Алдартай кафе / ресторан
               <LuChevronDown className="transition-transform duration-300 hs-collapse-open:rotate-180" />
             </button>
             <div
@@ -89,7 +89,7 @@ const MegaProductFilter = () => {
               id="hs-basic-collapse"
               type="button"
             >
-              Popular tags
+              Алдартай шошго
               <LuChevronDown className="transition-transform duration-300 hs-collapse-open:rotate-180" />
             </button>
             <div

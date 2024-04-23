@@ -26,7 +26,7 @@ const SubscribeToMail = () => {
                 htmlFor="subscribeEmail"
                 className="mb-4 text-lg font-medium text-default-950"
               >
-                Subscribe
+                Бүртгүүлэх
               </label>
               <div className="flex rounded-md shadow-sm">
                 <TextFormInput

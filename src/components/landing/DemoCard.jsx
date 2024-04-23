@@ -14,7 +14,7 @@ const DemoCard = ({ demo }) => {
             />
             <div className="absolute inset-0 flex h-full w-full cursor-pointer items-center justify-center  bg-default-500/20 opacity-0 transition-all duration-300 group-hover:opacity-100">
               <div className="inline-flex items-center justify-center rounded-full bg-primary py-1.5 pe-2 ps-5 text-center align-middle text-base font-semibold text-white duration-500 hover:bg-primary-600">
-                Live Preview{" "}
+                Шууд урьдчилан үзэх{" "}
                 <span className="ms-3 inline-flex h-8 w-8 items-center justify-center rounded-full border border-white bg-white text-primary">
                   <LuExternalLink size={20} />
                 </span>

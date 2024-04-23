@@ -63,7 +63,7 @@ const CustomerDataTable = ({
                         htmlFor="hs-table-search-checkbox-all"
                         className="sr-only"
                       >
-                        Checkbox
+                        шалгах хайрцаг
                       </label>
                     </div>
                   </th>
@@ -82,7 +82,7 @@ const CustomerDataTable = ({
               <tbody className="divide-y divide-default-200">
                 {rows.map((row, idx) => {
                   return (
-                    <tr className=" cursor-pointer" key={idx} onClick={()=>{navigate(`/admin/customers/${row?.userName}`)}}>
+                    <tr className=" cursor-pointer" key={idx} onClick={() => { navigate(`/admin/customers/${row?.userName}`) }}>
                       <td className="whitespace-nowrap px-6 py-4">
                         <div className="flex h-5 items-center">
                           <input
@@ -94,7 +94,7 @@ const CustomerDataTable = ({
                             htmlFor="hs-table-search-checkbox-1"
                             className="sr-only"
                           >
-                            Checkbox
+                            шалгах хайрцаг
                           </label>
                         </div>
                       </td>
@@ -107,7 +107,7 @@ const CustomerDataTable = ({
                             <td
                               key={tableData + idx}
                               className="whitespace-nowrap px-6 py-4 text-base text-default-800"
-                              
+
                             >
                               {tableData} |&nbsp;
                               <span className="text-xs">
