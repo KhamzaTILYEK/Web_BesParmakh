@@ -28,13 +28,13 @@ const FooterLinks = () => {
 
               <div className="flex flex-col gap-3">
                 <h5 className="mb-3 font-semibold text-default-950">
-                  Get in touch
+                  Холбоотой байх
                 </h5>
                 <div className="text-default-600">
                   <Link to="tel:+1234567891012">(+123) 456 789 123</Link>
                 </div>
                 <div className="text-default-600">
-                  <Link to="mailto:example@mail.com">example@mail.com</Link>
+                  <Link to="mailto:example@mail.com">aliabakh@mail.com</Link>
                 </div>
                 <div className="flex items-center gap-4">
                   {[LuPhone, LuFacebook, LuInstagram, FaXTwitter].map(

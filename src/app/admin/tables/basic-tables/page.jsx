@@ -16,11 +16,11 @@ const BasicTables = () => {
           <div className="border border-default-200 rounded-lg">
             <div className="p-6">
               <h3 className="font-medium text-base text-default-600 mb-4">
-                Basic example
+                Үндсэн жишээ
               </h3>
               <p className="text-default-600 mb-4">
-                For basic styling—light padding and only horizontal dividers—add
-                the base class <code className="text-danger">table</code> to any
+                Үндсэн хэв маягийн хувьд - хөнгөн дэвсгэр ба зөвхөн хэвтээ хуваагч - нэмнэ үү
+                суурь анги <code className="text-danger">ширээ</code> хэнд ч
                 <code className="text-danger">&lt;table&gt;</code>.
               </p>
               <div className="overflow-auto">
@@ -39,19 +39,19 @@ const BasicTables = () => {
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-semibold text-default-600"
                           >
-                            First
+                            Эхлээд
                           </th>
                           <th
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-semibold text-default-600"
                           >
-                            Last
+                            Сүүлийн
                           </th>
                           <th
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-semibold text-default-600"
                           >
-                            Handle
+                            Бариул
                           </th>
                         </tr>
                       </thead>
@@ -85,11 +85,11 @@ const BasicTables = () => {
           <div className="border border-default-200 rounded-lg">
             <div className="p-6">
               <h3 className="font-medium text-base text-default-600 mb-4">
-                Table Dark
+                Харанхуй ширээ
               </h3>
               <p className="text-default-600 mb-4">
-                You can also invert the colors—with light text on dark
-                backgrounds—with <code className="text-danger">bg-dark</code>.
+                Та мөн өнгийг эргүүлж болно—харанхуй дээр цайвар тексттэй
+                дэвсгэр - хамт<code className="text-danger">bg-dark</code>.
               </p>
               <div className="overflow-auto">
                 <div className="min-w-full inline-block align-middle">
@@ -107,19 +107,19 @@ const BasicTables = () => {
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-medium text-white"
                           >
-                            First
+                            Эхлээд
                           </th>
                           <th
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-medium text-white"
                           >
-                            Last
+                            Сүүлийн
                           </th>
                           <th
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-medium text-white"
                           >
-                            Handle
+                            Бариул
                           </th>
                         </tr>
                       </thead>
@@ -153,13 +153,13 @@ const BasicTables = () => {
           <div className="border border-default-200 rounded-lg">
             <div className="p-6">
               <h3 className="font-medium text-base text-default-600 mb-4">
-                Table head light
+                Ширээний толгойн гэрэл
               </h3>
               <p className="text-default-600 mb-4">
-                Similar to tables and dark tables, use the modifier classes
-                <code className="text-danger">.bg-light</code> to make
-                <code className="text-danger">&lt;thead&gt;</code>s appear light
-                or dark gray.
+                Хүснэгт болон харанхуй хүснэгттэй адил өөрчлөгч ангиллыг ашиглана уу
+                <code className="text-danger">.bg-light</code> хийх
+                <code className="text-danger">&lt;thead&gt;</code>гэрэлтэй харагдаж байна
+                эсвэл хар саарал.
               </p>
               <div className="overflow-auto">
                 <div className="min-w-full inline-block align-middle">
@@ -177,19 +177,19 @@ const BasicTables = () => {
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-semibold text-default-800"
                           >
-                            First
+                            Эхлээд
                           </th>
                           <th
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-semibold text-default-800"
                           >
-                            Last
+                            Сүүлийн
                           </th>
                           <th
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-semibold text-default-800"
                           >
-                            Handle
+                            Бариул
                           </th>
                         </tr>
                       </thead>
@@ -223,13 +223,13 @@ const BasicTables = () => {
           <div className="border border-default-200 rounded-lg">
             <div className="p-6">
               <h3 className="font-medium text-base text-default-600 mb-4">
-                Table head dark
+                Ширээний толгой харанхуй
               </h3>
               <p className="text-default-600 mb-4">
-                Similar to tables and dark tables, use the modifier classes
-                <code className="text-danger">.bg-dark</code> to make
-                <code className="text-danger">&lt;thead&gt;</code>s appear light
-                or dark gray.
+                Хүснэгт болон харанхуй хүснэгттэй адил өөрчлөгч ангиллыг ашиглана уу
+                <code className="text-danger">.bg-dark</code> хийх
+                <code className="text-danger">&lt;thead&gt;</code>гэрэлтэй харагдаж байна
+                эсвэл хар саарал.
               </p>
               <div className="overflow-auto">
                 <div className="min-w-full inline-block align-middle">
@@ -247,19 +247,19 @@ const BasicTables = () => {
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-semibold text-slate-100"
                           >
-                            First
+                            Эхлээд
                           </th>
                           <th
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-semibold text-slate-100"
                           >
-                            Last
+                            Сүүлийн
                           </th>
                           <th
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-semibold text-slate-100"
                           >
-                            Handle
+                            Бариул
                           </th>
                         </tr>
                       </thead>
@@ -293,11 +293,11 @@ const BasicTables = () => {
           <div className="border border-default-200 rounded-lg">
             <div className="p-6">
               <h3 className="font-medium text-base text-default-600 mb-4">
-                Bordered table
+                Хилтэй ширээ
               </h3>
               <p className="text-default-600 mb-4">
-                Add <code className="text-danger">border</code> for borders on
-                all sides of the table and cells.
+                Нэмэх <code className="text-danger">хил</code> хилийн хувьд
+                хүснэгт болон нүднүүдийн бүх тал.
               </p>
               <div className="relative overflow-auto">
                 <table className="border-collapse min-w-full border border-default-200 bg-white dark:bg-transparent text-sm shadow-sm">
@@ -307,13 +307,13 @@ const BasicTables = () => {
                         #
                       </th>
                       <th className="border border-default-200 font-semibold px-4 py-4 text-slate-900 dark:text-default-400 text-start">
-                        First
+                        Эхлээд
                       </th>
                       <th className="border border-default-200 font-semibold px-4 py-4 text-slate-900 dark:text-default-400 text-start">
-                        Last
+                        Сүүлийн
                       </th>
                       <th className="border border-default-200 font-semibold px-4 py-4 text-slate-900 dark:text-default-400 text-center">
-                        Handle
+                        Бариул
                       </th>
                     </tr>
                   </thead>
@@ -323,11 +323,10 @@ const BasicTables = () => {
                         <tr key={idx}>
                           <th
                             scope="row"
-                            className={`flex items-center gap-2 px-4 py-4 text-default-900 whitespace-nowrap dark:text-default-400 ${
-                              value.id !== 1
+                            className={`flex items-center gap-2 px-4 py-4 text-default-900 whitespace-nowrap dark:text-default-400 ${value.id !== 1
                                 ? "border-t border-default-200"
                                 : ""
-                            }`}
+                              }`}
                           >
                             {value.id}
                           </th>
@@ -363,11 +362,11 @@ const BasicTables = () => {
           <div className="border border-default-200 rounded-lg">
             <div className="p-6">
               <h3 className="font-medium text-base text-default-600 mb-4">
-                Border Color
+                Хилийн өнгө
               </h3>
               <p className="text-default-600 mb-4">
-                Add <code className="text-danger">border-primary</code> for
-                borders on all sides of the table and cells.
+                Нэмэх <code className="text-danger">border-primary</code> төлөө
+                Хүснэгт болон нүднүүдийн бүх талын хүрээ.
               </p>
               <div className="relative overflow-auto">
                 <table className="border-collapse min-w-full border border-primary dark:border-primary bg-white dark:bg-transparent text-sm shadow-sm">
@@ -377,13 +376,13 @@ const BasicTables = () => {
                         #
                       </th>
                       <th className="border border-primary dark:border-primary font-semibold px-4 py-4 text-slate-900 dark:text-default-400 text-start">
-                        First
+                        Эхлээд
                       </th>
                       <th className="border border-primary dark:border-primary font-semibold px-4 py-4 text-slate-900 dark:text-default-400 text-start">
-                        Last
+                        Сүүлийн
                       </th>
                       <th className="border border-primary dark:border-primary font-semibold px-4 py-4 text-slate-900 dark:text-default-400 text-center">
-                        Handle
+                        Бариул
                       </th>
                     </tr>
                   </thead>
@@ -393,11 +392,10 @@ const BasicTables = () => {
                         <tr key={idx}>
                           <th
                             scope="row"
-                            className={`flex items-center gap-2 px-4 py-4 text-default-900 whitespace-nowrap dark:text-default-400 ${
-                              value.id !== 1
+                            className={`flex items-center gap-2 px-4 py-4 text-default-900 whitespace-nowrap dark:text-default-400 ${value.id !== 1
                                 ? "border-t border-primary dark:border-primary"
                                 : ""
-                            }`}
+                              }`}
                           >
                             {value.id}
                           </th>
@@ -433,11 +431,11 @@ const BasicTables = () => {
           <div className="border border-default-200 rounded-lg">
             <div className="p-6">
               <h3 className="font-medium text-base text-default-600 mb-4">
-                Borderless table
+                Хил хязгааргүй ширээ
               </h3>
               <p className="text-default-600">
-                Add <code className=" text-danger">divide</code> for a table
-                without borders.
+                Нэмэх <code className=" text-danger">divide</code> ширээний хувьд
+                хил хязгааргүй.
               </p>
               <div className="overflow-auto">
                 <div className="min-w-full inline-block align-middle">
@@ -455,19 +453,19 @@ const BasicTables = () => {
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-semibold text-default-600"
                           >
-                            First
+                            Эхлээд
                           </th>
                           <th
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-semibold text-default-600"
                           >
-                            Last
+                            Сүүлийн
                           </th>
                           <th
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-semibold text-default-600"
                           >
-                            Handle
+                            Бариул
                           </th>
                         </tr>
                       </thead>
@@ -501,10 +499,10 @@ const BasicTables = () => {
           <div className="border border-default-200 rounded-lg">
             <div className="p-6">
               <h3 className="font-medium text-base text-default-600 mb-4">
-                Small table
+                Жижиг ширээ
               </h3>
               <p className="text-default-600 mb-4">
-                Add to make tables more compact by cutting cell padding in half.
+                Хүснэгтийг илүү нягт нямбай болгохын тулд эсийн дэвсгэрийг хагасаар нь багасгаж нэмнэ.
               </p>
               <div className="overflow-auto">
                 <div className="min-w-full inline-block align-middle">
@@ -522,19 +520,19 @@ const BasicTables = () => {
                             scope="col"
                             className="px-4 py-2 text-start text-sm font-semibold text-default-600"
                           >
-                            First
+                            Эхлээд
                           </th>
                           <th
                             scope="col"
                             className="px-4 py-2 text-start text-sm font-semibold text-default-600"
                           >
-                            Last
+                            Сүүлийн
                           </th>
                           <th
                             scope="col"
                             className="px-4 py-2 text-start text-sm font-semibold text-default-600"
                           >
-                            Handle
+                            Бариул
                           </th>
                         </tr>
                       </thead>
@@ -593,14 +591,14 @@ const BasicTables = () => {
           <div className="border border-default-200 rounded-lg">
             <div className="p-6">
               <h3 className="font-medium text-base text-default-600 mb-4">
-                Hoverable rows
+                Хөвөгч мөрүүд
               </h3>
               <p className="text-default-600 mb-4">
-                Add
+                Нэмэх
                 <code className="text-danger">
                   hover:{"{"}color{"}"}-*
                 </code>
-                to enable a hover state on table rows within a
+                a доторх хүснэгтийн мөрүүд дээр хулганын төлөвийг идэвхжүүлэх
                 <code>&lt;tbody&gt;</code>.
               </p>
               <div className="overflow-auto">
@@ -619,19 +617,19 @@ const BasicTables = () => {
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-semibold text-default-600"
                           >
-                            First
+                            Эхлээд
                           </th>
                           <th
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-semibold text-default-600"
                           >
-                            Last
+                            Сүүлийн
                           </th>
                           <th
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-semibold text-default-600"
                           >
-                            Handle
+                            Бариул
                           </th>
                         </tr>
                       </thead>
@@ -668,14 +666,14 @@ const BasicTables = () => {
           <div className="border border-default-200 rounded-lg">
             <div className="p-6">
               <h3 className="font-medium text-base text-default-600 mb-4">
-                Active Tables
+                Идэвхтэй хүснэгтүүд
               </h3>
               <p className="text-default-600 mb-4">
-                Add
+                Нэмэх
                 <code className="text-danger">
                   hover:{"{"}color{"}"}-*
                 </code>
-                to enable a hover state on table rows within a
+                a доторх хүснэгтийн мөрүүд дээр хулганын төлөвийг идэвхжүүлэх
                 <code>&lt;tbody&gt;</code>.
               </p>
               <div className="overflow-auto">
@@ -694,19 +692,19 @@ const BasicTables = () => {
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-semibold text-default-600"
                           >
-                            First
+                            Эхлээд
                           </th>
                           <th
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-semibold text-default-600"
                           >
-                            Last
+                            Сүүлийн
                           </th>
                           <th
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-semibold text-default-600"
                           >
-                            Handle
+                            Бариул
                           </th>
                         </tr>
                       </thead>
@@ -715,11 +713,10 @@ const BasicTables = () => {
                           return (
                             <tr
                               key={idx}
-                              className={`${
-                                value.id === 1
+                              className={`${value.id === 1
                                   ? "bg-default-100 dark:bg-transparent"
                                   : "hover:bg-default-100 dark:hover:bg-transparent"
-                              }`}
+                                }`}
                             >
                               <td className="px-4 py-4 whitespace-nowrap text-sm font-medium text-default-600">
                                 {value.id}
@@ -758,11 +755,11 @@ const BasicTables = () => {
           <div className="border border-default-200 rounded-lg">
             <div className="p-6">
               <h3 className="font-medium text-base text-default-600 mb-4">
-                Striped rows
+                Судалчлагдсан эгнээ
               </h3>
               <p className="text-default-600 mb-4">
-                Use .table-striped to add zebra-striping to any table row within
-                the .
+                Хүснэгтийн доторх дурын мөрөнд тахө зураас нэмэхийн тулд .table-striped-г ашиглана уу
+                нь .
               </p>
               <div className="overflow-auto">
                 <div className="min-w-full inline-block align-middle">
@@ -780,19 +777,19 @@ const BasicTables = () => {
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-semibold text-default-600"
                           >
-                            First
+                            Эхлээд
                           </th>
                           <th
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-semibold text-default-600"
                           >
-                            Last
+                            Сүүлийн
                           </th>
                           <th
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-semibold text-default-600"
                           >
-                            Handle
+                            Бариул
                           </th>
                         </tr>
                       </thead>
@@ -801,11 +798,10 @@ const BasicTables = () => {
                           return (
                             <tr
                               key={idx}
-                              className={`${
-                                value.id !== 2
+                              className={`${value.id !== 2
                                   ? "bg-default-100 dark:bg-transparent"
                                   : ""
-                              }`}
+                                }`}
                             >
                               <td className="px-4 py-4 whitespace-nowrap text-sm font-medium text-default-600">
                                 {value.id}
@@ -833,12 +829,12 @@ const BasicTables = () => {
           <div className="border border-default-200 rounded-lg">
             <div className="p-6">
               <h3 className="font-medium text-base text-default-600 mb-4">
-                Captions
+                Тайлбар
               </h3>
               <p className="text-default-600 mb-4">
-                A functions like a heading for a table. It helps users with
-                screen readers to find a table and understand what it’s about
-                and decide if they want to read it.
+                Хүснэгтийн гарчиг шиг функцийг гүйцэтгэдэг. Энэ нь хэрэглэгчдэд тусалдаг
+                Дэлгэц уншигчид хүснэгтийг олж, энэ нь юу болохыг ойлгох болно
+                мөн тэд үүнийг уншихыг хүсч байгаа эсэхийг шийднэ.
               </p>
               <div className="overflow-auto">
                 <div className="min-w-full inline-block align-middle">
@@ -856,19 +852,19 @@ const BasicTables = () => {
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-semibold text-default-600"
                           >
-                            First
+                            Эхлээд
                           </th>
                           <th
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-semibold text-default-600"
                           >
-                            Last
+                            Сүүлийн
                           </th>
                           <th
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-semibold text-default-600"
                           >
-                            Handle
+                            Бариул
                           </th>
                         </tr>
                       </thead>
@@ -903,10 +899,10 @@ const BasicTables = () => {
           <div className="border border-default-200 rounded-lg">
             <div className="p-6">
               <h3 className="font-medium text-base text-default-600 mb-4">
-                Contextual classes
+                Контекст ангиуд
               </h3>
               <p className="text-default-600 mb-4">
-                Use contextual classes to color table rows or individual cells.
+                Хүснэгтийн мөр эсвэл бие даасан нүднүүдийг будахын тулд контекст ангиллыг ашиглана уу.
               </p>
               <div className="overflow-auto">
                 <div className="min-w-full inline-block align-middle">
@@ -924,19 +920,19 @@ const BasicTables = () => {
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-semibold text-default-600"
                           >
-                            Column heading
+                            Баганын гарчиг
                           </th>
                           <th
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-semibold text-default-600"
                           >
-                            Column heading
+                            Баганын гарчиг
                           </th>
                           <th
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-semibold text-default-600"
                           >
-                            Column heading
+                            Баганын гарчиг
                           </th>
                         </tr>
                       </thead>
@@ -945,23 +941,22 @@ const BasicTables = () => {
                           return (
                             <tr
                               key={idx}
-                              className={`${
-                                value.id === 1
+                              className={`${value.id === 1
                                   ? `bg-${value.variant}-100 dark:bg-transparent`
                                   : `bg-${value.variant}/40`
-                              }`}
+                                }`}
                             >
                               <td className="px-4 py-4 whitespace-nowrap text-sm font-medium text-default-600">
                                 {value.id}
                               </td>
                               <td className="px-4 py-4 whitespace-nowrap text-sm text-default-600">
-                                Column content
+                                Баганын агуулга
                               </td>
                               <td className="px-4 py-4 whitespace-nowrap text-sm text-default-600">
-                                Column content
+                                Баганын агуулга
                               </td>
                               <td className="px-4 py-4 whitespace-nowrap text-start text-default-600">
-                                Column content
+                                Баганын агуулга
                               </td>
                             </tr>
                           );
@@ -977,7 +972,7 @@ const BasicTables = () => {
           <div className="border border-default-200 rounded-lg">
             <div className="p-6">
               <h3 className="font-medium text-base text-default-600 mb-4">
-                Nesting tables
+                Үүрлэх ширээ
               </h3>
               <div className="overflow-x-auto">
                 <div className="min-w-full inline-block align-middle">
@@ -995,19 +990,19 @@ const BasicTables = () => {
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-semibold text-default-600"
                           >
-                            First
+                            Эхлээд
                           </th>
                           <th
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-semibold text-default-600"
                           >
-                            Last
+                            Сүүлийн
                           </th>
                           <th
                             scope="col"
                             className="px-4 py-4 text-start text-sm font-semibold text-default-600"
                           >
-                            Handle
+                            Бариул
                           </th>
                         </tr>
                       </thead>
@@ -1016,11 +1011,10 @@ const BasicTables = () => {
                           return (
                             <tr
                               key={idx}
-                              className={`${
-                                value.id !== 2
+                              className={`${value.id !== 2
                                   ? "bg-default-50 border-y border-default-200"
                                   : ""
-                              }`}
+                                }`}
                             >
                               {value.id === 2 ? (
                                 <td colSpan={4} className="p-4">
@@ -1031,19 +1025,19 @@ const BasicTables = () => {
                                           scope="col"
                                           className="px-2 py-4 text-start text-sm font-semibold text-default-600"
                                         >
-                                          header
+                                          толгой
                                         </th>
                                         <th
                                           scope="col"
                                           className="px-2 py-4 text-start text-sm font-semibold text-default-600"
                                         >
-                                          header
+                                          толгой
                                         </th>
                                         <th
                                           scope="col"
                                           className="px-2 py-4 text-start text-sm font-semibold text-default-600"
                                         >
-                                          header
+                                          толгой
                                         </th>
                                       </tr>
                                     </thead>
@@ -1058,10 +1052,10 @@ const BasicTables = () => {
                                               {item}
                                             </td>
                                             <td className="px-2 py-4 whitespace-nowrap text-sm text-default-600">
-                                              first
+                                              эхлээд
                                             </td>
                                             <td className="px-2 py-4 whitespace-nowrap text-start text-default-600">
-                                              last
+                                              сүүлчийн
                                             </td>
                                           </tr>
                                         );
@@ -1100,7 +1094,7 @@ const BasicTables = () => {
             <div className="border border-default-200 rounded-lg">
               <div className="p-6">
                 <h3 className="font-medium text-base text-default-600 mb-4">
-                  Responsive tables
+                  Хариуцлагатай хүснэгтүүд
                 </h3>
                 <div className="overflow-x-auto">
                   <div className="min-w-full inline-block align-middle">
@@ -1118,37 +1112,37 @@ const BasicTables = () => {
                               scope="col"
                               className="px-4 py-4 text-start text-sm font-semibold text-default-700 dark:text-default-400"
                             >
-                              Table heading
+                              Хүснэгтийн гарчиг
                             </th>
                             <th
                               scope="col"
                               className="px-4 py-4 text-start text-sm font-semibold text-default-700 dark:text-default-400"
                             >
-                              Table heading
+                              Хүснэгтийн гарчиг
                             </th>
                             <th
                               scope="col"
                               className="px-4 py-4 text-start text-sm font-semibold text-default-700 dark:text-default-400"
                             >
-                              Table heading
+                              Хүснэгтийн гарчиг
                             </th>
                             <th
                               scope="col"
                               className="px-4 py-4 text-start text-sm font-semibold text-default-700 dark:text-default-400"
                             >
-                              Table heading
+                              Хүснэгтийн гарчиг
                             </th>
                             <th
                               scope="col"
                               className="px-4 py-4 text-start text-sm font-semibold text-default-700 dark:text-default-400"
                             >
-                              Table heading
+                              Хүснэгтийн гарчиг
                             </th>
                             <th
                               scope="col"
                               className="px-4 py-4 text-start text-sm font-semibold text-default-700 dark:text-default-400"
                             >
-                              Table heading
+                              Хүснэгтийн гарчиг
                             </th>
                           </tr>
                         </thead>
@@ -1163,22 +1157,22 @@ const BasicTables = () => {
                                   {value}
                                 </th>
                                 <td className="px-4 py-4 whitespace-nowrap text-sm font-medium text-default-600">
-                                  Table cell
+                                  Хүснэгтийн нүд
                                 </td>
                                 <td className="px-4 py-4 whitespace-nowrap text-sm font-medium text-default-600">
-                                  Table cell
+                                  Хүснэгтийн нүд
                                 </td>
                                 <td className="px-4 py-4 whitespace-nowrap text-sm font-medium text-default-600">
-                                  Table cell
+                                  Хүснэгтийн нүд
                                 </td>
                                 <td className="px-4 py-4 whitespace-nowrap text-sm font-medium text-default-600">
-                                  Table cell
+                                  Хүснэгтийн нүд
                                 </td>
                                 <td className="px-4 py-4 whitespace-nowrap text-sm font-medium text-default-600">
-                                  Table cell
+                                  Хүснэгтийн нүд
                                 </td>
                                 <td className="px-4 py-4 whitespace-nowrap text-sm font-medium text-default-600">
-                                  Table cell
+                                  Хүснэгтийн нүд
                                 </td>
                               </tr>
                             );

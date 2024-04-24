@@ -11,10 +11,10 @@ const TestimonialsSwiper = ({ reviews }) => {
   return (
     <div>
       <span className="mb-6 inline-flex rounded-full bg-primary/20 px-4 py-2 text-sm text-primary">
-        Testimonials
+        Гэрчлэл
       </span>
       <h2 className="mb-4 max-w-xl text-3xl font-semibold text-default-900">
-        What They Say About Us.
+        Тэд бидний тухай юу гэж хэлдэг.
       </h2>
       <div className="product-img-slider sticky-side-div">
         <Swiper

@@ -28,7 +28,7 @@ const clientMenuItems = [
   },
   {
     key: "dish",
-    label: "Dishes",
+    label: "Аяга таваг",
     url: "/dishes",
     isTitle: true,
 
@@ -128,7 +128,7 @@ const clientMenuItems = [
   // },
   {
     key: "admin-dashboard",
-    label: "Admin",
+    label: "Админ",
     url: "/admin/dashboard",
     isTitle: true,
   },
@@ -169,26 +169,26 @@ export const ADMIN_VERTICAL_MENU_ITEMS = [
   },
   {
     key: "manage-page",
-    label: "Manage",
+    label: "Удирдах",
     icon: LuSettings2,
     url: "/admin/manage",
     isTitle: true,
   },
   {
     key: "orders",
-    label: "Orders",
+    label: "Захиалга",
     icon: LuListOrdered,
     isTitle: true,
     children: [
       {
         key: "orders-list",
-        label: "Orders List",
+        label: "Захиалгын жагсаалт",
         url: "/admin/orders",
         parentKey: "orders",
       },
       {
         key: "orders-details",
-        label: "Order Details",
+        label: "захиалгын мэдээлэл",
         url: "/admin/orders/9f36ca",
         parentKey: "orders",
       },
@@ -196,25 +196,25 @@ export const ADMIN_VERTICAL_MENU_ITEMS = [
   },
   {
     key: "customers",
-    label: "Customers",
+    label: "Үйлчлүүлэгчид",
     icon: LuUsers,
     isTitle: true,
     children: [
       {
         key: "customers-list",
-        label: "Customers List",
+        label: "Хэрэглэгчдийн жагсаалт",
         url: "/admin/customers",
         parentKey: "customers",
       },
       {
         key: "customers-details",
-        label: "Customer Details",
+        label: "Хэрэглэгчийн мэдээлэл",
         url: "/admin/customers/Erali",
         parentKey: "customers",
       },
       {
         key: "customers-add",
-        label: "Add Customer",
+        label: "Хэрэглэгч нэмэх",
         url: "/admin/add-customer",
         parentKey: "customers",
       },
@@ -228,31 +228,31 @@ export const ADMIN_VERTICAL_MENU_ITEMS = [
   },
   {
     key: "restaurants",
-    label: "Restaurants",
+    label: "Ресторанууд",
     icon: LuHotel,
     isTitle: true,
     children: [
       {
         key: "restaurants-list",
-        label: "Restaurants List",
+        label: "Ресторануудын жагсаалт",
         url: "/admin/restaurants",
         parentKey: "restaurants",
       },
       {
         key: "restaurants-details",
-        label: "Restaurant Details",
+        label: "Рестораны дэлгэрэнгүй мэдээлэл",
         url: "/admin/restaurants/901",
         parentKey: "restaurants",
       },
       {
         key: "restaurants-add",
-        label: "Add Restaurant",
+        label: "Ресторан нэмэх",
         url: "/admin/add-restaurant",
         parentKey: "restaurants",
       },
       {
         key: "restaurants-edit",
-        label: "Edit Restaurant",
+        label: "Ресторан засах",
         url: "/admin/edit-restaurant",
         parentKey: "restaurants",
       },
@@ -260,31 +260,31 @@ export const ADMIN_VERTICAL_MENU_ITEMS = [
   },
   {
     key: "dishes",
-    label: "Dishes",
+    label: "Аяга таваг",
     icon: LuSoup,
     isTitle: true,
     children: [
       {
         key: "dishes-list",
-        label: "Dishes List",
+        label: "Хоолны жагсаалт",
         url: "/admin/dishes",
         parentKey: "dishes",
       },
       {
         key: "dishes-details",
-        label: "Dish Details",
+        label: "Хоолны дэлгэрэнгүй мэдээлэл",
         url: "/admin/dishes/1008",
         parentKey: "dishes",
       },
       {
         key: "dishes-add",
-        label: "Add Dish",
+        label: "Таваг нэмнэ үү",
         url: "/admin/add-dish",
         parentKey: "dishes",
       },
       {
         key: "dishes-edit",
-        label: "Edit Dish",
+        label: "Таваг засах",
         url: "/admin/edit-dish",
         parentKey: "dishes",
       },
@@ -644,24 +644,24 @@ export const ADMIN_VERTICAL_MENU_ITEMS = [
 ];
 
 export const FOOTER_LINKS = {
-  About: [
-    { name: "About Us" },
-    { name: "Features" },
-    { name: "News" },
-    { name: "Careers" },
-    { name: "Services" },
+  Тухай: [
+    { name: "Бидний тухай" },
+    { name: "Онцлогууд" },
+    { name: "Мэдээ" },
+    { name: "Карьер" },
+    { name: "Үйлчилгээ" },
   ],
-  Company: [
-    { name: "Our Team" },
-    { name: "Partner with Us" },
-    { name: "FAQs" },
-    { name: "Blog" },
+ Компани: [
+    { name: "Манай баг" },
+    { name: "Бидэнтэй хамтраарай" },
+    { name: "Түгээмэл асуултууд" },
+    { name: "Блог" },
   ],
-  Support: [
-    { name: "About" },
-    { name: "Support Center" },
-    { name: "Feedback" },
-    { name: "Contact Us", link: "/contact-us" },
-    { name: "Accessibility" },
+ Дэмжлэг: [
+    { name: "Тухай" },
+    { name: "Дэмжих төв" },
+    { name: "Санал хүсэлт" },
+    { name: "Бидэнтэй холбоо барина уу", link: "/contact-us" },
+    { name: "Хүртээмжтэй байдал" },
   ],
 };

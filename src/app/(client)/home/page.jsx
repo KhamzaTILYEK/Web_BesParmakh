@@ -27,8 +27,8 @@ const TestimonialsSwiper = lazy(
 );
 const SpecialMenu = lazy(() => import("@/components/SpecialMenu"));
 
-const Home = () => { 
-  
+const Home = () => {
+
   return (
     <>
       <PageTitle title="Нүүр хуудас" />
@@ -182,7 +182,7 @@ const Home = () => {
                   </span>
                   <div>
                     <h6 className="text-sm font-medium text-default-900">
-                      Hot Burger
+                      Халуун бургер
                     </h6>
                     <span className="inline-flex gap-0.5">
                       <FaStar
@@ -345,7 +345,7 @@ const Home = () => {
                   <div className="rounded-xl bg-white shadow-lg dark:bg-default-100">
                     <div className="p-6">
                       <h6 className="mb-2 text-base font-semibold text-default-900">
-                        Our Reviewers
+                        Манай тоймчид
                       </h6>
                       <div className="flex items-center justify-center -space-x-1">
                         <div className="h-12 w-12">

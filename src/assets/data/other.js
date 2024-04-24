@@ -27,35 +27,35 @@ import { subtractHours } from "@/utils";
 export const consumerReviews = [
   {
     id: 301,
-    reviewer_name: "Will Byers",
+    reviewer_name: "Jolaman Nurbyek",
     reviewer_image: avatar1Img,
     stars: 5,
     review:
-      "Food is the best. Besides the many and delicious meals, the service is also very good, especially in the very fast delivery. I highly recommend Food to you.",
+      "Хоол бол хамгийн шилдэг нь. Олон, амттай хоолноос гадна үйлчилгээ нь маш сайн, ялангуяа маш хурдан хүргэлт. Би танд хоол хүнсийг маш их санал болгож байна.",
   },
   {
     id: 302,
-    reviewer_name: "Mike Wheeler",
+    reviewer_name: "Ali Abakh",
     reviewer_image: avatar2Img,
     stars: 4.5,
     review:
-      "Yum is probably one of the best options when it comes to food delivery when living in DLF phase 3, or in the delivery range.",
+      "DLF-ийн 3-р үе шат эсвэл хүргэх мужид амьдрах үед хоол хүнс хүргэх хамгийн сайн сонголтуудын нэг юм.",
   },
   {
     id: 303,
-    reviewer_name: "Lucas Sinclair",
+    reviewer_name: "Bilguun Bat",
     reviewer_image: avatar3Img,
     stars: 5,
     review:
-      "Quality, Quantity, Packaging, Delivery Time & Taste are quintessential factors when one orders a home delivery. The people at Caters Point know how to deliver all to a nicety & perfection 😊",
+      "Чанар, тоо хэмжээ, сав баглаа боодол, хүргэх хугацаа, амт нь гэрт хүргэх захиалга өгөх гол хүчин зүйлүүд юм. Катерс Пойнтын хүмүүс бүгдийг хэрхэн сайхан, төгс болгохыг мэддэг",
   },
   {
     id: 304,
-    reviewer_name: "Steve Harrington",
+    reviewer_name: "Yerdos Yerdos",
     reviewer_image: avatar4Img,
     stars: 5,
     review:
-      'The food of the place is really awesome with a special menu item might be seasonal "Mango broccoli sandwich" which is really something you should give a shot. The sandwich is filled with cottage cheese, Mango and broccoli layer with more add-on toppings in it.',
+      'Тус газрын хоол нь үнэхээр гайхалтай, тусгай цэстэй, улирлын чанартай "Манго брокколи сэндвич" байж магадгүй бөгөөд энэ нь таны идэх ёстой зүйл юм. Сэндвичийг зуслангийн бяслаг, манго, цэцэгт байцааны давхаргаар дүүргэсэн бөгөөд дотор нь нэмэлт нэмэлтүүд орно.',
   },
 ];
 
@@ -637,34 +637,34 @@ export const transactionHistoryData = [
 
 export const analyticsOverviewData = [
   {
-    name: "Total Revenue",
+    name: "Нийт орлого",
     amount: 325684,
-    change: "10% Increase",
+    change: "10% Өсөх",
   },
   {
-    name: "New Orders",
+    name: "Шинэ захиалга",
     amount: 2560,
-    change: "50% Increase",
+    change: "50% Өсөх",
   },
   {
-    name: "Received Orders",
+    name: "Хүлээн авсан захиалга",
     amount: 12560,
-    change: "34% Increase",
+    change: "34% Өсөх",
   },
   {
-    name: "Reviews",
+    name: "Шүүмж",
     amount: 476,
-    change: "5% Decrease",
+    change: "5% Өсөх",
   },
   {
-    name: "New Reach",
+    name: "Шинэ хүртээмж",
     amount: 865,
-    change: "48% Increase",
+    change: "48% Өсөх",
   },
   {
-    name: "Successful Orders",
+    name: "Амжилттай захиалга",
     amount: 9165,
-    change: "8% Decrease",
+    change: "8% Өсөх",
   },
 ];
 
