@@ -31,7 +31,7 @@ const DishDetails = () => {
         <div className="page-content space-y-6 p-6">
           <BreadcrumbAdmin
             title={dish.name}
-            subtitle="Аяга таваг"
+            subtitle="Dishes"
             link="/admin/dishes"
           />
 

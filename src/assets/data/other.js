@@ -657,7 +657,7 @@ export const analyticsOverviewData = [
     change: "5% Өсөх",
   },
   {
-    name: "Шинэ хүртээмж",
+    name: "Хүртээмж",
     amount: 865,
     change: "48% Өсөх",
   },
