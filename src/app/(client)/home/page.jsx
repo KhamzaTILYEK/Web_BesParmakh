@@ -112,7 +112,7 @@ const Home = () => {
                           />{" "}
                           4.7{" "}
                           <span className="text-sm text-default-500">
-                            (13.7k Reviews)
+                            (13.7k Шүүмж)
                           </span>
                         </p>
                       </div>

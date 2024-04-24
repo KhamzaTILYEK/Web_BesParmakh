@@ -59,8 +59,8 @@ const BillingInformation = () => {
             <TextFormInput
               name="fname"
               type="text"
-              label="First name"
-              placeholder="First Name"
+              label="Нэр"
+              placeholder="Нэр"
               control={control}
               fullWidth
             />
@@ -68,8 +68,8 @@ const BillingInformation = () => {
             <TextFormInput
               name="lName"
               type="text"
-              label="Last Name"
-              placeholder="Last Name"
+              label="Овог"
+              placeholder="Овог"
               control={control}
               fullWidth
             />
@@ -77,8 +77,8 @@ const BillingInformation = () => {
             <TextFormInput
               name="companyName"
               type="text"
-              label="Company Name (Optional)"
-              placeholder="Company Name"
+              label="Компанийн нэр (заавал биш)"
+              placeholder="Компанийн нэр "
               containerClassName="lg:col-span-2"
               control={control}
               fullWidth
@@ -86,8 +86,8 @@ const BillingInformation = () => {
 
             <TextAreaFormInput
               name="address"
-              label="Address"
-              placeholder="Enter Your Address"
+              label="Хаяг"
+              placeholder="Өөрийн хаягаа оруулна уу"
               containerClassName="lg:col-span-4"
               control={control}
               fullWidth
@@ -95,12 +95,12 @@ const BillingInformation = () => {
 
             <SelectFormInput
               name="country"
-              label="Country"
+              label="Улс"
               control={control}
               id="billing-country"
               instanceId="billing-country"
               options={[
-                { value: "United States", label: "United States" },
+                { value: "Mongolia", label: "Mongolia" },
                 { value: "Canada", label: "Canada" },
                 { value: "Australia", label: "Australia" },
                 { value: "Germany", label: "Germany" },
@@ -119,12 +119,12 @@ const BillingInformation = () => {
 
             <SelectFormInput
               name="state"
-              label="State/Province"
+              label="Муж/Аймаг"
               control={control}
               id="billing-state-province"
               instanceId="billing-state-province"
               options={[
-                { value: "Alabama", label: "Alabama" },
+                { value: "Ulaanbaatar", label: "Ulaanbaatar" },
                 { value: "Alaska", label: "Alaska" },
                 { value: "Arizona", label: "Arizona" },
                 { value: "Arkansas", label: "Arkansas" },
@@ -142,12 +142,12 @@ const BillingInformation = () => {
 
             <SelectFormInput
               name="city"
-              label="City"
+              label="Хот"
               control={control}
               id="billing-city"
               instanceId="billing-city"
               options={[
-                { value: "Alexander", label: "Alexander" },
+                { value: "Ulaanbaatar", label: "Ulaanbaatar" },
                 { value: "Andalusia", label: "Andalusia" },
                 { value: "Anniston", label: "Anniston" },
                 { value: "Athens", label: "Athens" },
@@ -170,7 +170,7 @@ const BillingInformation = () => {
               id="billing-zip-code"
               instanceId="billing-zip-code"
               options={[
-                { value: 356123, label: "356123" },
+                { value: 13250, label: "13250" },
                 { value: 350115, label: "350115" },
                 { value: 350125, label: "350125" },
                 { value: 350135, label: "350135" },
@@ -181,7 +181,7 @@ const BillingInformation = () => {
             <TextFormInput
               name="email"
               type="text"
-              label="Email"
+              label="Имэйл"
               className="block w-full rounded-lg border border-default-200 bg-transparent px-4 py-2.5 dark:bg-default-50"
               placeholder="example@example.com"
               containerClassName="lg:col-span-2"
@@ -191,9 +191,9 @@ const BillingInformation = () => {
             <TextFormInput
               name="phoneNo"
               type="text"
-              label="Phone Number"
+              label="Утасны дугаар"
               className="block w-full rounded-lg border border-default-200 bg-transparent px-4 py-2.5 dark:bg-default-50"
-              placeholder="+1  123-XXX-7890"
+              placeholder="+976  123-XXX-7890"
               containerClassName="lg:col-span-2"
               control={control}
             />
@@ -203,7 +203,7 @@ const BillingInformation = () => {
                 id="shipmentAddress"
                 className="h-5 w-5 rounded border-default-200 bg-transparent text-primary focus:ring-0"
                 type="checkbox"
-                placeholder="+1  123-XXX-7890"
+                placeholder="+976  123-XXX-7890"
               />
               <label
                 htmlFor="shipmentAddress"
@@ -303,9 +303,9 @@ const BillingInformation = () => {
             <TextFormInput
               name="nameOnCard"
               type="text"
-              label="Name on Card"
+              label="Картан дээрх нэр"
               className="block w-full rounded-lg border border-default-200 bg-transparent px-4 py-2.5 dark:bg-default-50"
-              placeholder="Enter card holder name"
+              placeholder="Карт эзэмшигчийн нэрийг оруулна уу"
               containerClassName="lg:col-span-2"
               control={control}
             />
@@ -313,9 +313,9 @@ const BillingInformation = () => {
             <TextFormInput
               name="cardNo"
               type="text"
-              label="Card Number"
+              label="Картны дугаар"
               className="block w-full rounded-lg border border-default-200 bg-transparent px-4 py-2.5 dark:bg-default-50"
-              placeholder="Enter card number"
+              placeholder="Картын дугаарыг оруулна уу"
               containerClassName="lg:col-span-2"
               control={control}
             />
@@ -323,7 +323,7 @@ const BillingInformation = () => {
             <DateFormInput
               name="expiryDate"
               type="date"
-              label="Expire Date"
+              label="Дуусах огноо"
               className="block w-full rounded-lg border border-default-200 bg-transparent px-4 py-2.5 dark:bg-default-50"
               placeholder="MM/YY"
               control={control}
@@ -351,8 +351,8 @@ const BillingInformation = () => {
 
           <TextAreaFormInput
             name="message"
-            label="Message (optional)"
-            placeholder="Notes about your order, e.g. special notes for delivery"
+            label="Зурвас (заавал биш)"
+            placeholder="Таны захиалгын талаархи тэмдэглэл, жишээ нь. хүргэх тусгай тэмдэглэл"
             control={control}
             fullWidth
           />
