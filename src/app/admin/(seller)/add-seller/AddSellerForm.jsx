@@ -29,35 +29,35 @@ const AddSellerForm = () => {
   });
   return (
     <div className="rounded-lg border border-default-200">
-      <form onSubmit={handleSubmit(() => {})} className="p-6">
+      <form onSubmit={handleSubmit(() => { })} className="p-6">
         <div className="mb-6 grid gap-6 lg:grid-cols-2">
           <TextFormInput
             name="fname"
-            label="First Name"
+            label="Нэр"
             type="text"
-            placeholder="Enter Your First Name"
+            placeholder="Нэрээ оруулна уу"
             control={control}
             fullWidth
           />
           <TextFormInput
             name="lname"
-            label="Last Name"
+            label="Овог"
             type="text"
-            placeholder="Enter Your Last Name"
+            placeholder="Овогоо оруулна уу"
             control={control}
             fullWidth
           />
           <TextFormInput
             name="username"
-            label="User Name"
+            label="Хэрэглэгчийн нэр"
             type="text"
-            placeholder="Enter Your Last Name"
+            placeholder="Овогоо оруулна уу"
             control={control}
             fullWidth
           />
           <TextFormInput
             name="email"
-            label="Email"
+            label="Имэйл"
             type="email"
             placeholder="demoexample@mail.com"
             control={control}
@@ -65,7 +65,7 @@ const AddSellerForm = () => {
           />
           <TextFormInput
             name="phoneNo"
-            label="Phone Number"
+            label="Утасны дугаар"
             type="text"
             placeholder="+1-123-XXX-4567"
             control={control}
@@ -73,7 +73,7 @@ const AddSellerForm = () => {
           />
           <SelectFormInput
             name="country"
-            label="Country/Region"
+            label="Улс/Бүс нутаг"
             control={control}
             id="billing-country1"
             instanceId="billing-country"
@@ -96,7 +96,7 @@ const AddSellerForm = () => {
           />
           <SelectFormInput
             name="state"
-            label="State/Province"
+            label="Муж/Аймаг"
             control={control}
             id="billing-state-province1"
             instanceId="billing-state-province"
@@ -118,7 +118,7 @@ const AddSellerForm = () => {
           />
           <SelectFormInput
             name="zipCode"
-            label="ZIP/Postal Code"
+            label="ZIP/Шуудангийн код"
             control={control}
             id="billing-zip-code1"
             instanceId="billing-zip-code"
@@ -132,7 +132,7 @@ const AddSellerForm = () => {
           />
           <TextAreaFormInput
             name="description"
-            label="Description"
+            label="Тодорхойлолт"
             placeholder="Jot something down..."
             rows={5}
             containerClassName="lg:col-span-2"
@@ -147,14 +147,14 @@ const AddSellerForm = () => {
             className="flex items-center justify-center gap-2 rounded-lg bg-red-500/10 px-6 py-2.5 text-center text-sm font-semibold text-red-500 shadow-sm transition-colors duration-200 hover:bg-red-500 hover:text-white"
           >
             <LuEraser size={20} />
-            Clear
+            Тодорхой
           </button>
           <button
             type="submit"
             className="flex items-center justify-center gap-2 rounded-lg bg-primary px-6 py-2.5 text-center text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:bg-primary-500"
           >
             <LuSave size={20} />
-            Save
+            Хадгалах
           </button>
         </div>
       </form>

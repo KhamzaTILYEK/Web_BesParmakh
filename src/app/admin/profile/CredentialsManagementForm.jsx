@@ -25,25 +25,25 @@ const CredentialsManagementForm = () => {
       </h4>
       <PasswordFormInput
         name="currentPassword"
-        label="Current Password"
+        label="Одоогын Нууц Үг"
         containerClassName="mb-4"
-        placeholder="Enter your password"
+        placeholder="Нууц үгээ оруулна уу"
         control={control}
         fullWidth
       />
       <PasswordFormInput
         name="newPassword"
-        label="New Password"
+        label="Шинэ нууц үг"
         containerClassName="mb-4"
-        placeholder="Enter your new password"
+        placeholder="Шинэ нууц үгээ оруулна уу"
         control={control}
         fullWidth
       />
       <PasswordFormInput
         name="confirmPassword"
-        label="Confirm Password"
+        label="Нууц үгээ баталгаажуулна уу"
         containerClassName="mb-4"
-        placeholder="Enter your confirm password"
+        placeholder="Баталгаажуулах нууц үгээ оруулна уу"
         control={control}
         fullWidth
       />

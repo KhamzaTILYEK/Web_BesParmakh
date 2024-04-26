@@ -38,40 +38,40 @@ const BillingAddressForm = () => {
       <div className="grid gap-6 lg:grid-cols-2">
         <TextFormInput
           name="bfName"
-          label="First Name"
+          label="Нэр"
           type="text"
-          placeholder="Enter Your First Name"
+          placeholder="Нэрээ оруулна уу"
           control={control}
           fullWidth
         />
         <TextFormInput
           name="blName"
-          label="Last Name"
+          label="Овог"
           type="text"
-          placeholder="Enter Your Last Name"
+          placeholder="Овогоо оруулна уу"
           control={control}
           fullWidth
         />
         <TextFormInput
           name="bcompanyName"
-          label="Company Name (Optional)"
+          label="Компанийн нэр (заавал биш)"
           type="text"
-          placeholder="Enter Your Company Name"
+          placeholder="Компанийнхаа нэрийг оруулна уу"
           containerClassName="lg:col-span-2"
           control={control}
           fullWidth
         />
         <TextAreaFormInput
           name="baddress"
-          label="Address"
-          placeholder="Road No. 47/x, House no. 123/B, Flat No. B4"
+          label="Хаяг"
+          placeholder="47/х зам, байшин №. 123/Б, Хавтгай дугаар В4"
           containerClassName="lg:col-span-2"
           control={control}
           fullWidth
         />
         <SelectFormInput
           name="bcountry"
-          label="Country/Region"
+          label="Улс/Бүс нутаг"
           control={control}
           id="billing-country1"
           instanceId="billing-country1"
@@ -95,7 +95,7 @@ const BillingAddressForm = () => {
         />
         <SelectFormInput
           name="bstate"
-          label="State/Province"
+          label="Муж/Аймаг"
           control={control}
           id="billing-state-province1"
           containerClassName="lg:col-span-2"
@@ -118,7 +118,7 @@ const BillingAddressForm = () => {
         />
         <SelectFormInput
           name="bcity"
-          label="City"
+          label="Хот"
           control={control}
           id="billing-city1"
           instanceId="billing-city1"
@@ -140,7 +140,7 @@ const BillingAddressForm = () => {
         />
         <SelectFormInput
           name="bzipCode"
-          label="ZIP/Postal Code"
+          label="ZIP/Шуудангийн код"
           control={control}
           id="billing-zip-code1"
           instanceId="billing-zip-code1"
@@ -154,7 +154,7 @@ const BillingAddressForm = () => {
         />
         <TextFormInput
           name="bemail"
-          label="Email"
+          label="Имэйл"
           type="text"
           placeholder="demoexample@mail.com"
           containerClassName="lg:col-span-2"
@@ -163,7 +163,7 @@ const BillingAddressForm = () => {
         />
         <TextFormInput
           name="bphoneNo"
-          label="Phone Number"
+          label="Утасны дугаар"
           type="text"
           placeholder="+1-123-XXX-4567"
           containerClassName="lg:col-span-2"

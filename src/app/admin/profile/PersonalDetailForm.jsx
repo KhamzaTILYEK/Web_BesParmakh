@@ -63,31 +63,31 @@ const PersonalDetailForm = () => {
             >
               <TextFormInput
                 name="fName"
-                label="First Name"
+                label="Нэр"
                 type="text"
-                placeholder="Enter Your First Name"
+                placeholder="Нэрээ оруулна уу"
                 control={control}
                 fullWidth
               />
               <TextFormInput
                 name="lName"
-                label="Last Name"
+                label="Овог"
                 type="text"
-                placeholder="Enter Your Last Name"
+                placeholder="Овогоо оруулна уу"
                 control={control}
                 fullWidth
               />
               <TextFormInput
                 name="lName"
-                label="User Name"
+                label="Хэрэглэгчийн нэр"
                 type="text"
-                placeholder="Enter Your User Name"
+                placeholder="Хэрэглэгчийн нэрээ оруулна уу"
                 control={control}
                 fullWidth
               />
               <TextFormInput
                 name="email"
-                label="Email"
+                label="Имэйл"
                 type="email"
                 placeholder="demoexample@mail.com"
                 control={control}
@@ -95,7 +95,7 @@ const PersonalDetailForm = () => {
               />
               <TextFormInput
                 name="phoneNo"
-                label="Phone Number"
+                label="Утасны дугаар"
                 type="text"
                 placeholder="+1-123-XXX-4567"
                 control={control}
@@ -103,7 +103,7 @@ const PersonalDetailForm = () => {
               />
               <SelectFormInput
                 name="country"
-                label="Country"
+                label="Улс"
                 control={control}
                 id="billing-country2"
                 instanceId="billing-country"
@@ -127,7 +127,7 @@ const PersonalDetailForm = () => {
 
               <SelectFormInput
                 name="state"
-                label="State/Province"
+                label="Муж/Аймаг"
                 control={control}
                 id="billing-state-province2"
                 instanceId="billing-state-province"
@@ -149,7 +149,7 @@ const PersonalDetailForm = () => {
               />
               <SelectFormInput
                 name="zipCode"
-                label="ZIP/Postal Code"
+                label="ZIP/Шуудангийн код"
                 control={control}
                 id="billing-zip-code2"
                 instanceId="billing-zip-code"

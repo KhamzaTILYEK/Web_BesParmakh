@@ -47,7 +47,7 @@ const TopbarAdmin = () => {
             <input
               type="search"
               className="block w-64 rounded-full border-default-200 bg-default-50 py-2.5 pe-4 ps-12 text-sm text-default-600 focus:border-primary focus:ring-primary"
-              placeholder="Search for items..."
+              placeholder="зүйлсийг хайх..."
             />
             <span className="absolute start-4 top-2.5">
               <LuSearch size={20} className="text-default-600" />

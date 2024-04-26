@@ -109,7 +109,7 @@ const OrderList = () => {
   return (
     <div className="w-full lg:ps-64">
       <div className="page-content space-y-6 p-6">
-        <BreadcrumbAdmin title="Orders List" subtitle="Orders" />
+        <BreadcrumbAdmin title="Захиалгын жагсаалт" subtitle="Orders" />
         <div className="grid gap-6 xl:grid-cols-12">
           <div className="xl:col-span-9">
             <div className="space-y-6">

@@ -46,7 +46,7 @@ const EditCustomerForm = () => {
   };
   return (
     <div className="rounded-lg border border-default-200">
-      <form onSubmit={handleSubmit(() => {})} className="p-6">
+      <form onSubmit={handleSubmit(() => { })} className="p-6">
         <div className="mb-6 grid gap-6 lg:grid-cols-2">
           <TextFormInput
             name="fname"

@@ -23,35 +23,35 @@ const ContactForm = () => {
       <div className="grid gap-6 lg:grid-cols-2">
         <TextFormInput
           name="fName"
-          label="First Name"
+          label="Нэр"
           type="text"
-          placeholder="First Name"
+          placeholder="Нэр"
           control={control}
           fullWidth
         />
         <TextFormInput
           name="lName"
           type="text"
-          label="Last Name"
-          placeholder="Last Name"
+          label="Овог"
+          placeholder="Овог"
           control={control}
           fullWidth
         />
         <TextFormInput
           name="email"
-          label="E-mail"
+          label="И-мэйл"
           type="email"
-          placeholder="Enter Your Email"
+          placeholder="Имэйлээ оруулна уу"
           control={control}
           fullWidth
           containerClassName="lg:col-span-2"
         />
         <TextAreaFormInput
           name="message"
-          label="Message"
+          label="Захиа"
           rows={5}
           className="bg-transparent"
-          placeholder="Enter Your Message"
+          placeholder="Мессежээ оруулна уу"
           control={control}
           containerClassName="lg:col-span-2"
           fullWidth

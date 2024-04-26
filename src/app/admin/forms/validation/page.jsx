@@ -27,7 +27,7 @@ const DefaultValidation = () => {
                 htmlFor="validationDefault01"
                 className="font-semibold mb-2"
               >
-                First name
+                Нэр
               </label>
               <input
                 type="text"
@@ -42,7 +42,7 @@ const DefaultValidation = () => {
                 htmlFor="validationDefault02"
                 className="font-semibold mb-2"
               >
-                Last name
+                Овог
               </label>
               <input
                 type="text"
@@ -57,7 +57,7 @@ const DefaultValidation = () => {
                 htmlFor="validationDefaultUsername"
                 className="font-semibold mb-2"
               >
-                Username
+                Хэрэглэгчийн нэр
               </label>
               <div className="flex items-end ">
                 <span
@@ -81,7 +81,7 @@ const DefaultValidation = () => {
                 htmlFor="validationDefault03"
                 className="font-semibold mb-2"
               >
-                City
+                Хот
               </label>
               <input
                 type="text"
@@ -96,7 +96,7 @@ const DefaultValidation = () => {
                 htmlFor="validationDefault04"
                 className="font-semibold mb-2"
               >
-                State
+                муж
               </label>
               <input
                 type="text"
@@ -131,7 +131,7 @@ const DefaultValidation = () => {
                   required
                 />
                 <label className="ms-1.5 font-semibold" htmlFor="invalidCheck2">
-                  Agree to terms and conditions
+                  Нөхцөл, болзлыг зөвшөөрч байна
                 </label>
               </div>
             </div>
@@ -140,7 +140,7 @@ const DefaultValidation = () => {
                 className="py-2 px-5 inline-block font-semibold rounded-lg bg-primary/90 text-white hover:bg-primary"
                 type="submit"
               >
-                Submit form
+                Маягтыг илгээх
               </button>
             </div>
           </form>
@@ -177,11 +177,11 @@ const TypeValidation = () => {
     <div className="border border-default-200 rounded-lg">
       <div className="p-6">
         <h4 className="font-medium text-base text-default-600">
-          Validation type
+          Баталгаажуулалтын төрөл
         </h4>
         <p className="text-default-600">
-          Provide valuable, actionable feedback to your users with HTML5 form
-          validation–available in all our supported browsers.
+          HTML5 маягтын тусламжтайгаар хэрэглэгчдэдээ үнэ цэнэтэй, бодитой санал хүсэлтийг өгнө үү
+          баталгаажуулалт – бидний дэмждэг бүх хөтөч дээр байдаг.
         </p>
         <div className="pt-5">
           <form className="space-y-5" onSubmit={handleSubmit(() => null)}>

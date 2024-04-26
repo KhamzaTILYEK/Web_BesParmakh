@@ -94,7 +94,7 @@ export const restaurantsData = [
   {
     id: 901,
     seller_id: 701,
-    name: "Healthy Feast Corner",
+    name: "Эрүүл баярын булан",
     total_dishes: 34,
     total_sales: 425,
     address:

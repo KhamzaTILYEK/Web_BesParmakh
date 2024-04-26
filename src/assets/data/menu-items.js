@@ -28,7 +28,7 @@ const clientMenuItems = [
   },
   {
     key: "dish",
-    label: "Аяга таваг",
+    label: "Menu",
     url: "/dishes",
     isTitle: true,
 

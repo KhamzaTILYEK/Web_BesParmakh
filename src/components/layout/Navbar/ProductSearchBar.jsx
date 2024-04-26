@@ -29,7 +29,7 @@ const ProductSearchBar = () => {
       <div className="relative w-72">
         <input
           type="search"
-          placeholder="Search for items..."
+          placeholder="зүйлсийг хайх..."
           value={search ?? ""}
           onChange={handleSearch}
           className={

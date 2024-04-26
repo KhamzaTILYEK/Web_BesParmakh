@@ -87,13 +87,13 @@ const Manage = () => {
                 color="#009400"
                 change={34}
                 changeType="Захиалгыг нэмэгдүүлэх"
-                title="New Order"
+                title="Шинэ захиалга"
               />
               <OrderCard
                 color="#D40000"
                 change={45}
                 changeType="Захиалгыг багасгах"
-                title="Cancelled Orders"
+                title="Цуцлагдсан захиалга"
               />
               <AddNewFoodCard />
               <SpacialMenuCard />

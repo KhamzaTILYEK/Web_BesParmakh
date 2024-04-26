@@ -249,7 +249,7 @@ const BillingInformation = () => {
                     alt="paypal"
                   />
                   <h5 className="text-sm font-medium text-default-700">
-                    Paypal
+                    Khaan bank
                   </h5>
                 </label>
                 <input
