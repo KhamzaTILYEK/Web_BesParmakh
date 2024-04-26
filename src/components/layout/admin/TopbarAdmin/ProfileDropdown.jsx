@@ -22,7 +22,7 @@ const profileDropdownItems = [
   },
   {
     icon: LuLogOut,
-    name: "Log Out",
+    name: "Гарах",
     link: "/auth/logout",
   },
 ];

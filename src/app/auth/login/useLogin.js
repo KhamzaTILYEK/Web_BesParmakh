@@ -83,7 +83,7 @@ const useLogin = () => {
         if (postsData.role == "user" || postsData.role == "admin") {
           redirectAsRole(postsData.role, true);
         }
-        toast.success(`Successfully logged in. ${postsData?.userInfo?.userName}`, {
+        toast.success(`Амжилттай нэвтэрлээ. ${postsData?.userInfo?.userName}`, {
           position: "top-right",
           duration: 1000,
         });
