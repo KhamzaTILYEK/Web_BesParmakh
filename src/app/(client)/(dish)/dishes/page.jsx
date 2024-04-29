@@ -47,7 +47,7 @@ const ProductsGrid = () => {
                 <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
                   <div className="order-1 sm:col-span-2 xl:order-2">
                     <div className="order-1 h-full sm:col-span-2 xl:order-2">
-                      <DiscountCard discount={"52% Discount"} link="/dishes" />
+                      <DiscountCard discount={"52% Хөнгөлөлт"} link="/dishes" />
                     </div>
                   </div>
 

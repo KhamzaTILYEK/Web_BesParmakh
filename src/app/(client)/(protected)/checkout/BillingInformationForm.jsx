@@ -13,31 +13,31 @@ import OrderSummary from "./OrderSummary";
 
 const BillingInformation = () => {
   const billingFormSchema = yup.object({
-    fname: yup.string().required("Please enter your user name"),
-    lName: yup.string().required("Please enter your Last Name"),
+    fname: yup.string().required("Хэрэглэгчийн нэрээ оруулна уу"),
+    lName: yup.string().required("Овогоо оруулна уу"),
     companyName: yup.string().optional(),
-    address: yup.string().required("Please enter your Address"),
-    country: yup.string().required("Please select your Country"),
-    state: yup.string().required("Please select your State/Province"),
-    city: yup.string().required("Please select your City"),
-    zipCode: yup.string().required("Please select your ZIP/Postal code"),
+    address: yup.string().required("Та хаягаа оруулна уу"),
+    country: yup.string().required("Улсаа сонгоно уу"),
+    state: yup.string().required("Өөрийн муж/аймаг сонгоно уу"),
+    city: yup.string().required("Хотоо сонгоно уу"),
+    zipCode: yup.string().required("ZIP/Шуудангийн кодоо сонгоно уу"),
     email: yup
       .string()
-      .email("Please enter a valid email")
-      .required("Please enter your email"),
-    phoneNo: yup.number().required("Please enter your Phone NO."),
-    nameOnCard: yup.string().required("Please enter your Name."),
+      .email("Хүчинтэй имэйл оруулна уу")
+      .required("Имэйлээ оруулна уу"),
+    phoneNo: yup.number().required("Утасны дугаараа оруулна уу."),
+    nameOnCard: yup.string().required("Нэрээ оруулна уу."),
     cardNo: yup
       .number()
-      .min(16, "Card number should consist of 16 digits")
-      .max(16, "Card number should not exceed 16 digits")
-      .required("Please enter your Card No."),
-    expiryDate: yup.date().required("Please enter Expire date"),
+      .min(16, "Картын дугаар нь 16 оронтой байх ёстой")
+      .max(16, "Картын дугаар нь 16 оронтой тооноос хэтрэхгүй байх ёстой")
+      .required("Картын дугаараа оруулна уу."),
+    expiryDate: yup.date().required("Дуусах огноог оруулна уу"),
     cvvNo: yup
       .number()
-      .max(4, "CVV number should not exceed 4 digits")
-      .min(3, "CVV number should consist minimum 3 digits")
-      .required("Please enter CVV Number"),
+      .max(4, "CVV дугаар 4 оронтой тооноос хэтрэхгүй байх ёстой")
+      .min(3, "CVV дугаар нь дор хаяж 3 оронтой байх ёстой")
+      .required("CVV дугаараа оруулна уу"),
     message: yup.string().optional(),
   });
 
@@ -101,19 +101,19 @@ const BillingInformation = () => {
               instanceId="billing-country"
               options={[
                 { value: "Mongolia", label: "Mongolia" },
-                { value: "Canada", label: "Canada" },
-                { value: "Australia", label: "Australia" },
-                { value: "Germany", label: "Germany" },
-                { value: "Bangladesh", label: "Bangladesh" },
-                { value: "China", label: "China" },
-                { value: "Argentina", label: "Argentina" },
-                { value: "Bharat", label: "Bharat" },
-                { value: "Afghanistan", label: "Afghanistan" },
-                { value: "France", label: "France" },
-                { value: "Brazil", label: "Brazil" },
-                { value: "Belgium", label: "Belgium" },
-                { value: "Colombia", label: "Colombia" },
-                { value: "Albania", label: "Albania" },
+                //    { value: "Canada", label: "Canada" },
+                //    { value: "Australia", label: "Australia" },
+                //    { value: "Germany", label: "Germany" },
+                //    { value: "Bangladesh", label: "Bangladesh" },
+                //     { value: "China", label: "China" },
+                //     { value: "Argentina", label: "Argentina" },
+                //     { value: "Bharat", label: "Bharat" },
+                //    { value: "Afghanistan", label: "Afghanistan" },
+                //   { value: "France", label: "France" },
+                //      { value: "Brazil", label: "Brazil" },
+                //      { value: "Belgium", label: "Belgium" },
+                //   { value: "Colombia", label: "Colombia" },
+                //      { value: "Albania", label: "Albania" },
               ]}
             />
 
@@ -148,33 +148,33 @@ const BillingInformation = () => {
               instanceId="billing-city"
               options={[
                 { value: "Ulaanbaatar", label: "Ulaanbaatar" },
-                { value: "Andalusia", label: "Andalusia" },
-                { value: "Anniston", label: "Anniston" },
-                { value: "Athens", label: "Athens" },
-                { value: "Atmore", label: "Atmore" },
-                { value: "Auburn", label: "Auburn" },
-                { value: "Chickasaw", label: "Chickasaw" },
-                { value: "Clanton", label: "Clanton" },
-                { value: "Demopolis", label: "Demopolis" },
-                { value: "Guntersville", label: "Guntersville" },
-                { value: "Huntsville", label: "Huntsville" },
-                { value: "Jasper", label: "Jasper" },
-                { value: "Marion", label: "Marion" },
+                //   { value: "Andalusia", label: "Andalusia" },
+                //    { value: "Anniston", label: "Anniston" },
+                //    { value: "Athens", label: "Athens" },
+                //    { value: "Atmore", label: "Atmore" },
+                //    { value: "Auburn", label: "Auburn" },
+                //     { value: "Chickasaw", label: "Chickasaw" },
+                //    { value: "Clanton", label: "Clanton" },
+                //    { value: "Demopolis", label: "Demopolis" },
+                //     { value: "Guntersville", label: "Guntersville" },
+                //    { value: "Huntsville", label: "Huntsville" },
+                //    { value: "Jasper", label: "Jasper" },
+                //    { value: "Marion", label: "Marion" },
               ]}
             />
 
             <SelectFormInput
               name="zipCode"
-              label="ZIP/Postal Code"
+              label="ZIP/Шуудангийн код"
               control={control}
               id="billing-zip-code"
               instanceId="billing-zip-code"
               options={[
                 { value: 13250, label: "13250" },
-                { value: 350115, label: "350115" },
-                { value: 350125, label: "350125" },
-                { value: 350135, label: "350135" },
-                { value: 350145, label: "350145" },
+                //   { value: 350115, label: "350115" },
+                //   { value: 350125, label: "350125" },
+                //   { value: 350135, label: "350135" },
+                //   { value: 350145, label: "350145" },
               ]}
             />
 
