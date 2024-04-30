@@ -1,6 +1,7 @@
 import BillingInformationForm from "./BillingInformationForm";
 import { Breadcrumb } from "@/components";
 
+
 const Checkout = () => {
   return (
     <>

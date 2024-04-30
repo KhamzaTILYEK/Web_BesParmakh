@@ -25,20 +25,36 @@ export const orderRows = orderHistoryData.map((order) => {
 
 const columns = [
   {
+    key: "id",
+    name: "ID",
+  },
+  {
     key: "date",
     name: "Date",
   },
   {
-    key: "id",
-    name: "Order ID",
-  },
-  {
-    key: "dish_id",
-    name: "Dish",
+    key: "order",
+    name: "Orders",
   },
   {
     key: "amount",
     name: "Total",
+  },
+  {
+    key: "phoneNumber",
+    name: "Phone",
+  },
+  {
+    key: "address",
+    name: "Address",
+  },
+  {
+    key: "firstName",
+    name: "FirstName",
+  },
+  {
+    key: "lastName",
+    name: "lastName",
   },
   {
     key: "status",
@@ -48,64 +64,72 @@ const columns = [
 
 const OrderList = () => {
   const [fetchedOrders, setFetchedOrders] = useState();
+  const [orders, setOrders] = useState(null);
 
   useEffect(() => {
-    const fetchData = async () => {
-      const resolvedStatuses = await Promise.all(
-        Object.keys(orderProgressData).map(async (status, idx) => {
-          const orders = await Promise.all(
-            orderProgressData[status].map(async (order, index) => {
-              order.order = await getOrderById(order.order_id);
-              const dish = await getDishById(order.order?.dish_id ?? 0);
-              return (
-                <div
-                  key={order.order_id + index}
-                  className="flex items-center gap-4 rounded-lg bg-primary/10 p-2"
-                >
-                  <div className="flex h-16 w-16 items-center justify-center">
-                    <img
-                      src={dish?.images[0] ?? ""}
-                      height={64}
-                      width={64}
-                      alt="food"
-                    />
-                  </div>
-                  <div className="w-full">
-                    <h6 className="mb-1 flex items-center justify-between text-base font-medium text-default-900">
-                      {dish?.name}
-                      <p className="me-1 text-xs font-medium text-default-400">
-                        {order.time}
-                      </p>
-                    </h6>
-                    <p className="font-medium text-default-600">
-                      {order.order_id.toUpperCase()}
-                    </p>
-                  </div>
-                </div>
-              );
-            })
-          );
+    // const fetchData = async () => {
+    //   const resolvedStatuses = await Promise.all(
+    //     Object.keys(orderProgressData).map(async (status, idx) => {
+    //       const orders = await Promise.all(
+    //         orderProgressData[status].map(async (order, index) => {
+    //           order.order = await getOrderById(order.order_id);
+    //           const dish = await getDishById(order.order?.dish_id ?? 0);
+    //           return (
+    //             <div
+    //               key={order.order_id + index}
+    //               className="flex items-center gap-4 rounded-lg bg-primary/10 p-2"
+    //             >
+    //               <div className="flex h-16 w-16 items-center justify-center">
+    //                 <img
+    //                   src={dish?.images[0] ?? ""}
+    //                   height={64}
+    //                   width={64}
+    //                   alt="food"
+    //                 />
+    //               </div>
+    //               <div className="w-full">
+    //                 <h6 className="mb-1 flex items-center justify-between text-base font-medium text-default-900">
+    //                   {dish?.name}
+    //                   <p className="me-1 text-xs font-medium text-default-400">
+    //                     {order.time}
+    //                   </p>
+    //                 </h6>
+    //                 <p className="font-medium text-default-600">
+    //                   {order.order_id.toUpperCase()}
+    //                 </p>
+    //               </div>
+    //             </div>
+    //           );
+    //         })
+    //       );
 
-          return (
-            <div className="mb-6" key={status + idx}>
-              <div className="mb-4 flex flex-wrap items-center justify-between gap-4">
-                <h2 className="mb-0.5 text-xl font-semibold text-default-800">
-                  {toSentenceCase(status)}
-                </h2>
-                <Link to="/admin/orders/9f36ca">
-                  <LuEye size={18} />
-                </Link>
-              </div>
-              <div className="flex flex-col gap-4">{orders}</div>
-            </div>
-          );
-        })
-      );
-      setFetchedOrders(resolvedStatuses);
-    };
-    fetchData();
+    //       return (
+    //         <div className="mb-6" key={status + idx}>
+    //           <div className="mb-4 flex flex-wrap items-center justify-between gap-4">
+    //             <h2 className="mb-0.5 text-xl font-semibold text-default-800">
+    //               {toSentenceCase(status)}
+    //             </h2>
+    //             <Link to="/admin/orders/9f36ca">
+    //               <LuEye size={18} />
+    //             </Link>
+    //           </div>
+    //           <div className="flex flex-col gap-4">{orders}</div>
+    //         </div>
+    //       );
+    //     })
+    //   );
+    //   setFetchedOrders(resolvedStatuses);
+    // };
+    // fetchData();
+    getData()
   }, []);
-
+const getData = async () =>{
+  const response = await fetch(
+    `https://ap-southeast-1.aws.data.mongodb-api.com/app/application-0-qfspg/endpoint/getOrders`
+  )
+  let postsData = await response.json();
+  setOrders(postsData)
+}
   return (
     <div className="w-full lg:ps-64">
       <div className="page-content space-y-6 p-6">
@@ -116,19 +140,19 @@ const OrderList = () => {
               <div className="grid gap-6 sm:grid-cols-2 2xl:grid-cols-3">
                 <OrderStatistics
                   title="Хүргүүлсэн хоол"
-                  stats="23,568"
+                  stats="0"
                   icon={LuBanknote}
                   variant="bg-primary/20 text-primary"
                 />
                 <OrderStatistics
                   title="Таны үлдэгдэл"
-                  stats={`${currentCurrency}8,904.80`}
+                  stats={`0.00`}
                   icon={LuWallet}
                   variant="bg-yellow-500/20 text-yellow-500"
                 />
                 <OrderStatistics
                   title="Сэтгэл ханамжийн үнэлгээ"
-                  stats="98%"
+                  stats="100%"
                   icon={FaStar}
                   variant="bg-green-500/20 text-green-500"
                 />
@@ -137,7 +161,7 @@ const OrderList = () => {
                 <OrderDataTable
                   title="Захиалгын түүх"
                   columns={columns}
-                  rows={orderRows}
+                  rows={orders}
                 />
               </div>
             </div>

@@ -3,6 +3,9 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { LuCreditCard, LuDollarSign } from "react-icons/lu";
 import { amazonPaymentImg, paypal2PaymentImg } from "@/assets/data/images";
+import { useShoppingContext } from "@/context";
+import moment from 'moment';
+import { useNavigate, useParams } from "react-router-dom";
 import {
   DateFormInput,
   SelectFormInput,
@@ -10,8 +13,16 @@ import {
   TextFormInput,
 } from "@/components";
 import OrderSummary from "./OrderSummary";
+import { useEffect, useState } from "react";
+import { toast } from "sonner";
 
 const BillingInformation = () => {
+  const navigate = useNavigate();
+  const {cartItems,getCalculatedOrder} = useShoppingContext();
+  const [bill,setBill] = useState("")
+  const [total,setTotal] = useState(0)
+  const [order,setOrder] = useState("")
+  const [loading,setLoading] = useState(false)
   const billingFormSchema = yup.object({
     fname: yup.string().required("Хэрэглэгчийн нэрээ оруулна уу"),
     lName: yup.string().required("Овогоо оруулна уу"),
@@ -42,12 +53,59 @@ const BillingInformation = () => {
   });
 
   const { control, handleSubmit } = useForm({
-    resolver: yupResolver(billingFormSchema),
+    resolver: yupResolver(billingFormSchema)
   });
 
+useEffect(() => {
+toStr()
+console.log(cartItems);
+}, [cartItems])
+
+const toStr = async() =>{
+  let orders = await `${cartItems.map((cart)=>{return(
+    `${cart.dish.name}*${cart.quantity}`
+  )})}`
+  setTotal(getCalculatedOrder().total)
+  setOrder(orders);
+}
+const sendOrder = async (e) => {
+  let date = moment().format("DD MM YYYY hh:mm:ss")
+  e.preventDefault()
+if (e.target[0].value) {
+  try {      
+    if (bill=="paymentCard") {
+      const response = await fetch(
+        `https://ap-southeast-1.aws.data.mongodb-api.com/app/application-0-qfspg/endpoint/addOrder?status="ordered&date=${date}&firstName=${e.target[0].value}&lastName=${e.target[1].value}&address=${e.target[2].value}&email=${e.target[3].value}&phoneNumber=${e.target[4].value}&info=${e.target[5].value}&nameOnCard=${e.target[8].value}&cardNumber=${e.target[9].value}&cardDate=${e.target[10].value}&cvvNumber=${e.target[11].value}&order=${order}&amount=${total}`
+      )
+    }else{
+      const response = await fetch(
+        `https://ap-southeast-1.aws.data.mongodb-api.com/app/application-0-qfspg/endpoint/addOrder?status="ordered"&date=${date}&firstName=${e.target[0].value}&lastName=${e.target[1].value}&address=${e.target[2].value}&email=${e.target[3].value}&phoneNumber=${e.target[4].value}&info=${e.target[5].value}&order=${order}&amount=${total}`
+      )
+    }
+    
+    if (!response.ok) {
+      throw new Error(`HTTP error: Status ${response.status}`);
+    }
+    let postsData = await response.json();
+    if (postsData) {
+      navigate("/")
+    }
+
+  } catch (err) {
+    toast.success("done", {
+      position: "top-right",
+      duration: 1000,
+    });
+  }
+  finally {
+    setLoading(false);
+  }
+}
+    
+}
   return (
     <form
-      onSubmit={handleSubmit(() => { })}
+      onSubmit={(e)=>sendOrder(e)}
       className="grid grid-cols-1 gap-6 lg:grid-cols-3"
     >
       <div className="col-span-1 lg:col-span-2">
@@ -63,6 +121,7 @@ const BillingInformation = () => {
               placeholder="Нэр"
               control={control}
               fullWidth
+              containerClassName="lg:col-span-2"
             />
 
             <TextFormInput
@@ -72,9 +131,10 @@ const BillingInformation = () => {
               placeholder="Овог"
               control={control}
               fullWidth
+              containerClassName="lg:col-span-2"
             />
 
-            <TextFormInput
+            {/* <TextFormInput
               name="companyName"
               type="text"
               label="Компанийн нэр (заавал биш)"
@@ -82,7 +142,7 @@ const BillingInformation = () => {
               containerClassName="lg:col-span-2"
               control={control}
               fullWidth
-            />
+            /> */}
 
             <TextAreaFormInput
               name="address"
@@ -93,90 +153,49 @@ const BillingInformation = () => {
               fullWidth
             />
 
-            <SelectFormInput
+            {/* <SelectFormInput
               name="country"
               label="Улс"
               control={control}
               id="billing-country"
               instanceId="billing-country"
               options={[
-                { value: "Mongolia", label: "Mongolia" },
-                //    { value: "Canada", label: "Canada" },
-                //    { value: "Australia", label: "Australia" },
-                //    { value: "Germany", label: "Germany" },
-                //    { value: "Bangladesh", label: "Bangladesh" },
-                //     { value: "China", label: "China" },
-                //     { value: "Argentina", label: "Argentina" },
-                //     { value: "Bharat", label: "Bharat" },
-                //    { value: "Afghanistan", label: "Afghanistan" },
-                //   { value: "France", label: "France" },
-                //      { value: "Brazil", label: "Brazil" },
-                //      { value: "Belgium", label: "Belgium" },
-                //   { value: "Colombia", label: "Colombia" },
-                //      { value: "Albania", label: "Albania" },
+                { value: "Mongolia", label: "Mongolia" }
               ]}
-            />
+            /> */}
 
-            <SelectFormInput
+            {/* <SelectFormInput
               name="state"
               label="Муж/Аймаг"
               control={control}
               id="billing-state-province"
               instanceId="billing-state-province"
               options={[
-                { value: "Ulaanbaatar", label: "Ulaanbaatar" },
-                { value: "Alaska", label: "Alaska" },
-                { value: "Arizona", label: "Arizona" },
-                { value: "Arkansas", label: "Arkansas" },
-                { value: "California", label: "California" },
-                { value: "Colorado", label: "Colorado" },
-                { value: "Connecticut", label: "Connecticut" },
-                { value: "Delaware", label: "Delaware" },
-                { value: "Florida", label: "Florida" },
-                { value: "Gujarat", label: "Gujarat" },
-                { value: "Iowa", label: "Iowa" },
-                { value: "Kansas", label: "Kansas" },
-                { value: "Kentucky", label: "Kentucky" },
+                { value: "Ulaanbaatar", label: "Ulaanbaatar" }
               ]}
-            />
+            /> */}
 
-            <SelectFormInput
+            {/* <SelectFormInput
               name="city"
               label="Хот"
               control={control}
               id="billing-city"
               instanceId="billing-city"
               options={[
-                { value: "Ulaanbaatar", label: "Ulaanbaatar" },
-                //   { value: "Andalusia", label: "Andalusia" },
-                //    { value: "Anniston", label: "Anniston" },
-                //    { value: "Athens", label: "Athens" },
-                //    { value: "Atmore", label: "Atmore" },
-                //    { value: "Auburn", label: "Auburn" },
-                //     { value: "Chickasaw", label: "Chickasaw" },
-                //    { value: "Clanton", label: "Clanton" },
-                //    { value: "Demopolis", label: "Demopolis" },
-                //     { value: "Guntersville", label: "Guntersville" },
-                //    { value: "Huntsville", label: "Huntsville" },
-                //    { value: "Jasper", label: "Jasper" },
-                //    { value: "Marion", label: "Marion" },
+                { value: "Ulaanbaatar", label: "Ulaanbaatar" }
               ]}
-            />
+            /> */}
 
-            <SelectFormInput
+            {/* <SelectFormInput
               name="zipCode"
-              label="ZIP/Шуудангийн код"
+              label="ZIP/Post"
               control={control}
               id="billing-zip-code"
               instanceId="billing-zip-code"
               options={[
-                { value: 13250, label: "13250" },
-                //   { value: 350115, label: "350115" },
-                //   { value: 350125, label: "350125" },
-                //   { value: 350135, label: "350135" },
-                //   { value: 350145, label: "350145" },
+                { value: 13250, label: "13250" }
               ]}
-            />
+            /> */}
 
             <TextFormInput
               name="email"
@@ -197,22 +216,20 @@ const BillingInformation = () => {
               containerClassName="lg:col-span-2"
               control={control}
             />
-
-            <div className="flex items-center">
-              <input
-                id="shipmentAddress"
-                className="h-5 w-5 rounded border-default-200 bg-transparent text-primary focus:ring-0"
-                type="checkbox"
-                placeholder="+976  123-XXX-7890"
-              />
-              <label
-                htmlFor="shipmentAddress"
-                className="ms-2 block text-sm text-default-700"
-              >
-                Өөр хаягаар илгээнэ үү{" "}
-              </label>
-            </div>
           </div>
+        </div>
+        <div>
+                <h4 className="mb-6 text-lg font-medium text-default-800">
+                  Нэмэлт мэдээлэл
+                </h4>
+
+                <TextAreaFormInput
+                  name="message"
+                  label="Зурвас (заавал биш)"
+                  placeholder="Таны захиалгын талаархи тэмдэглэл, жишээ нь. хүргэх тусгай тэмдэглэл"
+                  control={control}
+                  fullWidth
+                />
         </div>
         <div className="mb-8">
           <h4 className="mb-6 text-lg font-medium text-default-800">
@@ -220,7 +237,7 @@ const BillingInformation = () => {
           </h4>
           <div className="mb-5 rounded-lg border border-default-200 p-6 lg:w-5/6">
             <div className="grid grid-cols-2 lg:grid-cols-4">
-              <div className="p-6 text-center">
+              <div onClick={()=>setBill("paymentCOD")} className="p-6 text-center">
                 <label
                   htmlFor="paymentCOD"
                   className="mb-4 flex flex-col items-center justify-center"
@@ -238,7 +255,7 @@ const BillingInformation = () => {
                   defaultChecked
                 />
               </div>
-              <div className="p-6 text-center">
+              {/* <div onClick={()=>setBill("paymentPaypal")} className="p-6 text-center">
                 <label
                   htmlFor="paymentPaypal"
                   className="mb-4 flex flex-col items-center justify-center"
@@ -249,7 +266,7 @@ const BillingInformation = () => {
                     alt="paypal"
                   />
                   <h5 className="text-sm font-medium text-default-700">
-                    Khaan bank
+                    PayPal
                   </h5>
                 </label>
                 <input
@@ -259,7 +276,7 @@ const BillingInformation = () => {
                   name="paymentOption"
                 />
               </div>
-              <div className="p-6 text-center">
+              <div onClick={()=>setBill("paymentAmazonPay")} className="p-6 text-center">
                 <label
                   htmlFor="paymentAmazonPay"
                   className="mb-4 flex flex-col items-center justify-center"
@@ -279,14 +296,16 @@ const BillingInformation = () => {
                   type="radio"
                   name="paymentOption"
                 />
-              </div>
-              <div className="p-6 text-center">
+              </div> */}
+              
+              <div onClick={()=>setBill("paymentCard")} className="p-6 text-center">
                 <label
+                
                   htmlFor="paymentCard"
                   className="mb-4 flex flex-col items-center justify-center"
                 >
                   <LuCreditCard className="mb-4 text-primary" size={24} />
-                  <h5 className="text-sm font-medium text-default-700">
+                  <h5  className="text-sm font-medium text-default-700">
                     Дебит/Кредит карт
                   </h5>
                 </label>
@@ -299,64 +318,56 @@ const BillingInformation = () => {
               </div>
             </div>
           </div>
-          <div className="grid gap-6 lg:grid-cols-2">
-            <TextFormInput
-              name="nameOnCard"
-              type="text"
-              label="Картан дээрх нэр"
-              className="block w-full rounded-lg border border-default-200 bg-transparent px-4 py-2.5 dark:bg-default-50"
-              placeholder="Карт эзэмшигчийн нэрийг оруулна уу"
-              containerClassName="lg:col-span-2"
-              control={control}
-            />
+          {bill == "paymentCard" &&
+            <div className="grid gap-6 lg:grid-cols-2">
+              <TextFormInput
+                name="nameOnCard"
+                type="text"
+                label="Картан дээрх нэр"
+                className="block w-full rounded-lg border border-default-200 bg-transparent px-4 py-2.5 dark:bg-default-50"
+                placeholder="Карт эзэмшигчийн нэрийг оруулна уу"
+                containerClassName="lg:col-span-2"
+                control={control}
+              />
 
-            <TextFormInput
-              name="cardNo"
-              type="text"
-              label="Картны дугаар"
-              className="block w-full rounded-lg border border-default-200 bg-transparent px-4 py-2.5 dark:bg-default-50"
-              placeholder="Картын дугаарыг оруулна уу"
-              containerClassName="lg:col-span-2"
-              control={control}
-            />
+              <TextFormInput
+                name="cardNo"
+                type="text"
+                label="Картны дугаар"
+                className="block w-full rounded-lg border border-default-200 bg-transparent px-4 py-2.5 dark:bg-default-50"
+                placeholder="Картын дугаарыг оруулна уу"
+                containerClassName="lg:col-span-2"
+                control={control}
+                maxLength={16}
+              />
 
-            <DateFormInput
-              name="expiryDate"
-              type="date"
-              label="Дуусах огноо"
-              className="block w-full rounded-lg border border-default-200 bg-transparent px-4 py-2.5 dark:bg-default-50"
-              placeholder="MM/YY"
-              control={control}
-              options={{
-                dateFormat: "m/y",
-              }}
-              fullWidth
-            />
+              <DateFormInput
+                name="expiryDate"
+                type="date"
+                label="Дуусах огноо"
+                className="block w-full rounded-lg border border-default-200 bg-transparent px-4 py-2.5 dark:bg-default-50"
+                placeholder="MM/YY"
+                control={control}
+                options={{
+                  dateFormat: "m/y",
+                }}
+                fullWidth
+              />
 
-            <TextFormInput
-              name="cvvNo"
-              type="text"
-              label="CVV"
-              className="block w-full rounded-lg border border-default-200 bg-transparent px-4 py-2.5 dark:bg-default-50"
-              placeholder="Enter CVV number"
-              maxLength={4}
-              control={control}
-            />
-          </div>
+              <TextFormInput
+                name="cvvNo"
+                type="text"
+                label="CVV"
+                className="block w-full rounded-lg border border-default-200 bg-transparent px-4 py-2.5 dark:bg-default-50"
+                placeholder="Enter CVV number"
+                maxLength={3}
+                control={control}
+              />
+            </div>
+          }
+          
         </div>
-        <div>
-          <h4 className="mb-6 text-lg font-medium text-default-800">
-            Нэмэлт мэдээлэл
-          </h4>
-
-          <TextAreaFormInput
-            name="message"
-            label="Зурвас (заавал биш)"
-            placeholder="Таны захиалгын талаархи тэмдэглэл, жишээ нь. хүргэх тусгай тэмдэглэл"
-            control={control}
-            fullWidth
-          />
-        </div>
+        
       </div>
 
       <OrderSummary />

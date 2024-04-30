@@ -63,25 +63,49 @@ useEffect(() => {
                     key="date"
                     className="whitespace-nowrap px-6 py-3 text-start text-sm font-medium text-default-800"
                   >
-                    {row.date}
+                    {row._id}
                   </td>
                   <td
                     key="id"
                     className="whitespace-nowrap px-6 py-3 text-start text-sm font-medium text-default-800"
                   >
-                    {row?._id}
+                    {row?.date}
                   </td>
                   <td
                     key="dish"
                     className="whitespace-nowrap px-6 py-3 text-start text-sm font-medium text-default-800"
                   >
-                    {row.dish_name}
+                    {row.order}
                   </td>
                   <td
                     key="amount"
                     className="whitespace-nowrap px-6 py-3 text-start text-sm font-medium text-default-800"
                   >
                     {row.amount}
+                  </td>
+                  <td
+                    key="startus"
+                    className="whitespace-nowrap px-6 py-3 text-start text-sm font-medium text-default-800"
+                  >
+                    {row.phoneNumber}
+                  </td>
+                  <td
+                    key="startus"
+                    className="whitespace-nowrap px-6 py-3 text-start text-sm font-medium text-default-800"
+                  >
+                    {row.address}
+                  </td>
+                  <td
+                    key="startus"
+                    className="whitespace-nowrap px-6 py-3 text-start text-sm font-medium text-default-800"
+                  >
+                    {row.firstName}
+                  </td>
+                  <td
+                    key="startus"
+                    className="whitespace-nowrap px-6 py-3 text-start text-sm font-medium text-default-800"
+                  >
+                    {row.lastName}
                   </td>
                   <td
                     key="startus"
