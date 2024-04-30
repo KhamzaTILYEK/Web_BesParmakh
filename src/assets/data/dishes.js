@@ -494,7 +494,7 @@ export const dishesData = [
     id: 1001,
     category_id: 4,
     restaurant_id: 901,
-    name: "Khamza",
+    name: "Pizza",
     images: [pizzaImg],
     price: 2000,
     type: "non-veg",
