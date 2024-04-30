@@ -75,11 +75,11 @@ if (e.target[0].value) {
   try {      
     if (bill=="paymentCard") {
       const response = await fetch(
-        `https://ap-southeast-1.aws.data.mongodb-api.com/app/application-0-qfspg/endpoint/addOrder?status="ordered&date=${date}&firstName=${e.target[0].value}&lastName=${e.target[1].value}&address=${e.target[2].value}&email=${e.target[3].value}&phoneNumber=${e.target[4].value}&info=${e.target[5].value}&nameOnCard=${e.target[8].value}&cardNumber=${e.target[9].value}&cardDate=${e.target[10].value}&cvvNumber=${e.target[11].value}&order=${order}&amount=${total}`
+        `https://ap-southeast-1.aws.data.mongodb-api.com/app/application-0-qfspg/endpoint/addOrder?status=ordered&date=${date}&firstName=${e.target[0].value}&lastName=${e.target[1].value}&address=${e.target[2].value}&email=${e.target[3].value}&phoneNumber=${e.target[4].value}&info=${e.target[5].value}&order=${order}&amount=${total}`
       )
     }else{
       const response = await fetch(
-        `https://ap-southeast-1.aws.data.mongodb-api.com/app/application-0-qfspg/endpoint/addOrder?status="ordered"&date=${date}&firstName=${e.target[0].value}&lastName=${e.target[1].value}&address=${e.target[2].value}&email=${e.target[3].value}&phoneNumber=${e.target[4].value}&info=${e.target[5].value}&order=${order}&amount=${total}`
+        `https://ap-southeast-1.aws.data.mongodb-api.com/app/application-0-qfspg/endpoint/addOrder?status=ordered&date=${date}&firstName=${e.target[0].value}&lastName=${e.target[1].value}&address=${e.target[2].value}&email=${e.target[3].value}&phoneNumber=${e.target[4].value}&info=${e.target[5].value}&order=${order}&amount=${total}`
       )
     }
     
