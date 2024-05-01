@@ -19,19 +19,12 @@ import { deleteCookie, hasCookie, getCookie, setCookie } from "cookies-next";
 
 const BillingInformation = () => {
   const navigate = useNavigate();
-  < HEAD
-    const { cartItems, getCalculatedOrder} = useShoppingContext();
+  const {cartItems, getCalculatedOrder} = useShoppingContext();
   const [bill, setBill] = useState("")
   const [total, setTotal] = useState(0)
   const [order, setOrder] = useState("")
   const [loading, setLoading] = useState(false)
-  const { cartItems, getCalculatedOrder } = useShoppingContext();
-  const [bill, setBill] = useState("")
-  const [user, setUser] = useState(null)
-  const [total, setTotal] = useState(0)
-  const [order, setOrder] = useState("")
-  const [loading, setLoading] = useState(false)
-    > 0013e4c63893cbac3934e3cb8222d9d7008b544c
+   
   const billingFormSchema = yup.object({
     fname: yup.string().required("Хэрэглэгчийн нэрээ оруулна уу"),
     lName: yup.string().required("Овогоо оруулна уу"),
@@ -65,57 +58,7 @@ const BillingInformation = () => {
     resolver: yupResolver(billingFormSchema)
   });
 
-  useEffect(() => {
-    < HEAD
-      toStr()
-    console.log(cartItems);
-  }, [cartItems])
-
-  const toStr = async () => {
-    let orders = await `${cartItems.map((cart) => {
-      return (
-        `${cart.dish.name}*${cart.quantity}`
-      )
-    })}`
-    setTotal(getCalculatedOrder().total)
-    setOrder(orders);
-  }
-  const sendOrder = async (e) => {
-    let date = moment().format("DD MM YYYY hh:mm:ss")
-    e.preventDefault()
-    if (e.target[0].value) {
-      try {
-        if (bill == "paymentCard") {
-          const response = await fetch(
-            `https://ap-southeast-1.aws.data.mongodb-api.com/app/application-0-qfspg/endpoint/addOrder?status=ordered&date=${date}&firstName=${e.target[0].value}&lastName=${e.target[1].value}&address=${e.target[2].value}&email=${e.target[3].value}&phoneNumber=${e.target[4].value}&info=${e.target[5].value}&order=${order}&amount=${total}`
-          )
-        } else {
-          const response = await fetch(
-            `https://ap-southeast-1.aws.data.mongodb-api.com/app/application-0-qfspg/endpoint/addOrder?status=ordered&date=${date}&firstName=${e.target[0].value}&lastName=${e.target[1].value}&address=${e.target[2].value}&email=${e.target[3].value}&phoneNumber=${e.target[4].value}&info=${e.target[5].value}&order=${order}&amount=${total}`
-          )
-        }
-
-        if (!response.ok) {
-          throw new Error(`HTTP error: Status ${response.status}`);
-        }
-        let postsData = await response.json();
-        if (postsData) {
-          navigate("/")
-        }
-
-      } catch (err) {
-        toast.success("Амжилттай", {
-          position: "top-right",
-          duration: 1000,
-        });
-      }
-      finally {
-        setLoading(false);
-      }
-    }
-
-  }
-=
+useEffect(() =>{
   getUser()
   toStr()
 }, [cartItems])
@@ -133,6 +76,7 @@ const getUser = async () => {
   let user = await JSON.parse(getCookie("__BesParmakh_AUTH__"))
   setUser(user.userInfo)
 }
+
 const sendOrder = async (e) => {
   console.log(user);
   let date = moment().format("DD MM YYYY hh:mm:ss")
@@ -174,7 +118,6 @@ const sendOrder = async (e) => {
   }
 
 }
-> 0013e4c63893cbac3934e3cb8222d9d7008b544c
 return (
   <form
     onSubmit={(e) => sendOrder(e)}
