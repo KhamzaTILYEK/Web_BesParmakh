@@ -18,11 +18,11 @@ import { toast } from "sonner";
 
 const BillingInformation = () => {
   const navigate = useNavigate();
-  const {cartItems,getCalculatedOrder} = useShoppingContext();
-  const [bill,setBill] = useState("")
-  const [total,setTotal] = useState(0)
-  const [order,setOrder] = useState("")
-  const [loading,setLoading] = useState(false)
+  const { cartItems, getCalculatedOrder } = useShoppingContext();
+  const [bill, setBill] = useState("")
+  const [total, setTotal] = useState(0)
+  const [order, setOrder] = useState("")
+  const [loading, setLoading] = useState(false)
   const billingFormSchema = yup.object({
     fname: yup.string().required("Хэрэглэгчийн нэрээ оруулна уу"),
     lName: yup.string().required("Овогоо оруулна уу"),
@@ -56,56 +56,58 @@ const BillingInformation = () => {
     resolver: yupResolver(billingFormSchema)
   });
 
-useEffect(() => {
-toStr()
-console.log(cartItems);
-}, [cartItems])
+  useEffect(() => {
+    toStr()
+    console.log(cartItems);
+  }, [cartItems])
 
-const toStr = async() =>{
-  let orders = await `${cartItems.map((cart)=>{return(
-    `${cart.dish.name}*${cart.quantity}`
-  )})}`
-  setTotal(getCalculatedOrder().total)
-  setOrder(orders);
-}
-const sendOrder = async (e) => {
-  let date = moment().format("DD MM YYYY hh:mm:ss")
-  e.preventDefault()
-if (e.target[0].value) {
-  try {      
-    if (bill=="paymentCard") {
-      const response = await fetch(
-        `https://ap-southeast-1.aws.data.mongodb-api.com/app/application-0-qfspg/endpoint/addOrder?status=ordered&date=${date}&firstName=${e.target[0].value}&lastName=${e.target[1].value}&address=${e.target[2].value}&email=${e.target[3].value}&phoneNumber=${e.target[4].value}&info=${e.target[5].value}&order=${order}&amount=${total}`
+  const toStr = async () => {
+    let orders = await `${cartItems.map((cart) => {
+      return (
+        `${cart.dish.name}*${cart.quantity}`
       )
-    }else{
-      const response = await fetch(
-        `https://ap-southeast-1.aws.data.mongodb-api.com/app/application-0-qfspg/endpoint/addOrder?status=ordered&date=${date}&firstName=${e.target[0].value}&lastName=${e.target[1].value}&address=${e.target[2].value}&email=${e.target[3].value}&phoneNumber=${e.target[4].value}&info=${e.target[5].value}&order=${order}&amount=${total}`
-      )
-    }
-    
-    if (!response.ok) {
-      throw new Error(`HTTP error: Status ${response.status}`);
-    }
-    let postsData = await response.json();
-    if (postsData) {
-      navigate("/")
+    })}`
+    setTotal(getCalculatedOrder().total)
+    setOrder(orders);
+  }
+  const sendOrder = async (e) => {
+    let date = moment().format("DD MM YYYY hh:mm:ss")
+    e.preventDefault()
+    if (e.target[0].value) {
+      try {
+        if (bill == "paymentCard") {
+          const response = await fetch(
+            `https://ap-southeast-1.aws.data.mongodb-api.com/app/application-0-qfspg/endpoint/addOrder?status=ordered&date=${date}&firstName=${e.target[0].value}&lastName=${e.target[1].value}&address=${e.target[2].value}&email=${e.target[3].value}&phoneNumber=${e.target[4].value}&info=${e.target[5].value}&order=${order}&amount=${total}`
+          )
+        } else {
+          const response = await fetch(
+            `https://ap-southeast-1.aws.data.mongodb-api.com/app/application-0-qfspg/endpoint/addOrder?status=ordered&date=${date}&firstName=${e.target[0].value}&lastName=${e.target[1].value}&address=${e.target[2].value}&email=${e.target[3].value}&phoneNumber=${e.target[4].value}&info=${e.target[5].value}&order=${order}&amount=${total}`
+          )
+        }
+
+        if (!response.ok) {
+          throw new Error(`HTTP error: Status ${response.status}`);
+        }
+        let postsData = await response.json();
+        if (postsData) {
+          navigate("/")
+        }
+
+      } catch (err) {
+        toast.success("Амжилттай", {
+          position: "top-right",
+          duration: 1000,
+        });
+      }
+      finally {
+        setLoading(false);
+      }
     }
 
-  } catch (err) {
-    toast.success("done", {
-      position: "top-right",
-      duration: 1000,
-    });
   }
-  finally {
-    setLoading(false);
-  }
-}
-    
-}
   return (
     <form
-      onSubmit={(e)=>sendOrder(e)}
+      onSubmit={(e) => sendOrder(e)}
       className="grid grid-cols-1 gap-6 lg:grid-cols-3"
     >
       <div className="col-span-1 lg:col-span-2">
@@ -219,17 +221,17 @@ if (e.target[0].value) {
           </div>
         </div>
         <div>
-                <h4 className="mb-6 text-lg font-medium text-default-800">
-                  Нэмэлт мэдээлэл
-                </h4>
+          <h4 className="mb-6 text-lg font-medium text-default-800">
+            Нэмэлт мэдээлэл
+          </h4>
 
-                <TextAreaFormInput
-                  name="message"
-                  label="Зурвас (заавал биш)"
-                  placeholder="Таны захиалгын талаархи тэмдэглэл, жишээ нь. хүргэх тусгай тэмдэглэл"
-                  control={control}
-                  fullWidth
-                />
+          <TextAreaFormInput
+            name="message"
+            label="Зурвас (заавал биш)"
+            placeholder="Таны захиалгын талаархи тэмдэглэл, жишээ нь. хүргэх тусгай тэмдэглэл"
+            control={control}
+            fullWidth
+          />
         </div>
         <div className="mb-8">
           <h4 className="mb-6 text-lg font-medium text-default-800">
@@ -237,7 +239,7 @@ if (e.target[0].value) {
           </h4>
           <div className="mb-5 rounded-lg border border-default-200 p-6 lg:w-5/6">
             <div className="grid grid-cols-2 lg:grid-cols-4">
-              <div onClick={()=>setBill("paymentCOD")} className="p-6 text-center">
+              <div onClick={() => setBill("paymentCOD")} className="p-6 text-center">
                 <label
                   htmlFor="paymentCOD"
                   className="mb-4 flex flex-col items-center justify-center"
@@ -297,15 +299,15 @@ if (e.target[0].value) {
                   name="paymentOption"
                 />
               </div> */}
-              
-              <div onClick={()=>setBill("paymentCard")} className="p-6 text-center">
+
+              <div onClick={() => setBill("paymentCard")} className="p-6 text-center">
                 <label
-                
+
                   htmlFor="paymentCard"
                   className="mb-4 flex flex-col items-center justify-center"
                 >
                   <LuCreditCard className="mb-4 text-primary" size={24} />
-                  <h5  className="text-sm font-medium text-default-700">
+                  <h5 className="text-sm font-medium text-default-700">
                     Дебит/Кредит карт
                   </h5>
                 </label>
@@ -365,9 +367,9 @@ if (e.target[0].value) {
               />
             </div>
           }
-          
+
         </div>
-        
+
       </div>
 
       <OrderSummary />

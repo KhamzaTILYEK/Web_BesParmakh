@@ -86,7 +86,7 @@ const MegaMenuDropdown = () => {
                       <div className="grid grid-cols-4 divide-x divide-default-200">
                         <div className="ps-6">
                           <h6 className="text-base font-medium text-default-800">
-                            Буурцагт суурилсан боолт
+                            Буурцаг
                           </h6>
                           <ul className="mt-4 grid space-y-3">
                             <li>
@@ -446,7 +446,7 @@ const MegaMenuDropdown = () => {
                                 to=""
                                 className="text-sm font-medium text-default-600 transition-all hover:text-primary"
                               >
-                                Согтуу гоймон
+                                гоймон
                               </Link>
                             </li>
                             <li>
