@@ -33,7 +33,7 @@ export const useShoppingContext = () => {
 };
 
 const ShopProvider = ({ children }) => {
-  const [state, setState] = useLocalStorage("__Yum_Next_Session__", INIT_STATE);
+  const [state, setState] = useLocalStorage("__Order_List_Session__", INIT_STATE);
 
   const addToCart = (dish, quantity) => {
     const cartItems = state.cartItems;

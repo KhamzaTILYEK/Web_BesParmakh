@@ -15,14 +15,24 @@ import {
 import OrderSummary from "./OrderSummary";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
+import { deleteCookie, hasCookie, getCookie, setCookie } from "cookies-next";
 
 const BillingInformation = () => {
   const navigate = useNavigate();
+<<<<<<< HEAD
   const { cartItems, getCalculatedOrder } = useShoppingContext();
   const [bill, setBill] = useState("")
   const [total, setTotal] = useState(0)
   const [order, setOrder] = useState("")
   const [loading, setLoading] = useState(false)
+=======
+  const {cartItems,getCalculatedOrder} = useShoppingContext();
+  const [bill,setBill] = useState("")
+  const [user,setUser] = useState(null)
+  const [total,setTotal] = useState(0)
+  const [order,setOrder] = useState("")
+  const [loading,setLoading] = useState(false)
+>>>>>>> 0013e4c63893cbac3934e3cb8222d9d7008b544c
   const billingFormSchema = yup.object({
     fname: yup.string().required("Хэрэглэгчийн нэрээ оруулна уу"),
     lName: yup.string().required("Овогоо оруулна уу"),
@@ -57,6 +67,7 @@ const BillingInformation = () => {
   });
 
   useEffect(() => {
+<<<<<<< HEAD
     toStr()
     console.log(cartItems);
   }, [cartItems])
@@ -105,6 +116,64 @@ const BillingInformation = () => {
     }
 
   }
+=======
+  getUser()
+  toStr()
+  }, [cartItems])
+
+  const toStr = async() =>{
+    let orders = await `${cartItems.map((cart)=>{return(
+      `${cart.dish.name}*${cart.quantity}`
+    )})}`
+    setTotal(getCalculatedOrder().total)
+    setOrder(orders);
+  }
+  const getUser = async () => {
+    let user = await JSON.parse(getCookie("__BesParmakh_AUTH__"))
+    setUser(user.userInfo)
+  }
+  const sendOrder = async (e) => {
+    console.log(user);
+    let date = moment().format("DD MM YYYY hh:mm:ss")
+    e.preventDefault()
+  if (e.target[2].value) {
+    try {      
+      if (bill=="paymentCard") {
+        const response = await fetch(
+          `https://ap-southeast-1.aws.data.mongodb-api.com/app/application-0-qfspg/endpoint/addOrder?status=ordered&date=${date}&userID=${user._id}&firstName=${user.firstName}&lastName=${user.lastName}&address=${e.target[2].value}&email=${user.email}&phoneNumber=${user.contact_no}&info=${e.target[5].value}&order=${order}&amount=${total}`
+        )
+      }else{
+        const response = await fetch(
+          `https://ap-southeast-1.aws.data.mongodb-api.com/app/application-0-qfspg/endpoint/addOrder?status=ordered&date=${date}&userID=${user._id}&firstName=${user.firstName}&lastName=${user.lastName}&address=${e.target[2].value}&email=${user.email}&phoneNumber=${user.contact_no}&info=${e.target[5].value}&order=${order}&amount=${total}`
+        )
+      }
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error: Status ${response.status}`);
+      }
+      let postsData = await response.json();
+      if (postsData) {
+        navigate("/")
+      }
+
+    } catch (err) {
+      toast.success("done", {
+        position: "top-right",
+        duration: 1500,
+      });
+    }
+    finally {
+      setLoading(false);
+    }
+  }else{
+    toast.error("inset Хаяг", {
+      position: "top-right",
+      duration: 1000,
+    });
+  }
+      
+  }
+>>>>>>> 0013e4c63893cbac3934e3cb8222d9d7008b544c
   return (
     <form
       onSubmit={(e) => sendOrder(e)}
@@ -120,17 +189,18 @@ const BillingInformation = () => {
               name="fname"
               type="text"
               label="Нэр"
-              placeholder="Нэр"
+              placeholder={user?.firstName}
               control={control}
               fullWidth
               containerClassName="lg:col-span-2"
+              
             />
 
             <TextFormInput
               name="lName"
               type="text"
               label="Овог"
-              placeholder="Овог"
+              placeholder={user?.lastName}
               control={control}
               fullWidth
               containerClassName="lg:col-span-2"
@@ -204,7 +274,7 @@ const BillingInformation = () => {
               type="text"
               label="Имэйл"
               className="block w-full rounded-lg border border-default-200 bg-transparent px-4 py-2.5 dark:bg-default-50"
-              placeholder="example@example.com"
+              placeholder={user?.email}
               containerClassName="lg:col-span-2"
               control={control}
             />
@@ -214,7 +284,7 @@ const BillingInformation = () => {
               type="text"
               label="Утасны дугаар"
               className="block w-full rounded-lg border border-default-200 bg-transparent px-4 py-2.5 dark:bg-default-50"
-              placeholder="+976  123-XXX-7890"
+              placeholder={user?.contact_no}
               containerClassName="lg:col-span-2"
               control={control}
             />

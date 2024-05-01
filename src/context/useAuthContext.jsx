@@ -11,7 +11,7 @@ export function useAuthContext() {
   return context;
 }
 
-const authSessionKey = "__YUM_REACT_AUTH__";
+const authSessionKey = "__BesParmakh_AUTH__";
 
 export function AuthProvider({ children }) {
   const [session, setSession] = useState(
